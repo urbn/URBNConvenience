@@ -1,4 +1,4 @@
- [![CI Status](http://img.shields.io/travis/jgrandelli/URBNConvenience.svg?style=flat)](https://travis-ci.org/jgrandelli/URBNConvenience)
+[![CI Status](http://img.shields.io/travis/urbn/URBNConvenience.svg?style=flat)](https://travis-ci.org/urbn/URBNConvenience)
 [![Version](https://img.shields.io/cocoapods/v/URBNConvenience.svg?style=flat)](http://cocoadocs.org/docsets/URBNConvenience)
 [![License](https://img.shields.io/cocoapods/l/URBNConvenience.svg?style=flat)](http://cocoadocs.org/docsets/URBNConvenience)
 [![Platform](https://img.shields.io/cocoapods/p/URBNConvenience.svg?style=flat)](http://cocoadocs.org/docsets/URBNConvenience)
@@ -17,7 +17,15 @@ URBNConvenience classes may be individually imported on an ass needed basis, or 
 
 * __URBNMacros:__ Convenience macros for things like OS & device versions, logging, and assertions.
 
-* __NSNotificationCenter+URBN:__ A category on NSNotificationCenter to remove the boiler plate around posting a notification on the main queue.
+* __NSNotificationCenter+URBN:__ A category on `NSNotificationCenter` to remove the boiler plate around posting a notification on the main queue.
+
+* __UITextField+URBNLoadingIndicator:__ A category on `UITextField` that displays a stock loading indicator as the `rightView` of the textfield.
+
+* __UIView+URBNAnimations:__ A short and sweet category on `UIView` to quickly add cross dissolve animations to views. The default animation duration is 0.2 seconds.
+
+* __UIView+URBNLayout:__ A super useful category on `UIView` to expedite layout work with `UIView`’s. Includes methods for manual frame layout as well as auto layout.
+
+* __URBNTextField:__ Because designers like text insets and padding, this subclass adds `edgeInsets`. These insets work with all `UITextField`’s subviews (text, editing, left view, clear button, & right view).
 
 ## Requirements
 
