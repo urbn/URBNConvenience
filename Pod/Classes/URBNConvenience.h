@@ -1,6 +1,16 @@
 
 #import <Foundation/Foundation.h>
+
+//Categories
 #import "NSNotificationCenter+URBN.h"
+#import "UIView+URBNLayout.h"
+#import "UIView+URBNAnimations.h"
+#import "UITextField+URBNLoadingIndicator.h"
+
+//Subclasses
+#import "URBNTextField.h"
+
+//Functions & Macros
 #import "URBNFunctions.h"
 #import "URBNMacros.h"
 

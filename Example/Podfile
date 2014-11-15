@@ -1,11 +1,17 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'URBNConvenience', :exclusive => true do
-  pod "URBNConvenience"
+#   below is used for testing remote pods
+#  pod "URBNConvenience"
+
+#   below is used for testing local pods
+  pod "URBNConvenience", :path => "../"
 end
 
 target 'Tests', :exclusive => true do
-  pod "URBNConvenience"
+#   below is used for testing remote pods
+#  pod "URBNConvenience"
 
-  
+#   below is used for testing local pods
+pod "URBNConvenience", :path => "../"  
 end
