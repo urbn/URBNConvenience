@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  URBNConvenience
+
+  Created by Demetri Miller on 5/2/14.
+  Copyright (c) 2014 Urban Outfitters. All rights reserved.
+*/
+
+"urbnconvenience.now" = "now";
+"urbnconvenience.week" = "w";

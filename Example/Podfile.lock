@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  URBNConvenience: 8976e2b6eac20f2379dd2875bdb06545a05f0bef
+  URBNConvenience: ba7eb922f005cc1db32c76dea8be1123201afd79
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.35.0
