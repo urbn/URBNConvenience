@@ -21,8 +21,6 @@
 
 @interface URBNConvenience : NSObject
 
-+ (NSString *)humanReadableStringForTimeSinceDate:(NSDate *)date;
-
 - (NSString *)version;
 
 @end
