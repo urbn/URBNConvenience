@@ -29,7 +29,7 @@
     self.imageView2.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.imageView2];
     
-    UIImage *image = [URBNConvenience imageDrawnWithKey:@"imageKey" size:size drawBlock:^(CGRect rect, CGContextRef context) {
+    UIImage *image = [UIImage urbn_imageDrawnWithKey:@"imageKey" size:size drawBlock:^(CGRect rect, CGContextRef context) {
         CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
         CGContextFillRect(context, rect);
     }];
@@ -37,7 +37,7 @@
     self.imageView1.image = image;
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UIImage *delayImage = [URBNConvenience imageDrawnWithKey:@"imageKey" size:size drawBlock:nil];
+        UIImage *delayImage = [UIImage urbn_imageDrawnWithKey:@"imageKey" size:size drawBlock:nil];
         self.imageView2.image = delayImage;
     });
 }

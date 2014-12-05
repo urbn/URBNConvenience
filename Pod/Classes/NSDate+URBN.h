@@ -10,6 +10,6 @@
 
 @interface NSDate (URBN)
 
-- (NSString *)humanReadableStringForTimeSinceCurrentDate;
+- (NSString *)urbn_humanReadableStringForTimeSinceCurrentDate;
 
 @end

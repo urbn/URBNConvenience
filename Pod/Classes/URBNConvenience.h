@@ -4,6 +4,7 @@
 //Categories
 #import "NSDate+URBN.h"
 #import "NSNotificationCenter+URBN.h"
+#import "UIImage+URBN.h"
 #import "UIView+URBNLayout.h"
 #import "UIView+URBNAnimations.h"
 #import "UITextField+URBNLoadingIndicator.h"
@@ -15,7 +16,6 @@
 #import "URBNFunctions.h"
 #import "URBNMacros.h"
 
-typedef void(^URBNConvenienceImageDrawBlock)(CGRect rect, CGContextRef context);
 
 /**
  Umbrella framework header file, any files addded to the framework
@@ -24,7 +24,6 @@ typedef void(^URBNConvenienceImageDrawBlock)(CGRect rect, CGContextRef context);
 
 @interface URBNConvenience : NSObject
 
-+ (UIImage *)imageDrawnWithKey:(NSString *)key size:(CGSize)size drawBlock:(URBNConvenienceImageDrawBlock)drawBlock;
 - (NSString *)version;
 
 @end
