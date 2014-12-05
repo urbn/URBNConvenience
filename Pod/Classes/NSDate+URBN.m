@@ -17,7 +17,7 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
 
 @implementation NSDate (URBN)
 
-- (NSString *)humanReadableStringForTimeSinceCurrentDate {
+- (NSString *)urbn_humanReadableStringForTimeSinceCurrentDate {
     static NSDateComponentsFormatter *_componentsFormatter = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

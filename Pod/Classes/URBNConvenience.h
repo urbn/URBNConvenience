@@ -2,7 +2,9 @@
 #import <Foundation/Foundation.h>
 
 //Categories
+#import "NSDate+URBN.h"
 #import "NSNotificationCenter+URBN.h"
+#import "UIImage+URBN.h"
 #import "UIView+URBNLayout.h"
 #import "UIView+URBNAnimations.h"
 #import "UITextField+URBNLoadingIndicator.h"
@@ -13,6 +15,7 @@
 //Functions & Macros
 #import "URBNFunctions.h"
 #import "URBNMacros.h"
+
 
 /**
  Umbrella framework header file, any files addded to the framework
