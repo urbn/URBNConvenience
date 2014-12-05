@@ -27,6 +27,11 @@ URBNConvenience classes may be individually imported on an ass needed basis, or 
 
 * __URBNTextField:__ Because designers like text insets and padding, this subclass adds `edgeInsets`. These insets work with all `UITextField`’s subviews (text, editing, left view, clear button, & right view).
 
+* __NSDate+URBN:__ A category on `NSDate` to get human-readable information about the duration between two dates.
+
+* __UIImage+URBN:__ The current FP app has a lot of asset bloat. This category provides a way to cache/reuse image assets drawn with CoreGraphics.
+
+
 ## Requirements
 
 URBNConvenience has been tested on iOS 7 and up. Though it may work on lower deployment targets. ARC is required.
