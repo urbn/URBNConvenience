@@ -9,7 +9,7 @@ A collection of useful Categories, Macros, and convenience functions we use in U
 
 ## Usage
 
-URBNConvenience classes may be individually imported on an ass needed basis, or if you need all of them imported at once, you may import `URBNConvenience.h` which will bring with it all of the other classes currently in the URBNConvenience pod.
+URBNConvenience classes may be individually imported on an as needed basis, or if you need all of them imported at once, you may import `URBNConvenience.h` which will bring with it all of the other classes currently in the URBNConvenience pod.
 
 * __URBNConvenience:__ An umbrella framework header to be included when all URBNConvenience classes are needed. Also includes version information about URBNConvenience.
 
