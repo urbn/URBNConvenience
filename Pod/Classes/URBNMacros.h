@@ -9,17 +9,19 @@
 #if (TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)
 
 #pragma mark - Environment
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.height
+
 #define IS_SIMULATOR TARGET_IPHONE_SIMULATOR
 
 #define IS_RETINA ([[UIScreen mainScreen] scale] > 1) ? YES : NO
-#define IS_4IN    ([[UIScreen mainScreen] bounds].size.height == 568)
+#define IS_4IN    (SCREEN_WIDTH == 568)
 
 #define IS_IPAD   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPAD_1 (IS_IPAD && ![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
 
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-#define IS_IPHONE_6 ([[UIScreen mainScreen] bounds].size.height == 667.0)
-#define IS_IPHONE_6P ([[UIScreen mainScreen] bounds].size.height == 736.0)
+#define IS_IPHONE_6 (SCREEN_WIDTH == 667.0)
+#define IS_IPHONE_6P (SCREEN_WIDTH == 736.0)
 #define IS_RETINA_3X (IS_IPHONE_6 || IS_IPHONE_6P)
 
 #pragma mark - System Version
