@@ -17,6 +17,11 @@
 #define IS_IPAD   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPAD_1 (IS_IPAD && ![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
 
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE_6 ([[UIScreen mainScreen] bounds].size.height == 667.0)
+#define IS_IPHONE_6P ([[UIScreen mainScreen] bounds].size.height == 736.0)
+#define IS_RETINA_3X (IS_IPHONE_6 || IS_IPHONE_6P)
+
 #pragma mark - System Version
 #define VERSION_GREATER_THAN(v1, v2)               ([v1 compare:v2 options:NSNumericSearch] == NSOrderedDescending)
 
