@@ -255,6 +255,14 @@ static NSString * URBNConstraint_Identifier = @"URBN.Constraint.Identifier";
     return [self urbn_addConstraintForAttribute:attribute withItem:nil withConstant:constant withPriority:priority];
 }
 
+- (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item {
+    return [self urbn_addConstraintForAttribute:attribute withItem:item withConstant:0.f];
+}
+
+- (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item withConstant:(CGFloat)constant {
+    return [self urbn_addConstraintForAttribute:attribute withItem:item withConstant:constant withPriority:UILayoutPriorityDefaultHigh];
+}
+
 - (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item withConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority {
     NSLayoutAttribute toAttribute = item ? attribute : nil;
     NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:attribute relatedBy:NSLayoutRelationEqual toItem:item attribute:toAttribute multiplier:1 constant:constant];

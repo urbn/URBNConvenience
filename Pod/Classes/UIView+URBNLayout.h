@@ -105,10 +105,12 @@ float pin(float min, float value, float max);
  *  @param attribute This is the attribute to create the constraint with.  (This will also be the attribute related if @item is defined)
  *  @param item      The `toItem` to relate against.  If this is defined, then the @attribute will be used as the relation
  *  @param constant  The constant for the constraint
- *  @param priority  The priority of the constraint
+ *  @param priority  The priority of the constraint (Defaults to High)
  *
  *  @return A newly created constraint based on the params above.  This constraint will have already been applied to the self.
  */
+- (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item;
+- (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item withConstant:(CGFloat)constant;
 - (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item withConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority;
 
 /**
