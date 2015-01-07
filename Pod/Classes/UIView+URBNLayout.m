@@ -232,6 +232,13 @@ static NSString * URBNConstraint_Identifier = @"URBN.Constraint.Identifier";
 }
 
 #pragma mark - General Constraints
+- (void)urbn_addAndIdentifyConstraints:(NSArray *)constraints {
+    [constraints enumerateObjectsUsingBlock:^(NSLayoutConstraint *obj, NSUInteger idx, BOOL *stop) {
+        [self urbn_identifyConstraint:obj];
+    }];
+    [self addConstraints:constraints];
+}
+
 - (NSLayoutConstraint *)urbn_constraintForAttribute:(NSLayoutAttribute)attribute {
     NSMutableArray *predicates = [NSMutableArray array];
     [predicates addObject:[NSPredicate predicateWithFormat:@"firstItem == %@", self]];
@@ -239,13 +246,21 @@ static NSString * URBNConstraint_Identifier = @"URBN.Constraint.Identifier";
     if ([[NSLayoutConstraint new] respondsToSelector:@selector(identifier)]) {
         [predicates addObject:[NSPredicate predicateWithFormat:@"identifier == %@", URBNConstraint_Identifier]];
     }
-    return [[[self constraints] filteredArrayUsingPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:predicates]] firstObject];
+    
+    NSArray *constraintsToSearch = [[self.superview constraints] arrayByAddingObjectsFromArray:[self constraints]];
+    return [[constraintsToSearch filteredArrayUsingPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:predicates]] firstObject];
 }
 
 - (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority {
-    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:attribute relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:constant];
+    return [self urbn_addConstraintForAttribute:attribute withItem:nil withConstant:constant withPriority:priority];
+}
+
+- (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item withConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority {
+    NSLayoutAttribute toAttribute = item ? attribute : nil;
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:attribute relatedBy:NSLayoutRelationEqual toItem:item attribute:toAttribute multiplier:1 constant:constant];
+    
     constraint.priority = priority;
-    [self urbn_addAndIdentifyConstraints:@[constraint]];
+    [((UIView *)item ?: self) urbn_addAndIdentifyConstraints:@[constraint]];
     return constraint;
 }
 
@@ -256,13 +271,6 @@ static NSString * URBNConstraint_Identifier = @"URBN.Constraint.Identifier";
         [constraint setValue:URBNConstraint_Identifier forKey:NSStringFromSelector(identifierSelector)];
     }
     return constraint;
-}
-
-- (void)urbn_addAndIdentifyConstraints:(NSArray *)constraints {
-    [constraints enumerateObjectsUsingBlock:^(NSLayoutConstraint *obj, NSUInteger idx, BOOL *stop) {
-        [self urbn_identifyConstraint:obj];
-    }];
-    [self addConstraints:constraints];
 }
 
 @end

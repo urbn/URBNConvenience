@@ -89,9 +89,27 @@ float pin(float min, float value, float max);
 - (NSLayoutConstraint *)urbn_addHeightLayoutConstraintWithConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority;
 
 // Everything else
+/**
+ *  This will define the `identifier` property of each constraint.
+ *  You can then use the `-urbn_constraintForAttribute` to lookup any of these constraints.
+ *
+ *  @param constraints  The constraints to add identifiers for. 
+ */
+- (void)urbn_addAndIdentifyConstraints:(NSArray *)constraints;
 - (NSLayoutConstraint *)urbn_constraintForAttribute:(NSLayoutAttribute)attribute;
 - (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority;
 
+/**
+ *  Create a constraint with the given properties
+ *
+ *  @param attribute This is the attribute to create the constraint with.  (This will also be the attribute related if @item is defined)
+ *  @param item      The `toItem` to relate against.  If this is defined, then the @attribute will be used as the relation
+ *  @param constant  The constant for the constraint
+ *  @param priority  The priority of the constraint
+ *
+ *  @return A newly created constraint based on the params above.  This constraint will have already been applied to the self.
+ */
+- (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item withConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority;
 
 /**
  *  The purpose of this is to replace the
