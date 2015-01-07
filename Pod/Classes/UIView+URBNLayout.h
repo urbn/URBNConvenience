@@ -35,6 +35,8 @@ float pin(float min, float value, float max);
  *  constraint.identifier.  
  *  You can set your own identifier if you'd like something that is more
  *  tailored to your application.   By default it's defined as "URBN.Constraint.Identifier"
+ *
+ *  NOTE: This should be set at the very beginning of app launch if necessary
  */
 + (void)urbn_setConstraintIdentifier:(NSString *)identifier;
 + (NSString *)urbn_constraintIdentifier;
