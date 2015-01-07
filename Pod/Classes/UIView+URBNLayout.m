@@ -264,7 +264,7 @@ static NSString * URBNConstraint_Identifier = @"URBN.Constraint.Identifier";
 }
 
 - (NSLayoutConstraint *)urbn_addConstraintForAttribute:(NSLayoutAttribute)attribute withItem:(id)item withConstant:(CGFloat)constant withPriority:(UILayoutPriority)priority {
-    NSLayoutAttribute toAttribute = item ? attribute : nil;
+    NSLayoutAttribute toAttribute = item ? attribute : NSLayoutAttributeNotAnAttribute;
     NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:attribute relatedBy:NSLayoutRelationEqual toItem:item attribute:toAttribute multiplier:1 constant:constant];
     
     constraint.priority = priority;
