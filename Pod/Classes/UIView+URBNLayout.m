@@ -247,7 +247,9 @@ static NSString * URBNConstraint_Identifier = @"URBN.Constraint.Identifier";
         [predicates addObject:[NSPredicate predicateWithFormat:@"identifier == %@", URBNConstraint_Identifier]];
     }
     
-    NSArray *constraintsToSearch = [[self.superview constraints] arrayByAddingObjectsFromArray:[self constraints]];
+    NSMutableArray* constraintsToSearch = [NSMutableArray array];
+    [constraintsToSearch addObjectsFromArray:self.superview.constraints];
+    [constraintsToSearch addObjectsFromArray:self.constraints];
     return [[constraintsToSearch filteredArrayUsingPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:predicates]] firstObject];
 }
 
