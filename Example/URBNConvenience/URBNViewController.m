@@ -54,7 +54,7 @@
         } completion:nil];
     });
 
-    //This code proves Github Issue #9 has been fixed.
+    //This code proves Github Issue #9 has been fixed. (https://github.com/urbn/URBNConvenience/issues/9)
     UILabel* errorLabel = [[UILabel alloc] init];
     errorLabel.text = @"There should be a red box here.";
     errorLabel.translatesAutoresizingMaskIntoConstraints = NO;
