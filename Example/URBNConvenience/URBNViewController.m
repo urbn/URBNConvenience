@@ -53,6 +53,38 @@
             [self.view layoutIfNeeded];
         } completion:nil];
     });
+
+    //This code proves Github Issue #9 has been fixed. (https://github.com/urbn/URBNConvenience/issues/9)
+    UILabel* errorLabel = [[UILabel alloc] init];
+    errorLabel.text = @"There should be a red box here.";
+    errorLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:errorLabel];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[errorLabel]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(errorLabel)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[errorLabel]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(errorLabel)]];
+
+    UILabel* label = [[UILabel alloc] init];
+    label.text = @"This label should appear in front of a red box.";
+    label.numberOfLines = 2;
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    [label urbn_addHeightLayoutConstraintWithConstant:70.0f];
+    [label urbn_addWidthLayoutConstraingWithConstant:320.0f];
+
+    UIView* redBox = [[UIView alloc] init];
+    redBox.clipsToBounds = NO;
+    redBox.translatesAutoresizingMaskIntoConstraints = NO;
+    redBox.backgroundColor = [UIColor redColor];
+
+    [redBox urbn_addHeightLayoutConstraintWithConstant:label.urbn_heightLayoutConstraint.constant]; //These are the key lines of code in this example. If Issue #9 exists, the constants will be 0
+    [redBox urbn_addWidthLayoutConstraingWithConstant:label.urbn_widthLayoutConstraint.constant];
+
+    [redBox addSubview:label];
+    [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[label]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(label)]];
+    [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[label]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(label)]];
+
+    [self.view addSubview:redBox];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[redBox]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(redBox)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[redBox]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(redBox)]];
+    /// End of Issue #9 code
 }
 
 

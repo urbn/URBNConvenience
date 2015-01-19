@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "URBNConvenience"
-  s.version          = "0.5"
+  s.version          = "0.5.1"
   s.summary          = "A pod for URBN convenience functions, macros, and categories."
   s.homepage         = "https://github.com/urbn/URBNConvenience"
   s.license          = 'MIT'
@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
+  s.resource     = 'Pod/Resources/Localizable.strings'
 end
