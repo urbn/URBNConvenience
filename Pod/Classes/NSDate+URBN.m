@@ -33,7 +33,7 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
     NSDateComponents *components = [[NSDateComponents alloc] init];
     
     if (timeSince < URBNConvenienceMinuteThreshold) {
-        string = [self localizedStringForKey:@"urbnconvenience.now" withDefault:@"yeo-now"];
+        string = [self localizedStringForKey:@"urbnconvenience.now" withDefault:@"now"];
     }
     else if (timeSince < URBNConvenienceHourThreshold) {
         components.minute = (timeSince / URBNConvenienceMinuteThreshold);
@@ -48,7 +48,7 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
         // NSDateComponentsFormatter doesn't support "number of weeks since a date" formatting
         // so we do it ourselves.
         NSInteger numWeeks = ((timeSince / URBNConvenienceDayThreshold) / 7);
-        string = [NSString stringWithFormat:@"%ld%@", (long)numWeeks, [self localizedStringForKey:@"urbnconvenience.week" withDefault:@"yeo-w"]];
+        string = [NSString stringWithFormat:@"%ld%@", (long)numWeeks, [self localizedStringForKey:@"urbnconvenience.week" withDefault:@"w"]];
     }
     
     // Default to the componentsFormatter if we don't have a string yet (beyond threshold or no localized key).
