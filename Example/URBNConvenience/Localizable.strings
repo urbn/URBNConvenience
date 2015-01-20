@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  URBNConvenience
+
+  Created by Nick DiStefano on 1/20/15.
+  Copyright (c) 2015 jgrandelli. All rights reserved.
+*/
+
+//For producing a failing test test
+//"urbnconvenience.now" = "meow";
