@@ -18,6 +18,7 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
 @implementation NSDate (URBN)
 
 - (NSString *)urbn_humanReadableStringForTimeSinceCurrentDate {
+
     static NSDateComponentsFormatter *_componentsFormatter = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -32,7 +33,7 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
     NSDateComponents *components = [[NSDateComponents alloc] init];
     
     if (timeSince < URBNConvenienceMinuteThreshold) {
-        string = NSLocalizedString(@"urbnconvenience.now", nil);
+        string = [self localizedStringForKey:@"urbnconvenience.now" withDefault:@"now"];
     }
     else if (timeSince < URBNConvenienceHourThreshold) {
         components.minute = (timeSince / URBNConvenienceMinuteThreshold);
@@ -47,7 +48,7 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
         // NSDateComponentsFormatter doesn't support "number of weeks since a date" formatting
         // so we do it ourselves.
         NSInteger numWeeks = ((timeSince / URBNConvenienceDayThreshold) / 7);
-        string = [NSString stringWithFormat:@"%ld%@", (long)numWeeks, NSLocalizedString(@"urbnconvenience.week", nil)];
+        string = [NSString stringWithFormat:@"%ld%@", (long)numWeeks, [self localizedStringForKey:@"urbnconvenience.week" withDefault:@"w"]];
     }
     
     // Default to the componentsFormatter if we don't have a string yet (beyond threshold or no localized key).
@@ -56,6 +57,29 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
     }
     
     return string;
+}
+
+- (NSString *)localizedStringForKey:(NSString *)key withDefault:(NSString *)defaultString {
+    static NSBundle *bundle = nil;
+    if (bundle == nil) {
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"URBNConvenience" ofType:@"bundle"];
+        bundle = [NSBundle bundleWithPath:bundlePath];
+
+        NSString *language = [[NSLocale preferredLanguages] count]? [NSLocale preferredLanguages][0]: @"en";
+        
+        if (![[bundle localizations] containsObject:language]) {
+            language = [language componentsSeparatedByString:@"-"][0];
+        }
+        
+        if ([[bundle localizations] containsObject:language]) {
+            bundlePath = [bundle pathForResource:language ofType:@"lproj"];
+        }
+
+        bundle = [NSBundle bundleWithPath:bundlePath] ?: [NSBundle mainBundle];
+    }
+
+    defaultString = [bundle localizedStringForKey:key value:defaultString table:nil];
+    return [[NSBundle mainBundle] localizedStringForKey:key value:defaultString table:nil];
 }
 
 @end
