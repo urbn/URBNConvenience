@@ -31,6 +31,8 @@ URBNConvenience classes may be individually imported on an as needed basis, or i
 
 * __UIImage+URBN:__ The current FP app has a lot of asset bloat. This category provides a way to cache/reuse image assets drawn with CoreGraphics.
 
+* __NSString+URBN:__ A category on `NSString` that provides some convenient functions for finding substrings.
+
 
 ## Requirements
 
