@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <URBNConvenience/NSDate+URBN.h>
+#import <URBNConvenience/NSString+URBN.h>
 #import <XCTest/XCTest.h>
 
 
@@ -60,6 +61,18 @@
     
     string = [[currentDate dateByAddingTimeInterval:1209800] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"2w"], @"'week' test failed");
+}
+
+- (void)testContainsString {
+    NSString *refString = @"This is a test string";
+    
+    XCTAssertTrue([refString urbn_containsString:@"This"], @"Case sensistive case failed for present string");
+    
+    XCTAssertFalse([refString urbn_containsString:@"Stuff"], @"Case sensitive case failed for absent string");
+    
+    XCTAssertTrue([refString urbn_containsCaseInsensitiveString:@"this"], @"Case insensistive case failed for present string");
+    
+    XCTAssertFalse([refString urbn_containsCaseInsensitiveString:@"more stuff"], @"Case insensistive case failed for absent string");
 }
 
 @end
