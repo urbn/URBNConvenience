@@ -8,6 +8,9 @@
 
 #import <URBNConvenience/URBNConvenience.h>
 #import "URBNViewController.h"
+#import "URBNBorderViewController.h"
+#import <URBNConvenience/UIView+URBNBorders.h>
+
 
 @interface URBNViewController ()
 @property(nonatomic, strong) UIImageView *imageView1;
@@ -23,6 +26,9 @@
     CGSize size = CGSizeMake(100, 100);
     self.imageView1 = [[UIImageView alloc] init];
     self.imageView1.translatesAutoresizingMaskIntoConstraints = NO;
+    self.imageView1.urbn_leftBorder.width = 1.0;
+    self.imageView1.urbn_leftBorder.color = [UIColor blueColor];
+    self.imageView1.urbn_leftBorder.insets = UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0);
     [self.view addSubview:self.imageView1];
     
     [self.imageView1 urbn_addConstraintForAttribute:NSLayoutAttributeTop withItem:self.view withConstant:100.f withPriority:UILayoutPriorityDefaultHigh];
@@ -85,7 +91,21 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[redBox]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(redBox)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[redBox]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(redBox)]];
     /// End of Issue #9 code
+    
+    UIButton *b = [UIButton buttonWithType:UIButtonTypeSystem];
+    [b setTitle:@"Borders" forState:UIControlStateNormal];
+    [b addTarget:self action:@selector(showBorders) forControlEvents:UIControlEventTouchUpInside];
+    b.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:b];
+    [b urbn_addConstraintForAttribute:NSLayoutAttributeTop withItem:self.view withConstant:50.f withPriority:UILayoutPriorityDefaultHigh];
+    [b urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
 }
 
+- (void)showBorders {
+    URBNBorderViewController *borderVC = [[URBNBorderViewController alloc] initWithStyle:UITableViewStylePlain];
+    borderVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissViewControllerAnimated:completion:)];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:borderVC];
+    [self presentViewController:nav animated:YES completion:nil];
+}
 
 @end
