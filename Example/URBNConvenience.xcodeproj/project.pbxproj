@@ -25,6 +25,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		A0F058511A2E58C500D60C6E /* URBNConvenienceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */; };
 		C53D60CFF934CAB77330C0EC /* libPods-URBNConvenience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F7AF4595DAFFDEFBC96370 /* libPods-URBNConvenience.a */; };
+		D8F856211AB73100008BE6C8 /* URBNBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */; };
 		DF516EE131BD7E1E2F9F7404 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6237067A55C7CDA6D05DE5 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		9BF835A10478A8BD0F62A026 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNConvenienceTestCase.m; sourceTree = "<group>"; };
 		B1F7AF4595DAFFDEFBC96370 /* libPods-URBNConvenience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNConvenience.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F8561F1AB73100008BE6C8 /* URBNBorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBNBorderViewController.h; sourceTree = "<group>"; };
+		D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNBorderViewController.m; sourceTree = "<group>"; };
 		DB52ACD594203A25EDFCBF16 /* Pods-URBNConvenience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNConvenience.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNConvenience/Pods-URBNConvenience.debug.xcconfig"; sourceTree = "<group>"; };
 		EE988799A090A92BA95D4B41 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +150,8 @@
 		6003F593195388D20070C39A /* URBNConvenience */ = {
 			isa = PBXGroup;
 			children = (
+				D8F8561F1AB73100008BE6C8 /* URBNBorderViewController.h */,
+				D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */,
 				6003F59C195388D20070C39A /* URBNAppDelegate.h */,
 				6003F59D195388D20070C39A /* URBNAppDelegate.m */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
@@ -369,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* URBNAppDelegate.m in Sources */,
+				D8F856211AB73100008BE6C8 /* URBNBorderViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* URBNViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
