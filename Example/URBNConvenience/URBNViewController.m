@@ -45,8 +45,8 @@
         CGContextFillRect(context, rect);
     }];
     
-    self.imageView1.image = image;
-
+    self.imageView1.image = [image applyBlurWithRadius:8 tintColor:[[UIColor redColor] colorWithAlphaComponent:0.8] saturationDeltaFactor:1 maskImage:nil];
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         UIImage *delayImage = [UIImage urbn_imageDrawnWithKey:@"imageKey" size:size drawBlock:nil];
         self.imageView2.image = delayImage;
