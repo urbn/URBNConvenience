@@ -13,6 +13,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }

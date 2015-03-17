@@ -103,9 +103,13 @@
 
 - (void)showBorders {
     URBNBorderViewController *borderVC = [[URBNBorderViewController alloc] initWithStyle:UITableViewStylePlain];
-    borderVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissViewControllerAnimated:completion:)];
+    borderVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissVC)];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:borderVC];
     [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (void)dismissVC {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

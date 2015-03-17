@@ -23,7 +23,6 @@
 
 
 #pragma mark - UIView+Border
-#pragma mark -
 static const char kURBNBorderViewKey;
 @implementation UIView (URBNBorders)
 
@@ -45,6 +44,7 @@ static const char kURBNBorderViewKey;
     // We do not have a borderView yet.  Let's create one and bind it to the edges of ourself
     bv = [[URBNBorderView alloc] initWithFrame:self.bounds];
     bv.opaque = NO;
+    bv.userInteractionEnabled = NO;
     bv.clearsContextBeforeDrawing = YES;
     bv.contentMode = UIViewContentModeRedraw;
     bv.translatesAutoresizingMaskIntoConstraints = NO;
@@ -84,7 +84,6 @@ static const char kURBNBorderViewKey;
 
 
 #pragma mark - URBNBorderView Private
-#pragma mark -
 @implementation URBNBorderView
 
 #pragma mark - Clear
