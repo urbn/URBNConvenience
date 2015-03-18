@@ -1,2345 +1,825 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>044B209B6DF2350602B4705D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>789ED9A5A419EC55F7CA657E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>064A5DA32E0FEC0ADF6A2AAA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UITextField+URBNLoadingIndicator.h</string>
-			<key>path</key>
-			<string>Pod/Classes/UITextField+URBNLoadingIndicator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>088846167C07DDC4919828C9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIView+URBNAnimations.m</string>
-			<key>path</key>
-			<string>Pod/Classes/UIView+URBNAnimations.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>092AA81964CC37CE13B0EC43</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>277B9D0DDBE06A2691D8C1D8</string>
-				<string>7F08D92F7DE2DA042BD63B95</string>
-				<string>DDB57D489B000EFDD4C36357</string>
-				<string>A0439A5547D253C35F593594</string>
-				<string>69412B28106EA2359017B8EC</string>
-				<string>E70D7A868102BE45DDF65C40</string>
-				<string>AFBD973D95B3F7E4B570CDC0</string>
-				<string>A6548A764CD54C7E1AC8C8C4</string>
-				<string>6B3CEF7F873DD269A3BE61F2</string>
-				<string>93F436E54288391AEE8A47EC</string>
-				<string>92E7CB193B16B5E62DF35B5A</string>
-				<string>2604B353289548CC03AF856F</string>
-				<string>E6A0CDEFFF3C2AA96941958F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09892650E01C4EDE87CF05DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIImage+URBN.h</string>
-			<key>path</key>
-			<string>Pod/Classes/UIImage+URBN.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0EA2D1B22F4848F0D5764B7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A45E98297E642631FE7162CD</string>
-				<string>88157B68C15550343EFB2B61</string>
-				<string>9E9D09AAFC41171776FF623B</string>
-				<string>838A1D75BBC3523291099597</string>
-				<string>3E2AEF78A62D62C200A9A3F5</string>
-				<string>BC60CC3E03CB4A7A79BCDBFD</string>
-				<string>3FAF0ED9A341D0073CA3CFBC</string>
-				<string>6433308B1AE50BC8976FB1AC</string>
-				<string>09892650E01C4EDE87CF05DB</string>
-				<string>18978C6C5FC1D8207E1A8309</string>
-				<string>064A5DA32E0FEC0ADF6A2AAA</string>
-				<string>4CE261E72ABA7E75319FDEBA</string>
-				<string>B26514CC5142AD61C7EADD20</string>
-				<string>088846167C07DDC4919828C9</string>
-				<string>432DD936D473CB65FC1DF58E</string>
-				<string>14293C0061C7F47BA62508C3</string>
-				<string>474A02C3E58C8C8669F572F0</string>
-				<string>62740B3A2458620854114529</string>
-				<string>C363D63F9BFB8B4582C4D503</string>
-				<string>B82035CB278868B07B17AD64</string>
-				<string>3762646CB3183C3EC06169BA</string>
-				<string>857FCC4D6DDF7B44A7C6A1B9</string>
-				<string>C5CD9AB8DDDB18B58E6C67ED</string>
-				<string>7AA3861EF170FD7AC6725D1F</string>
-				<string>94242C06B8767BD2DED86AB0</string>
-				<string>EBAAF6F0708C7084A44B2C4B</string>
-				<string>94FB281AF37877EA46426FCF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>URBNConvenience</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>104A0789AC0EADF71AB9B422</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B772DC0B7180DF388013DFFF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>59DBFF4F66328478EB7A64F9</string>
-				<string>AF36E9B26E6DCCA46641F7A2</string>
-				<string>092AA81964CC37CE13B0EC43</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience-URBNConvenience</string>
-			<key>productName</key>
-			<string>Pods-URBNConvenience-URBNConvenience</string>
-			<key>productReference</key>
-			<string>F602667F38A02B8FAEDE6A5C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>130BADF4A13D737AEC1C041C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1F5739F2333D1B50F1952FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>13E6DB269D2F0EF987E9FA39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>88157B68C15550343EFB2B61</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>14293C0061C7F47BA62508C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIView+URBNBorders.m</string>
-			<key>path</key>
-			<string>Pod/Classes/UIView+URBNBorders.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>14C63DD0CA6B279B04B3980A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>name</key>
-			<string>URBNConvenience.bundle</string>
-			<key>path</key>
-			<string>Pod/Resources/URBNConvenience.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>187CA0E4AA5F6319E6ACE607</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4F838431713352C4511AE1FD</string>
-				<string>308554C29FD21D7EC8E7FA67</string>
-				<string>23FFAB80C51192AEE3A1DA6C</string>
-				<string>F602667F38A02B8FAEDE6A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18978C6C5FC1D8207E1A8309</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+URBN.m</string>
-			<key>path</key>
-			<string>Pod/Classes/UIImage+URBN.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CBC7A92F5797A0ECB08E70C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>838A1D75BBC3523291099597</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>21083EFB53075886FDDE0EE5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC60CC3E03CB4A7A79BCDBFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2137F1E8042BD415174DF289</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>222B451212EB0BE45EBAA0AB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>857FCC4D6DDF7B44A7C6A1B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>22888096F6C9CAF2553260D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-URBNConvenience-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22FA076B0A6460065BADABA9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>83B5AEDC240CD37646C9371E</string>
-				<string>B9912FB303E92A641660E4FB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>23FFAB80C51192AEE3A1DA6C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-URBNConvenience.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>25F0C2A3B21E600ABFECD675</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>13E6DB269D2F0EF987E9FA39</string>
-				<string>1CBC7A92F5797A0ECB08E70C</string>
-				<string>21083EFB53075886FDDE0EE5</string>
-				<string>FE937C680FA6F2A4CEC0E164</string>
-				<string>7BA14F3A50575CE855C338F7</string>
-				<string>429EC4150E76162E4811DA28</string>
-				<string>6C69F5034A7DD1088CC4464D</string>
-				<string>D24AB7A15BF2BB00D70894BC</string>
-				<string>5CE8178BBC0CDAFCBDD44A81</string>
-				<string>3C195D214365EF7DC85E3068</string>
-				<string>D78C572136ECD27BEDFD92EE</string>
-				<string>222B451212EB0BE45EBAA0AB</string>
-				<string>7D35CB967634357DA4BA6235</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2604B353289548CC03AF856F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5CD9AB8DDDB18B58E6C67ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>277B9D0DDBE06A2691D8C1D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A45E98297E642631FE7162CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2A525C2C7F3FE63B1DC33E94</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1F5739F2333D1B50F1952FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2FF5B791EC2B7B2135D6E470</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>308554C29FD21D7EC8E7FA67</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests-URBNConvenience.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>360275E87DB235DE52409766</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D16BFA0783951CF4F2DB3E31</string>
-			<key>buildPhases</key>
-			<array>
-				<string>25F0C2A3B21E600ABFECD675</string>
-				<string>EFE67C6713C3E9388523818E</string>
-				<string>BA7EABDD497C6EDA417DCF1B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests-URBNConvenience</string>
-			<key>productName</key>
-			<string>Pods-Tests-URBNConvenience</string>
-			<key>productReference</key>
-			<string>308554C29FD21D7EC8E7FA67</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>3762646CB3183C3EC06169BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>URBNFunctions.h</string>
-			<key>path</key>
-			<string>Pod/Classes/URBNFunctions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>376E2708C6F32ACA680A5145</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>68F90B891963DDF580D475B8</string>
-				<string>41464456BF4FA80CCBF276C6</string>
-				<string>F7A5483C898648B42B233692</string>
-				<string>CAD40D0E0D6B02BA293FCD61</string>
-				<string>D94243B7F7249E97494B2191</string>
-				<string>2FF5B791EC2B7B2135D6E470</string>
-				<string>662889D610F6E5EF5B3DCD14</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3876A96F709B9D13491F9A6D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EFA8B94B3D9482C63382D5DB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3C195D214365EF7DC85E3068</key>
-		<dict>
-			<key>fileRef</key>
-			<string>62740B3A2458620854114529</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3D0D49197CDF24A0C4363891</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>22FA076B0A6460065BADABA9</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>B5AE7C6BA80B43A74B6DF1F6</string>
-			<key>productRefGroup</key>
-			<string>187CA0E4AA5F6319E6ACE607</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>F14A5CD14CFA6E039EE17DD3</string>
-				<string>360275E87DB235DE52409766</string>
-				<string>6C498726D354FE1D050DAD24</string>
-				<string>104A0789AC0EADF71AB9B422</string>
-			</array>
-		</dict>
-		<key>3E2AEF78A62D62C200A9A3F5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+URBN.h</string>
-			<key>path</key>
-			<string>Pod/Classes/NSString+URBN.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FAF0ED9A341D0073CA3CFBC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIImage+ImageEffects.h</string>
-			<key>path</key>
-			<string>Pod/Classes/UIImage+ImageEffects.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>41464456BF4FA80CCBF276C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>429EC4150E76162E4811DA28</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18978C6C5FC1D8207E1A8309</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>42A11CEBD5D5A66CB4087E4B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience-URBNConvenience-Private.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>432DD936D473CB65FC1DF58E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIView+URBNBorders.h</string>
-			<key>path</key>
-			<string>Pod/Classes/UIView+URBNBorders.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>435FA43935592D1D5D42EFC8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0EA2D1B22F4848F0D5764B7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>445FE1B575480B94795EC937</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E04C8594BC9CF0787DA5FD98</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>45D2FC85A97C37BF90E4E5AF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1F5739F2333D1B50F1952FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>474A02C3E58C8C8669F572F0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIView+URBNLayout.h</string>
-			<key>path</key>
-			<string>Pod/Classes/UIView+URBNLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4CE261E72ABA7E75319FDEBA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UITextField+URBNLoadingIndicator.m</string>
-			<key>path</key>
-			<string>Pod/Classes/UITextField+URBNLoadingIndicator.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E54218DE6F43F99CCFFFDA7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FAF0ED9A341D0073CA3CFBC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4F838431713352C4511AE1FD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>50B9F324ACEDE4B9EC36D76F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>064A5DA32E0FEC0ADF6A2AAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>531CDA22E80A3348804B90ED</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3D0D49197CDF24A0C4363891</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>360275E87DB235DE52409766</string>
-			<key>remoteInfo</key>
-			<string>Pods-Tests-URBNConvenience</string>
-		</dict>
-		<key>55A215CAB2A0C0BF2816AA6C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-URBNConvenience-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>59DBFF4F66328478EB7A64F9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BAEA6207123E02AC713101B1</string>
-				<string>F4C99D8286A25822ADC4E857</string>
-				<string>9E9D5C9EC88446D36652C9FD</string>
-				<string>C188A08AF482DEDBEB6EACDD</string>
-				<string>B700D7EB830A998BA3AF2C50</string>
-				<string>9590EC9D78E72237F39A60D8</string>
-				<string>E7FDE05326E5993264BD62FD</string>
-				<string>6BBF6F2514C4EFB2BCF862B6</string>
-				<string>AECB1A93090D928F2AB00973</string>
-				<string>5B9E1905196DAEE2C364997F</string>
-				<string>ACE8C2F1898906B369730AA0</string>
-				<string>E78A834205ED37408E9A519D</string>
-				<string>6520DD60AA7314324528C180</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5B9E1905196DAEE2C364997F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>62740B3A2458620854114529</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5CE8178BBC0CDAFCBDD44A81</key>
-		<dict>
-			<key>fileRef</key>
-			<string>14293C0061C7F47BA62508C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>62740B3A2458620854114529</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIView+URBNLayout.m</string>
-			<key>path</key>
-			<string>Pod/Classes/UIView+URBNLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6433308B1AE50BC8976FB1AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+ImageEffects.m</string>
-			<key>path</key>
-			<string>Pod/Classes/UIImage+ImageEffects.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6520DD60AA7314324528C180</key>
-		<dict>
-			<key>fileRef</key>
-			<string>94242C06B8767BD2DED86AB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>662889D610F6E5EF5B3DCD14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66B9E8B789F0790DEBA38775</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience-URBNConvenience-prefix.pch</string>
-			<key>path</key>
-			<string>../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>685F699FB8B653EE91316629</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>376E2708C6F32ACA680A5145</string>
-				<string>7AFF067996F91EC287A972C9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>68F90B891963DDF580D475B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69412B28106EA2359017B8EC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09892650E01C4EDE87CF05DB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6AD64C7F36D5E19D2ADD6506</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E2AEF78A62D62C200A9A3F5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6B3CEF7F873DD269A3BE61F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>474A02C3E58C8C8669F572F0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6BBF6F2514C4EFB2BCF862B6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>088846167C07DDC4919828C9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6C498726D354FE1D050DAD24</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C33444A6253EB088A1B88803</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7029F34174BBABC383E50D8D</string>
-				<string>894908A2A8B8DBB9CE25D659</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E49D52BDDF03A11578E2AB77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience</string>
-			<key>productName</key>
-			<string>Pods-URBNConvenience</string>
-			<key>productReference</key>
-			<string>23FFAB80C51192AEE3A1DA6C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>6C69F5034A7DD1088CC4464D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4CE261E72ABA7E75319FDEBA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E2FF8A40DD9C0B9E82C5FD9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DC1FBE4D10F5F627386F5609</string>
-				<string>D4D25EF03F9F7D3E01E9C02B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7029F34174BBABC383E50D8D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F89CCABB8AB1B7D319D93CFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>74C5DC6B308BA278B8904D2A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5CD9AB8DDDB18B58E6C67ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>77620E61C40C15E02F5D872C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>42A11CEBD5D5A66CB4087E4B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>789ED9A5A419EC55F7CA657E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1F5739F2333D1B50F1952FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7AA3861EF170FD7AC6725D1F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>URBNTextField.h</string>
-			<key>path</key>
-			<string>Pod/Classes/URBNTextField.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7AFF067996F91EC287A972C9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>959326235CEBCCA2DE3CA888</string>
-				<string>22888096F6C9CAF2553260D4</string>
-				<string>AC45451ACBC793F4ECA3FDBF</string>
-				<string>B09AFE1DD4E5A3E3B6B0991F</string>
-				<string>55A215CAB2A0C0BF2816AA6C</string>
-				<string>C5AEFEB248B517F6F16642BE</string>
-				<string>9ED95C69224ED196BC80B28F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-URBNConvenience</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7BA14F3A50575CE855C338F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6433308B1AE50BC8976FB1AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7D35CB967634357DA4BA6235</key>
-		<dict>
-			<key>fileRef</key>
-			<string>94242C06B8767BD2DED86AB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7F08D92F7DE2DA042BD63B95</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9E9D09AAFC41171776FF623B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>807A8AD8ADDA80E8D6AA8199</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DE305C9897B82341DD3262DA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-URBNConvenience/Pods-Tests-URBNConvenience-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>838A1D75BBC3523291099597</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSNotificationCenter+URBN.m</string>
-			<key>path</key>
-			<string>Pod/Classes/NSNotificationCenter+URBN.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>83B5AEDC240CD37646C9371E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8544574C76C6854BA8EE3543</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience-URBNConvenience.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>857FCC4D6DDF7B44A7C6A1B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>URBNFunctions.m</string>
-			<key>path</key>
-			<string>Pod/Classes/URBNFunctions.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>88157B68C15550343EFB2B61</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSDate+URBN.m</string>
-			<key>path</key>
-			<string>Pod/Classes/NSDate+URBN.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894908A2A8B8DBB9CE25D659</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2A525C2C7F3FE63B1DC33E94</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8CD8A09A03EA69ECD4D44EAA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3762646CB3183C3EC06169BA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>924A52D5E5F05C0CA0C65129</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Tests-URBNConvenience-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92E7CB193B16B5E62DF35B5A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3762646CB3183C3EC06169BA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>93F436E54288391AEE8A47EC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C363D63F9BFB8B4582C4D503</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>94242C06B8767BD2DED86AB0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>URBNTextField.m</string>
-			<key>path</key>
-			<string>Pod/Classes/URBNTextField.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>94FB281AF37877EA46426FCF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C4508FE86E603C5B88FA946A</string>
-				<string>DE305C9897B82341DD3262DA</string>
-				<string>924A52D5E5F05C0CA0C65129</string>
-				<string>ACFABB5719E4AFE28D57D2D3</string>
-				<string>8544574C76C6854BA8EE3543</string>
-				<string>42A11CEBD5D5A66CB4087E4B</string>
-				<string>F9E232F6BE4EC974385FD985</string>
-				<string>66B9E8B789F0790DEBA38775</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/Pods-Tests-URBNConvenience</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9590EC9D78E72237F39A60D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18978C6C5FC1D8207E1A8309</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>959326235CEBCCA2DE3CA888</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-URBNConvenience-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960DA020CF039C9E8901A41F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9ED95C69224ED196BC80B28F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9E9D09AAFC41171776FF623B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSNotificationCenter+URBN.h</string>
-			<key>path</key>
-			<string>Pod/Classes/NSNotificationCenter+URBN.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9E9D5C9EC88446D36652C9FD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC60CC3E03CB4A7A79BCDBFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9EA4979DC159382509751137</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B26514CC5142AD61C7EADD20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9ED95C69224ED196BC80B28F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-URBNConvenience.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0439A5547D253C35F593594</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FAF0ED9A341D0073CA3CFBC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A1E0C93C15491A8F264508AB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3D0D49197CDF24A0C4363891</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>104A0789AC0EADF71AB9B422</string>
-			<key>remoteInfo</key>
-			<string>Pods-URBNConvenience-URBNConvenience</string>
-		</dict>
-		<key>A45E98297E642631FE7162CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSDate+URBN.h</string>
-			<key>path</key>
-			<string>Pod/Classes/NSDate+URBN.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A6548A764CD54C7E1AC8C8C4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>432DD936D473CB65FC1DF58E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A73F437EC4E94459EFEABC70</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9E9D09AAFC41171776FF623B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AC45451ACBC793F4ECA3FDBF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-URBNConvenience-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ACE8C2F1898906B369730AA0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B82035CB278868B07B17AD64</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ACFABB5719E4AFE28D57D2D3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Tests-URBNConvenience-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AECB1A93090D928F2AB00973</key>
-		<dict>
-			<key>fileRef</key>
-			<string>14293C0061C7F47BA62508C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF36E9B26E6DCCA46641F7A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>130BADF4A13D737AEC1C041C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AFBD973D95B3F7E4B570CDC0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B26514CC5142AD61C7EADD20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B09AFE1DD4E5A3E3B6B0991F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-URBNConvenience-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B26514CC5142AD61C7EADD20</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIView+URBNAnimations.h</string>
-			<key>path</key>
-			<string>Pod/Classes/UIView+URBNAnimations.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AE7C6BA80B43A74B6DF1F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2137F1E8042BD415174DF289</string>
-				<string>435FA43935592D1D5D42EFC8</string>
-				<string>3876A96F709B9D13491F9A6D</string>
-				<string>187CA0E4AA5F6319E6ACE607</string>
-				<string>685F699FB8B653EE91316629</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B700D7EB830A998BA3AF2C50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6433308B1AE50BC8976FB1AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B712CA3478AF5D8D60ED7BF3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>474A02C3E58C8C8669F572F0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B772DC0B7180DF388013DFFF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DDCF6E30A3678B7148AC255E</string>
-				<string>77620E61C40C15E02F5D872C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B7AE2E22D0BA72E352EED1F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A45E98297E642631FE7162CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B82035CB278868B07B17AD64</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>URBNConvenience.m</string>
-			<key>path</key>
-			<string>Pod/Classes/URBNConvenience.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9912FB303E92A641660E4FB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BA7EABDD497C6EDA417DCF1B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B7AE2E22D0BA72E352EED1F2</string>
-				<string>A73F437EC4E94459EFEABC70</string>
-				<string>6AD64C7F36D5E19D2ADD6506</string>
-				<string>4E54218DE6F43F99CCFFFDA7</string>
-				<string>E6A4304835A3294DD5C0CBD0</string>
-				<string>50B9F324ACEDE4B9EC36D76F</string>
-				<string>9EA4979DC159382509751137</string>
-				<string>D217F0AD62E22BEDC0A0E983</string>
-				<string>B712CA3478AF5D8D60ED7BF3</string>
-				<string>EE59BCB03CBD49B006FA71B5</string>
-				<string>8CD8A09A03EA69ECD4D44EAA</string>
-				<string>74C5DC6B308BA278B8904D2A</string>
-				<string>E7B2298559D6E66E55AF8A6D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BAEA6207123E02AC713101B1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>88157B68C15550343EFB2B61</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BC60CC3E03CB4A7A79BCDBFD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSString+URBN.m</string>
-			<key>path</key>
-			<string>Pod/Classes/NSString+URBN.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C188A08AF482DEDBEB6EACDD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F9E232F6BE4EC974385FD985</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1F5739F2333D1B50F1952FD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>C33444A6253EB088A1B88803</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>ED175F2AD3BF642616FB384A</string>
-				<string>960DA020CF039C9E8901A41F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C363D63F9BFB8B4582C4D503</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>URBNConvenience.h</string>
-			<key>path</key>
-			<string>Pod/Classes/URBNConvenience.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C4508FE86E603C5B88FA946A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests-URBNConvenience.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5AEFEB248B517F6F16642BE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-URBNConvenience.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5CD9AB8DDDB18B58E6C67ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>URBNMacros.h</string>
-			<key>path</key>
-			<string>Pod/Classes/URBNMacros.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CA2525EDDEB95AC212657E45</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DE305C9897B82341DD3262DA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-URBNConvenience/Pods-Tests-URBNConvenience-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CAD40D0E0D6B02BA293FCD61</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Tests-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC1DF669C0746473B8B70F3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-Tests-URBNConvenience</string>
-			<key>target</key>
-			<string>360275E87DB235DE52409766</string>
-			<key>targetProxy</key>
-			<string>531CDA22E80A3348804B90ED</string>
-		</dict>
-		<key>D16BFA0783951CF4F2DB3E31</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>807A8AD8ADDA80E8D6AA8199</string>
-				<string>CA2525EDDEB95AC212657E45</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D217F0AD62E22BEDC0A0E983</key>
-		<dict>
-			<key>fileRef</key>
-			<string>432DD936D473CB65FC1DF58E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D24AB7A15BF2BB00D70894BC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>088846167C07DDC4919828C9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4D25EF03F9F7D3E01E9C02B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>662889D610F6E5EF5B3DCD14</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D78C572136ECD27BEDFD92EE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B82035CB278868B07B17AD64</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D94243B7F7249E97494B2191</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DC1FBE4D10F5F627386F5609</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2FF5B791EC2B7B2135D6E470</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DDB57D489B000EFDD4C36357</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E2AEF78A62D62C200A9A3F5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DDCF6E30A3678B7148AC255E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>42A11CEBD5D5A66CB4087E4B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DE305C9897B82341DD3262DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests-URBNConvenience-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E04C8594BC9CF0787DA5FD98</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F7A5483C898648B42B233692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E49D52BDDF03A11578E2AB77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience-URBNConvenience</string>
-			<key>target</key>
-			<string>104A0789AC0EADF71AB9B422</string>
-			<key>targetProxy</key>
-			<string>A1E0C93C15491A8F264508AB</string>
-		</dict>
-		<key>E6A0CDEFFF3C2AA96941958F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7AA3861EF170FD7AC6725D1F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6A4304835A3294DD5C0CBD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09892650E01C4EDE87CF05DB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E70D7A868102BE45DDF65C40</key>
-		<dict>
-			<key>fileRef</key>
-			<string>064A5DA32E0FEC0ADF6A2AAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E78A834205ED37408E9A519D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>857FCC4D6DDF7B44A7C6A1B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E7B2298559D6E66E55AF8A6D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7AA3861EF170FD7AC6725D1F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E7FDE05326E5993264BD62FD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4CE261E72ABA7E75319FDEBA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EBAAF6F0708C7084A44B2C4B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>14C63DD0CA6B279B04B3980A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED175F2AD3BF642616FB384A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C5AEFEB248B517F6F16642BE</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EE59BCB03CBD49B006FA71B5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C363D63F9BFB8B4582C4D503</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EFA8B94B3D9482C63382D5DB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1F5739F2333D1B50F1952FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFE67C6713C3E9388523818E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>45D2FC85A97C37BF90E4E5AF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F14A5CD14CFA6E039EE17DD3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6E2FF8A40DD9C0B9E82C5FD9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>445FE1B575480B94795EC937</string>
-				<string>044B209B6DF2350602B4705D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CEC1DF669C0746473B8B70F3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>productName</key>
-			<string>Pods-Tests</string>
-			<key>productReference</key>
-			<string>4F838431713352C4511AE1FD</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>F4C99D8286A25822ADC4E857</key>
-		<dict>
-			<key>fileRef</key>
-			<string>838A1D75BBC3523291099597</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F602667F38A02B8FAEDE6A5C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-URBNConvenience-URBNConvenience.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F7A5483C898648B42B233692</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F89CCABB8AB1B7D319D93CFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AC45451ACBC793F4ECA3FDBF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F9E232F6BE4EC974385FD985</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Pods-URBNConvenience-URBNConvenience-dummy.m</string>
-			<key>path</key>
-			<string>../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE937C680FA6F2A4CEC0E164</key>
-		<dict>
-			<key>fileRef</key>
-			<string>924A52D5E5F05C0CA0C65129</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>3D0D49197CDF24A0C4363891</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05FE66680F87B7A9C4BD6024 /* NSDate+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3D6BDFA9AB961732891F8D /* NSDate+URBN.m */; };
+		0AFA73BE81D2C5988968E0BF /* NSString+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD6AB8936147B11CE767A7 /* NSString+URBN.m */; };
+		0AFC7FFBB2E7FA97FE5DA5E1 /* NSDate+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = B9DCB4C14F26D6386EEEB0F0 /* NSDate+URBN.h */; };
+		0CD0BE03E969F85DCCF17051 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC9C17C62B763306A4E3D6 /* Pods-Tests-dummy.m */; };
+		141432785BF36B375FA78753 /* UIView+URBNAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CD617ABC7171E73200BB /* UIView+URBNAnimations.m */; };
+		16ADD2C8BFD11DA69AD464A8 /* NSDate+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3D6BDFA9AB961732891F8D /* NSDate+URBN.m */; };
+		1F0737DADE594186380402CB /* UITextField+URBNLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6514AB48E9ACEBFB80DBD /* UITextField+URBNLoadingIndicator.m */; };
+		2317063339189269A4830F1A /* UIView+URBNAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1A7F631AFEC1D9775B9DEA /* UIView+URBNAnimations.h */; };
+		247CCF5770ACDF666100413B /* UITextField+URBNLoadingIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EED7FB106F1BA94B87189F /* UITextField+URBNLoadingIndicator.h */; };
+		25A978261C143EC67809E8EF /* UIView+URBNBorders.m in Sources */ = {isa = PBXBuildFile; fileRef = A308DBE897401F4CCB458B21 /* UIView+URBNBorders.m */; };
+		26C06FD63F1DABDDF2771CA1 /* Pods-URBNConvenience-URBNConvenience-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6023806140C430065B7562 /* Pods-URBNConvenience-URBNConvenience-dummy.m */; };
+		2ACBDF632745174D3CF22340 /* URBNFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C25E3D72A1492C75ED6695 /* URBNFunctions.m */; };
+		2CC629C4BC20680C837889F6 /* UITextField+URBNLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6514AB48E9ACEBFB80DBD /* UITextField+URBNLoadingIndicator.m */; };
+		2FFC061AD0D624B0EBF21E57 /* URBNConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F36F8A4D4870AFB282F353E /* URBNConvenience.h */; };
+		3A63F2CA7BBBD46C37A20716 /* UIView+URBNLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BF17B84729CFA10FE567631C /* UIView+URBNLayout.h */; };
+		3B9D998E1229A0641005CE5B /* URBNMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF7E4F6BA3F1B3E0259F5F0 /* URBNMacros.h */; };
+		3C1BB28CD34794AFDDD7B876 /* NSString+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA8F548A533360C7445B062 /* NSString+URBN.h */; };
+		3EE9BE34BE68F28D4A572F25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DE650E646904AA18E438FD /* Foundation.framework */; };
+		4A8834485AA5465EA691040B /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C50409B83CAC1DC905ED577 /* UIImage+ImageEffects.m */; };
+		4CF2F4AB8562873DC5EA1FF4 /* UIView+URBNAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1A7F631AFEC1D9775B9DEA /* UIView+URBNAnimations.h */; };
+		4E202C1269C5485752B0405F /* URBNTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D3B829F79A51C8DDE6433E /* URBNTextField.h */; };
+		4FA389F19BCB817ED4491670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DE650E646904AA18E438FD /* Foundation.framework */; };
+		50EB6F0A40538407DF68B5CB /* UIImage+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE03BC683D51216638939EE /* UIImage+URBN.m */; };
+		57C70FCA97DE324DD7668492 /* NSDate+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = B9DCB4C14F26D6386EEEB0F0 /* NSDate+URBN.h */; };
+		5E63C34AA87124D0D4A851E4 /* URBNConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = B85C9C2D1B2DEC7B8E012F05 /* URBNConvenience.m */; };
+		5F1DF85806F8287DE0BE69FD /* UIView+URBNAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CD617ABC7171E73200BB /* UIView+URBNAnimations.m */; };
+		63DE6B28D7885FA6E441657F /* URBNConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F36F8A4D4870AFB282F353E /* URBNConvenience.h */; };
+		65A48B69AEA22B04AF66FF1C /* NSString+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA8F548A533360C7445B062 /* NSString+URBN.h */; };
+		68532AD56FA51025B651A97F /* URBNFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 757E5E6ADA005BCD4E76D6E4 /* URBNFunctions.h */; };
+		6B80F0E000DCA375C2E5D7B7 /* UIImage+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = 047D3CA3487FD9A42114DE4C /* UIImage+URBN.h */; };
+		754C214A636CC63892ECF7C7 /* UIView+URBNBorders.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8C78793388C0FF33BCD947 /* UIView+URBNBorders.h */; };
+		81DBFA339D4B40FBEA490997 /* NSNotificationCenter+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F7B51F63543C43179359D /* NSNotificationCenter+URBN.m */; };
+		81F4D963F5B7A1589F3F27CE /* Pods-Tests-URBNConvenience-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C78C13E9C423CB2561A9766 /* Pods-Tests-URBNConvenience-dummy.m */; };
+		8D801166F776150DD597DE15 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C50409B83CAC1DC905ED577 /* UIImage+ImageEffects.m */; };
+		90CF3B2BA5C49BE288D56EA4 /* UIView+URBNLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E40583BC5E68A05DD50AA524 /* UIView+URBNLayout.m */; };
+		91B7875B84D69CA4DB626CA7 /* URBNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A753F57B2F795C37362FAF56 /* URBNTextField.m */; };
+		940ACC6BDC4AD93486550445 /* UIView+URBNBorders.m in Sources */ = {isa = PBXBuildFile; fileRef = A308DBE897401F4CCB458B21 /* UIView+URBNBorders.m */; };
+		A7B4135B6EE1ABCA4BF8BC88 /* NSNotificationCenter+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F7B51F63543C43179359D /* NSNotificationCenter+URBN.m */; };
+		AB89A8DCDFAEEAC1ADA6E1BA /* NSNotificationCenter+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A11CBED1314F0FC8C18164E /* NSNotificationCenter+URBN.h */; };
+		B05D6A5C83DB71AE267EF96E /* URBNMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF7E4F6BA3F1B3E0259F5F0 /* URBNMacros.h */; };
+		B115BF0963ED0F74930F7047 /* UIView+URBNLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E40583BC5E68A05DD50AA524 /* UIView+URBNLayout.m */; };
+		B34D7B3BA6263B89AFD4C87C /* Pods-URBNConvenience-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE23E89CBF7D44204203D /* Pods-URBNConvenience-dummy.m */; };
+		B98DA9C844AC29E592DF42C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DE650E646904AA18E438FD /* Foundation.framework */; };
+		BBA640B1F87F3EFE3A5BC628 /* UIView+URBNLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BF17B84729CFA10FE567631C /* UIView+URBNLayout.h */; };
+		BD59CE7275672410B33F2285 /* UIImage+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = 047D3CA3487FD9A42114DE4C /* UIImage+URBN.h */; };
+		C13DB98B74A32690A7E161A1 /* URBNConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = B85C9C2D1B2DEC7B8E012F05 /* URBNConvenience.m */; };
+		C206A5137ABE46C915E36CEF /* URBNFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C25E3D72A1492C75ED6695 /* URBNFunctions.m */; };
+		C9DB64379344B3505E972249 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = EE68C641DE0ADCE685CD9FCD /* UIImage+ImageEffects.h */; };
+		CEF77B28A0FC58946FB4CB5C /* UITextField+URBNLoadingIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EED7FB106F1BA94B87189F /* UITextField+URBNLoadingIndicator.h */; };
+		CF3EFB09AC3B464DD5FB6BA4 /* URBNFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 757E5E6ADA005BCD4E76D6E4 /* URBNFunctions.h */; };
+		E81CB7A2D3B76CEFF8F75196 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DE650E646904AA18E438FD /* Foundation.framework */; };
+		F0BB7BA4DACEFE0F14F60C3F /* URBNTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D3B829F79A51C8DDE6433E /* URBNTextField.h */; };
+		F2C93B92D8A7A54E20B772F5 /* UIView+URBNBorders.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8C78793388C0FF33BCD947 /* UIView+URBNBorders.h */; };
+		F393683B6D08A194C56FA6D5 /* UIImage+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE03BC683D51216638939EE /* UIImage+URBN.m */; };
+		F5B76FF1440663F81C59A708 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = EE68C641DE0ADCE685CD9FCD /* UIImage+ImageEffects.h */; };
+		FAF9CC55DE55A3E41643D6E4 /* NSNotificationCenter+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A11CBED1314F0FC8C18164E /* NSNotificationCenter+URBN.h */; };
+		FE931714701341F559926282 /* NSString+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD6AB8936147B11CE767A7 /* NSString+URBN.m */; };
+		FEBFA63FE50FF193685DD032 /* URBNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A753F57B2F795C37362FAF56 /* URBNTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54F265913C4DD6CA44F1789C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF7E68FC8C6907F2C7B03387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24DC9D1D87FBEB245D620279;
+			remoteInfo = "Pods-Tests-URBNConvenience";
+		};
+		DDD5BFC0FAD01009C3DB2D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF7E68FC8C6907F2C7B03387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D73B8F668829C46324FAB7;
+			remoteInfo = "Pods-URBNConvenience-URBNConvenience";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047D3CA3487FD9A42114DE4C /* UIImage+URBN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+URBN.h"; sourceTree = "<group>"; };
+		0A39D6B961DC4051DFF7213C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B9CF9195F046A782280BB5D /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E38CD617ABC7171E73200BB /* UIView+URBNAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+URBNAnimations.m"; sourceTree = "<group>"; };
+		1422D767E9C9BCE0943CD62B /* Pods-URBNConvenience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBNConvenience.debug.xcconfig"; sourceTree = "<group>"; };
+		177A1C0DDF888999D88D07DD /* Pods-URBNConvenience-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URBNConvenience-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C50409B83CAC1DC905ED577 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		2B1A7F631AFEC1D9775B9DEA /* UIView+URBNAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+URBNAnimations.h"; sourceTree = "<group>"; };
+		2BA8F548A533360C7445B062 /* NSString+URBN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+URBN.h"; sourceTree = "<group>"; };
+		2F36F8A4D4870AFB282F353E /* URBNConvenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNConvenience.h; sourceTree = "<group>"; };
+		30C25E3D72A1492C75ED6695 /* URBNFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNFunctions.m; sourceTree = "<group>"; };
+		33947A2129EB65464F2B9F5E /* Pods-URBNConvenience-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URBNConvenience-environment.h"; sourceTree = "<group>"; };
+		382DAE624DB2D0DE02D29567 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A11CBED1314F0FC8C18164E /* NSNotificationCenter+URBN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+URBN.h"; sourceTree = "<group>"; };
+		3F6974D66F73B1E9AA66A085 /* libPods-URBNConvenience-URBNConvenience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNConvenience-URBNConvenience.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BFE23E89CBF7D44204203D /* Pods-URBNConvenience-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URBNConvenience-dummy.m"; sourceTree = "<group>"; };
+		57D3B829F79A51C8DDE6433E /* URBNTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNTextField.h; sourceTree = "<group>"; };
+		57FC6D6947FB167452EC6C82 /* Pods-Tests-URBNConvenience-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-URBNConvenience-prefix.pch"; sourceTree = "<group>"; };
+		5D6023806140C430065B7562 /* Pods-URBNConvenience-URBNConvenience-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-URBNConvenience-URBNConvenience-dummy.m"; path = "../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-dummy.m"; sourceTree = "<group>"; };
+		6BE855B0209C69D6D5AFD038 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6C78C13E9C423CB2561A9766 /* Pods-Tests-URBNConvenience-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-URBNConvenience-dummy.m"; sourceTree = "<group>"; };
+		72880C9BAA1A30AE1EDA79AF /* Pods-URBNConvenience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBNConvenience.release.xcconfig"; sourceTree = "<group>"; };
+		74EED7FB106F1BA94B87189F /* UITextField+URBNLoadingIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+URBNLoadingIndicator.h"; sourceTree = "<group>"; };
+		757E5E6ADA005BCD4E76D6E4 /* URBNFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNFunctions.h; sourceTree = "<group>"; };
+		7F10FBB479F65DEF270229EB /* Pods-URBNConvenience-URBNConvenience-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNConvenience-URBNConvenience-Private.xcconfig"; path = "../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-Private.xcconfig"; sourceTree = "<group>"; };
+		7FFC9C17C62B763306A4E3D6 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		84CD6AB8936147B11CE767A7 /* NSString+URBN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+URBN.m"; sourceTree = "<group>"; };
+		8AE56662FD76FB08B94280C8 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8CF1CF20CA99D65EA494ACBB /* libPods-Tests-URBNConvenience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-URBNConvenience.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F22C1E79AFB7398606D4E2B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		958F7B51F63543C43179359D /* NSNotificationCenter+URBN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+URBN.m"; sourceTree = "<group>"; };
+		966E214EF702D6E56DD996EB /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		9BE6514AB48E9ACEBFB80DBD /* UITextField+URBNLoadingIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+URBNLoadingIndicator.m"; sourceTree = "<group>"; };
+		9FE03BC683D51216638939EE /* UIImage+URBN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+URBN.m"; sourceTree = "<group>"; };
+		A308DBE897401F4CCB458B21 /* UIView+URBNBorders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+URBNBorders.m"; sourceTree = "<group>"; };
+		A5E344DF5FC1CBE2A47D9B0A /* URBNConvenience.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = URBNConvenience.bundle; sourceTree = "<group>"; };
+		A753F57B2F795C37362FAF56 /* URBNTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNTextField.m; sourceTree = "<group>"; };
+		AE3D6BDFA9AB961732891F8D /* NSDate+URBN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+URBN.m"; sourceTree = "<group>"; };
+		B85C9C2D1B2DEC7B8E012F05 /* URBNConvenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNConvenience.m; sourceTree = "<group>"; };
+		B9DCB4C14F26D6386EEEB0F0 /* NSDate+URBN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+URBN.h"; sourceTree = "<group>"; };
+		BEF7E4F6BA3F1B3E0259F5F0 /* URBNMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNMacros.h; sourceTree = "<group>"; };
+		BF17B84729CFA10FE567631C /* UIView+URBNLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+URBNLayout.h"; sourceTree = "<group>"; };
+		CF90E82CF696FD2D846EB79A /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		D296EFF0D6AD7AA097495A8C /* libPods-URBNConvenience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNConvenience.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D3524D893DF37D01B8B63D /* Pods-URBNConvenience-URBNConvenience-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-URBNConvenience-URBNConvenience-prefix.pch"; path = "../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-prefix.pch"; sourceTree = "<group>"; };
+		D5AC8C866DF3094A4A950252 /* Pods-Tests-URBNConvenience-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-URBNConvenience-Private.xcconfig"; sourceTree = "<group>"; };
+		E40583BC5E68A05DD50AA524 /* UIView+URBNLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+URBNLayout.m"; sourceTree = "<group>"; };
+		E4DE650E646904AA18E438FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EAF8131401990C3174DC777E /* Pods-URBNConvenience-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URBNConvenience-resources.sh"; sourceTree = "<group>"; };
+		EBB3650AEAAF37D6D489E27C /* Pods-URBNConvenience-URBNConvenience.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNConvenience-URBNConvenience.xcconfig"; path = "../Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience.xcconfig"; sourceTree = "<group>"; };
+		EBE706AF49CC6A8881B16F4C /* Pods-URBNConvenience-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URBNConvenience-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE68C641DE0ADCE685CD9FCD /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		EE8C78793388C0FF33BCD947 /* UIView+URBNBorders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+URBNBorders.h"; sourceTree = "<group>"; };
+		FFE2F8E70039E6A747D52D0F /* Pods-Tests-URBNConvenience.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-URBNConvenience.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26F3DD6644BF5DA8148E7477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81CB7A2D3B76CEFF8F75196 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EC201CB425976FBE943F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE9BE34BE68F28D4A572F25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7C6A17DB3B9A9DAFAAC5E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA389F19BCB817ED4491670 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92BEA0D54996B1C2752A1899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98DA9C844AC29E592DF42C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17F26EA910122517051A01FA /* URBNConvenience */ = {
+			isa = PBXGroup;
+			children = (
+				BA58FC269E1C171F598395B1 /* Pod */,
+				B3BDCCAAB58B91294F196D80 /* Resources */,
+				323EC4E5030FA19E3311910A /* Support Files */,
+			);
+			name = URBNConvenience;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		22EBD4EB7A347E6D58B01C1A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17F26EA910122517051A01FA /* URBNConvenience */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		26263DF0FE8EA2D5E8A1442F /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8AE56662FD76FB08B94280C8 /* Pods-Tests-acknowledgements.markdown */,
+				382DAE624DB2D0DE02D29567 /* Pods-Tests-acknowledgements.plist */,
+				7FFC9C17C62B763306A4E3D6 /* Pods-Tests-dummy.m */,
+				CF90E82CF696FD2D846EB79A /* Pods-Tests-environment.h */,
+				966E214EF702D6E56DD996EB /* Pods-Tests-resources.sh */,
+				0A39D6B961DC4051DFF7213C /* Pods-Tests.debug.xcconfig */,
+				6BE855B0209C69D6D5AFD038 /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+		323EC4E5030FA19E3311910A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2F8E70039E6A747D52D0F /* Pods-Tests-URBNConvenience.xcconfig */,
+				D5AC8C866DF3094A4A950252 /* Pods-Tests-URBNConvenience-Private.xcconfig */,
+				6C78C13E9C423CB2561A9766 /* Pods-Tests-URBNConvenience-dummy.m */,
+				57FC6D6947FB167452EC6C82 /* Pods-Tests-URBNConvenience-prefix.pch */,
+				EBB3650AEAAF37D6D489E27C /* Pods-URBNConvenience-URBNConvenience.xcconfig */,
+				7F10FBB479F65DEF270229EB /* Pods-URBNConvenience-URBNConvenience-Private.xcconfig */,
+				5D6023806140C430065B7562 /* Pods-URBNConvenience-URBNConvenience-dummy.m */,
+				D2D3524D893DF37D01B8B63D /* Pods-URBNConvenience-URBNConvenience-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-Tests-URBNConvenience";
+			sourceTree = "<group>";
+		};
+		3F8B74A83BB3839E849BD838 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5E344DF5FC1CBE2A47D9B0A /* URBNConvenience.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A5AE447032362C610BD955A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB2CFA89967B6036C965E670 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77B06135118F1653B9603184 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				26263DF0FE8EA2D5E8A1442F /* Pods-Tests */,
+				A927E5B2125D090E96F5AED1 /* Pods-URBNConvenience */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		84D1E6FC2492A700F8CD3517 = {
+			isa = PBXGroup;
+			children = (
+				8F22C1E79AFB7398606D4E2B /* Podfile */,
+				22EBD4EB7A347E6D58B01C1A /* Development Pods */,
+				4A5AE447032362C610BD955A /* Frameworks */,
+				EC0D32741F1F45F2B65BC03C /* Products */,
+				77B06135118F1653B9603184 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9EE01DA1E56CD4C685511B35 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9DCB4C14F26D6386EEEB0F0 /* NSDate+URBN.h */,
+				AE3D6BDFA9AB961732891F8D /* NSDate+URBN.m */,
+				3A11CBED1314F0FC8C18164E /* NSNotificationCenter+URBN.h */,
+				958F7B51F63543C43179359D /* NSNotificationCenter+URBN.m */,
+				2BA8F548A533360C7445B062 /* NSString+URBN.h */,
+				84CD6AB8936147B11CE767A7 /* NSString+URBN.m */,
+				EE68C641DE0ADCE685CD9FCD /* UIImage+ImageEffects.h */,
+				1C50409B83CAC1DC905ED577 /* UIImage+ImageEffects.m */,
+				047D3CA3487FD9A42114DE4C /* UIImage+URBN.h */,
+				9FE03BC683D51216638939EE /* UIImage+URBN.m */,
+				74EED7FB106F1BA94B87189F /* UITextField+URBNLoadingIndicator.h */,
+				9BE6514AB48E9ACEBFB80DBD /* UITextField+URBNLoadingIndicator.m */,
+				2B1A7F631AFEC1D9775B9DEA /* UIView+URBNAnimations.h */,
+				0E38CD617ABC7171E73200BB /* UIView+URBNAnimations.m */,
+				EE8C78793388C0FF33BCD947 /* UIView+URBNBorders.h */,
+				A308DBE897401F4CCB458B21 /* UIView+URBNBorders.m */,
+				BF17B84729CFA10FE567631C /* UIView+URBNLayout.h */,
+				E40583BC5E68A05DD50AA524 /* UIView+URBNLayout.m */,
+				2F36F8A4D4870AFB282F353E /* URBNConvenience.h */,
+				B85C9C2D1B2DEC7B8E012F05 /* URBNConvenience.m */,
+				757E5E6ADA005BCD4E76D6E4 /* URBNFunctions.h */,
+				30C25E3D72A1492C75ED6695 /* URBNFunctions.m */,
+				BEF7E4F6BA3F1B3E0259F5F0 /* URBNMacros.h */,
+				57D3B829F79A51C8DDE6433E /* URBNTextField.h */,
+				A753F57B2F795C37362FAF56 /* URBNTextField.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A927E5B2125D090E96F5AED1 /* Pods-URBNConvenience */ = {
+			isa = PBXGroup;
+			children = (
+				177A1C0DDF888999D88D07DD /* Pods-URBNConvenience-acknowledgements.markdown */,
+				EBE706AF49CC6A8881B16F4C /* Pods-URBNConvenience-acknowledgements.plist */,
+				43BFE23E89CBF7D44204203D /* Pods-URBNConvenience-dummy.m */,
+				33947A2129EB65464F2B9F5E /* Pods-URBNConvenience-environment.h */,
+				EAF8131401990C3174DC777E /* Pods-URBNConvenience-resources.sh */,
+				1422D767E9C9BCE0943CD62B /* Pods-URBNConvenience.debug.xcconfig */,
+				72880C9BAA1A30AE1EDA79AF /* Pods-URBNConvenience.release.xcconfig */,
+			);
+			name = "Pods-URBNConvenience";
+			path = "Target Support Files/Pods-URBNConvenience";
+			sourceTree = "<group>";
+		};
+		B3BDCCAAB58B91294F196D80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FACA25A5FD1B95024B6FA7B6 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BA58FC269E1C171F598395B1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9EE01DA1E56CD4C685511B35 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DB2CFA89967B6036C965E670 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E4DE650E646904AA18E438FD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EC0D32741F1F45F2B65BC03C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B9CF9195F046A782280BB5D /* libPods-Tests.a */,
+				8CF1CF20CA99D65EA494ACBB /* libPods-Tests-URBNConvenience.a */,
+				D296EFF0D6AD7AA097495A8C /* libPods-URBNConvenience.a */,
+				3F6974D66F73B1E9AA66A085 /* libPods-URBNConvenience-URBNConvenience.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACA25A5FD1B95024B6FA7B6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B74A83BB3839E849BD838 /* Resources */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26C30DF2E5C2B50EDD3C2932 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFC7FFBB2E7FA97FE5DA5E1 /* NSDate+URBN.h in Headers */,
+				FAF9CC55DE55A3E41643D6E4 /* NSNotificationCenter+URBN.h in Headers */,
+				3C1BB28CD34794AFDDD7B876 /* NSString+URBN.h in Headers */,
+				F5B76FF1440663F81C59A708 /* UIImage+ImageEffects.h in Headers */,
+				6B80F0E000DCA375C2E5D7B7 /* UIImage+URBN.h in Headers */,
+				247CCF5770ACDF666100413B /* UITextField+URBNLoadingIndicator.h in Headers */,
+				2317063339189269A4830F1A /* UIView+URBNAnimations.h in Headers */,
+				754C214A636CC63892ECF7C7 /* UIView+URBNBorders.h in Headers */,
+				3A63F2CA7BBBD46C37A20716 /* UIView+URBNLayout.h in Headers */,
+				63DE6B28D7885FA6E441657F /* URBNConvenience.h in Headers */,
+				68532AD56FA51025B651A97F /* URBNFunctions.h in Headers */,
+				3B9D998E1229A0641005CE5B /* URBNMacros.h in Headers */,
+				F0BB7BA4DACEFE0F14F60C3F /* URBNTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C1BD088C44ED386AFFF2AF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C70FCA97DE324DD7668492 /* NSDate+URBN.h in Headers */,
+				AB89A8DCDFAEEAC1ADA6E1BA /* NSNotificationCenter+URBN.h in Headers */,
+				65A48B69AEA22B04AF66FF1C /* NSString+URBN.h in Headers */,
+				C9DB64379344B3505E972249 /* UIImage+ImageEffects.h in Headers */,
+				BD59CE7275672410B33F2285 /* UIImage+URBN.h in Headers */,
+				CEF77B28A0FC58946FB4CB5C /* UITextField+URBNLoadingIndicator.h in Headers */,
+				4CF2F4AB8562873DC5EA1FF4 /* UIView+URBNAnimations.h in Headers */,
+				F2C93B92D8A7A54E20B772F5 /* UIView+URBNBorders.h in Headers */,
+				BBA640B1F87F3EFE3A5BC628 /* UIView+URBNLayout.h in Headers */,
+				2FFC061AD0D624B0EBF21E57 /* URBNConvenience.h in Headers */,
+				CF3EFB09AC3B464DD5FB6BA4 /* URBNFunctions.h in Headers */,
+				B05D6A5C83DB71AE267EF96E /* URBNMacros.h in Headers */,
+				4E202C1269C5485752B0405F /* URBNTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		13504B00501CC7D07F0D38EE /* Pods-URBNConvenience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BA1F18848556CC651069F59 /* Build configuration list for PBXNativeTarget "Pods-URBNConvenience" */;
+			buildPhases = (
+				4BF2A0ABEBD535FD6E4E00F1 /* Sources */,
+				26F3DD6644BF5DA8148E7477 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF9346F76F543981A5A32AB6 /* PBXTargetDependency */,
+			);
+			name = "Pods-URBNConvenience";
+			productName = "Pods-URBNConvenience";
+			productReference = D296EFF0D6AD7AA097495A8C /* libPods-URBNConvenience.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24DC9D1D87FBEB245D620279 /* Pods-Tests-URBNConvenience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523DAF003753FFFB9F4C8A47 /* Build configuration list for PBXNativeTarget "Pods-Tests-URBNConvenience" */;
+			buildPhases = (
+				A70B091C19735034A27D6D29 /* Sources */,
+				45EC201CB425976FBE943F93 /* Frameworks */,
+				26C30DF2E5C2B50EDD3C2932 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-URBNConvenience";
+			productName = "Pods-Tests-URBNConvenience";
+			productReference = 8CF1CF20CA99D65EA494ACBB /* libPods-Tests-URBNConvenience.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		90D73B8F668829C46324FAB7 /* Pods-URBNConvenience-URBNConvenience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797CE9CD6435A70839C3A078 /* Build configuration list for PBXNativeTarget "Pods-URBNConvenience-URBNConvenience" */;
+			buildPhases = (
+				FBA50BBF5A67863E24C48C60 /* Sources */,
+				4A7C6A17DB3B9A9DAFAAC5E0 /* Frameworks */,
+				8C1BD088C44ED386AFFF2AF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-URBNConvenience-URBNConvenience";
+			productName = "Pods-URBNConvenience-URBNConvenience";
+			productReference = 3F6974D66F73B1E9AA66A085 /* libPods-URBNConvenience-URBNConvenience.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A52DE112306DA849FD1784A7 /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16B2C186E5909CAEE1B383D /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				99AC93929FE651CACB5A0C74 /* Sources */,
+				92BEA0D54996B1C2752A1899 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58137510D8D3999222FDCF05 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 0B9CF9195F046A782280BB5D /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF7E68FC8C6907F2C7B03387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 053A044222A05DC86D1BE076 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84D1E6FC2492A700F8CD3517;
+			productRefGroup = EC0D32741F1F45F2B65BC03C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A52DE112306DA849FD1784A7 /* Pods-Tests */,
+				24DC9D1D87FBEB245D620279 /* Pods-Tests-URBNConvenience */,
+				13504B00501CC7D07F0D38EE /* Pods-URBNConvenience */,
+				90D73B8F668829C46324FAB7 /* Pods-URBNConvenience-URBNConvenience */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BF2A0ABEBD535FD6E4E00F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34D7B3BA6263B89AFD4C87C /* Pods-URBNConvenience-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99AC93929FE651CACB5A0C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD0BE03E969F85DCCF17051 /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70B091C19735034A27D6D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16ADD2C8BFD11DA69AD464A8 /* NSDate+URBN.m in Sources */,
+				A7B4135B6EE1ABCA4BF8BC88 /* NSNotificationCenter+URBN.m in Sources */,
+				0AFA73BE81D2C5988968E0BF /* NSString+URBN.m in Sources */,
+				81F4D963F5B7A1589F3F27CE /* Pods-Tests-URBNConvenience-dummy.m in Sources */,
+				4A8834485AA5465EA691040B /* UIImage+ImageEffects.m in Sources */,
+				F393683B6D08A194C56FA6D5 /* UIImage+URBN.m in Sources */,
+				1F0737DADE594186380402CB /* UITextField+URBNLoadingIndicator.m in Sources */,
+				141432785BF36B375FA78753 /* UIView+URBNAnimations.m in Sources */,
+				940ACC6BDC4AD93486550445 /* UIView+URBNBorders.m in Sources */,
+				90CF3B2BA5C49BE288D56EA4 /* UIView+URBNLayout.m in Sources */,
+				C13DB98B74A32690A7E161A1 /* URBNConvenience.m in Sources */,
+				C206A5137ABE46C915E36CEF /* URBNFunctions.m in Sources */,
+				FEBFA63FE50FF193685DD032 /* URBNTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA50BBF5A67863E24C48C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FE66680F87B7A9C4BD6024 /* NSDate+URBN.m in Sources */,
+				81DBFA339D4B40FBEA490997 /* NSNotificationCenter+URBN.m in Sources */,
+				FE931714701341F559926282 /* NSString+URBN.m in Sources */,
+				26C06FD63F1DABDDF2771CA1 /* Pods-URBNConvenience-URBNConvenience-dummy.m in Sources */,
+				8D801166F776150DD597DE15 /* UIImage+ImageEffects.m in Sources */,
+				50EB6F0A40538407DF68B5CB /* UIImage+URBN.m in Sources */,
+				2CC629C4BC20680C837889F6 /* UITextField+URBNLoadingIndicator.m in Sources */,
+				5F1DF85806F8287DE0BE69FD /* UIView+URBNAnimations.m in Sources */,
+				25A978261C143EC67809E8EF /* UIView+URBNBorders.m in Sources */,
+				B115BF0963ED0F74930F7047 /* UIView+URBNLayout.m in Sources */,
+				5E63C34AA87124D0D4A851E4 /* URBNConvenience.m in Sources */,
+				2ACBDF632745174D3CF22340 /* URBNFunctions.m in Sources */,
+				91B7875B84D69CA4DB626CA7 /* URBNTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58137510D8D3999222FDCF05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-URBNConvenience";
+			target = 24DC9D1D87FBEB245D620279 /* Pods-Tests-URBNConvenience */;
+			targetProxy = 54F265913C4DD6CA44F1789C /* PBXContainerItemProxy */;
+		};
+		BF9346F76F543981A5A32AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-URBNConvenience-URBNConvenience";
+			target = 90D73B8F668829C46324FAB7 /* Pods-URBNConvenience-URBNConvenience */;
+			targetProxy = DDD5BFC0FAD01009C3DB2D9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01AB1F3D59EAB051466BD6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE855B0209C69D6D5AFD038 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2376E500284AA65A46088F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A39D6B961DC4051DFF7213C /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3434DC6EAA75B80E0644D7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		47774C443550B8F6023958D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1422D767E9C9BCE0943CD62B /* Pods-URBNConvenience.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4F347C5317C038A4A9B4AA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61546FE0B7C168E1FA52B19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AC8C866DF3094A4A950252 /* Pods-Tests-URBNConvenience-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-URBNConvenience/Pods-Tests-URBNConvenience-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		776FF09E1D8BFE9C8338B7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F10FBB479F65DEF270229EB /* Pods-URBNConvenience-URBNConvenience-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CB8994AEE5C3DB480EC65D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F10FBB479F65DEF270229EB /* Pods-URBNConvenience-URBNConvenience-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-URBNConvenience-URBNConvenience/Pods-URBNConvenience-URBNConvenience-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AB6B0C68BB058186C840CA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AC8C866DF3094A4A950252 /* Pods-Tests-URBNConvenience-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-URBNConvenience/Pods-Tests-URBNConvenience-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D23B4067361D8247123C10C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72880C9BAA1A30AE1EDA79AF /* Pods-URBNConvenience.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		053A044222A05DC86D1BE076 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3434DC6EAA75B80E0644D7CF /* Debug */,
+				4F347C5317C038A4A9B4AA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523DAF003753FFFB9F4C8A47 /* Build configuration list for PBXNativeTarget "Pods-Tests-URBNConvenience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61546FE0B7C168E1FA52B19C /* Debug */,
+				AB6B0C68BB058186C840CA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BA1F18848556CC651069F59 /* Build configuration list for PBXNativeTarget "Pods-URBNConvenience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47774C443550B8F6023958D6 /* Debug */,
+				D23B4067361D8247123C10C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797CE9CD6435A70839C3A078 /* Build configuration list for PBXNativeTarget "Pods-URBNConvenience-URBNConvenience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776FF09E1D8BFE9C8338B7DE /* Debug */,
+				9CB8994AEE5C3DB480EC65D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16B2C186E5909CAEE1B383D /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2376E500284AA65A46088F12 /* Debug */,
+				01AB1F3D59EAB051466BD6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF7E68FC8C6907F2C7B03387 /* Project object */;
+}
