@@ -211,6 +211,15 @@
 			path = "Target Support Files/Pods-Tests";
 			sourceTree = "<group>";
 		};
+		3071C05B1ABC7D8A001E1696 /* Image Effects */ = {
+			isa = PBXGroup;
+			children = (
+				EE68C641DE0ADCE685CD9FCD /* UIImage+ImageEffects.h */,
+				1C50409B83CAC1DC905ED577 /* UIImage+ImageEffects.m */,
+			);
+			name = "Image Effects";
+			sourceTree = "<group>";
+		};
 		323EC4E5030FA19E3311910A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,14 +275,13 @@
 		9EE01DA1E56CD4C685511B35 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3071C05B1ABC7D8A001E1696 /* Image Effects */,
 				B9DCB4C14F26D6386EEEB0F0 /* NSDate+URBN.h */,
 				AE3D6BDFA9AB961732891F8D /* NSDate+URBN.m */,
 				3A11CBED1314F0FC8C18164E /* NSNotificationCenter+URBN.h */,
 				958F7B51F63543C43179359D /* NSNotificationCenter+URBN.m */,
 				2BA8F548A533360C7445B062 /* NSString+URBN.h */,
 				84CD6AB8936147B11CE767A7 /* NSString+URBN.m */,
-				EE68C641DE0ADCE685CD9FCD /* UIImage+ImageEffects.h */,
-				1C50409B83CAC1DC905ED577 /* UIImage+ImageEffects.m */,
 				047D3CA3487FD9A42114DE4C /* UIImage+URBN.h */,
 				9FE03BC683D51216638939EE /* UIImage+URBN.m */,
 				74EED7FB106F1BA94B87189F /* UITextField+URBNLoadingIndicator.h */,
