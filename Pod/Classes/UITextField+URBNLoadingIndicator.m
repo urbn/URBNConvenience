@@ -32,9 +32,11 @@ static CGFloat kURBNTextFieldLoadingIndicatorAnimationDuration = .25f;
     if(loading) {
         if(!indy || ![indy isKindOfClass:[UIActivityIndicatorView class]]) {
             indy = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-            UIView *newView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, (indy.size.width + insets.right - insets.left), indy.size.height - insets.top + insets.bottom)];
+            UIView *newView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, (indy.size.width + insets.right + insets.left), (indy.size.height + insets.top + insets.bottom))];
+
+            indy.frame = CGRectMake(insets.left, insets.top, indy.width, indy.height);
             [newView addSubview:indy];
-            newView.contentMode = UIViewContentModeCenter;
+            
             self.rightView = newView;
         }
         

@@ -107,7 +107,7 @@
     [tf urbn_addConstraintForAttribute:NSLayoutAttributeTop withItem:self.view withConstant:100.f withPriority:UILayoutPriorityDefaultHigh];
     [tf urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
     [tf urbn_addWidthLayoutConstraingWithConstant:100.f];
-    [tf urbn_showLoading:YES animated:YES spinnerInsets:UIEdgeInsetsMake(0, 0, 0, 8)];
+    [tf urbn_showLoading:YES animated:YES spinnerInsets:UIEdgeInsetsMake(0.0, 0.0, 4.0, 4.0)];
 }
 
 - (void)showBorders {
