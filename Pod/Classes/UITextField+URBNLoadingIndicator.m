@@ -7,10 +7,10 @@ static CGFloat kURBNTextFieldLoadingIndicatorAnimationDuration = .25f;
 @implementation UITextField (URBNLoadingIndicator)
 
 - (void)urbn_showLoading:(BOOL)loading animated:(BOOL)isAnimated {
-    [self urbn_showLoading:loading animated:isAnimated spinnerRightInset:0];
+    [self urbn_showLoading:loading animated:isAnimated spinnerInsets:UIEdgeInsetsZero];
 }
 
-- (void)urbn_showLoading:(BOOL)loading animated:(BOOL)isAnimated spinnerRightInset:(CGFloat)rightInset {
+- (void)urbn_showLoading:(BOOL)loading animated:(BOOL)isAnimated spinnerInsets:(UIEdgeInsets)insets {
     //If we're already showing the loading indicator don't try showing again
     if ( loading && [self.rightView isKindOfClass:[UIActivityIndicatorView class]] ) {
         return;
@@ -32,8 +32,9 @@ static CGFloat kURBNTextFieldLoadingIndicatorAnimationDuration = .25f;
     if(loading) {
         if(!indy || ![indy isKindOfClass:[UIActivityIndicatorView class]]) {
             indy = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-            UIView *newView = [UIView new];
-            [indy urbn_wrapInContainerViewWithView:newView insets:UIEdgeInsetsMake(0, -(indy.frame.size.width + rightInset), 0, 0)];
+            UIView *newView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, (indy.size.width + insets.right - insets.left), indy.size.height - insets.top + insets.bottom)];
+            [newView addSubview:indy];
+            newView.contentMode = UIViewContentModeCenter;
             self.rightView = newView;
         }
         

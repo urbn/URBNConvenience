@@ -99,6 +99,15 @@
     [self.view addSubview:b];
     [b urbn_addConstraintForAttribute:NSLayoutAttributeTop withItem:self.view withConstant:50.f withPriority:UILayoutPriorityDefaultHigh];
     [b urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
+    
+    UITextField *tf = [UITextField new];
+    tf.borderStyle = UITextBorderStyleRoundedRect;
+    tf.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:tf];
+    [tf urbn_addConstraintForAttribute:NSLayoutAttributeTop withItem:self.view withConstant:100.f withPriority:UILayoutPriorityDefaultHigh];
+    [tf urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
+    [tf urbn_addWidthLayoutConstraingWithConstant:100.f];
+    [tf urbn_showLoading:YES animated:YES spinnerInsets:UIEdgeInsetsMake(0, 0, 0, 8)];
 }
 
 - (void)showBorders {
