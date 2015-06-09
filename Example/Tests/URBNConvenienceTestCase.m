@@ -18,16 +18,6 @@
 
 @implementation URBNConvenienceTestCase
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
 - (void)testHumanReadableStrings {
     NSString *string;
     NSDate *currentDate = [NSDate date];
@@ -35,31 +25,31 @@
     string = [currentDate urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"now"], @"'now' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:59] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-59] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"now"], @"'now' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:70] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-70] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1m"], @"'minute' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:3599] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-3599] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"59m"], @"'minute' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:3700] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-3700] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1h"], @"'hour' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:84399] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-84399] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"23h"], @"'hour' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:86500] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-86500] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1d"], @"'day' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:604799] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-604799] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"6d"], @"'day' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:604900] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-604900] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1w"], @"'week' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:1209800] urbn_humanReadableStringForTimeSinceCurrentDate];
+    string = [[currentDate dateByAddingTimeInterval:-1209800] urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"2w"], @"'week' test failed");
 }
 
