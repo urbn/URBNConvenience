@@ -18,49 +18,47 @@
 
 @implementation URBNConvenienceTestCase
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testHumanReadableStrings {
+- (void)testHumanReadableStringsPastDates {
     NSString *string;
     NSDate *currentDate = [NSDate date];
+    NSCalendar *calendar = [NSCalendar calendarWithIdentifier:NSGregorianCalendar];
     
-    string = [currentDate urbn_humanReadableStringForTimeSinceCurrentDate];
-    XCTAssertTrue([string isEqualToString:@"now"], @"'now' test failed");
-    
-    string = [[currentDate dateByAddingTimeInterval:59] urbn_humanReadableStringForTimeSinceCurrentDate];
-    XCTAssertTrue([string isEqualToString:@"now"], @"'now' test failed");
-    
-    string = [[currentDate dateByAddingTimeInterval:70] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *oneMinuteAgo = [calendar dateByAddingUnit:NSCalendarUnitMinute value:-1 toDate:currentDate options:0];
+    string = [oneMinuteAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1m"], @"'minute' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:3599] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *fiftyNineMinuetsAgo = [calendar dateByAddingUnit:NSCalendarUnitMinute value:-59 toDate:currentDate options:0];
+    string = [fiftyNineMinuetsAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"59m"], @"'minute' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:3700] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *oneHourAgo = [calendar dateByAddingUnit:NSCalendarUnitHour value:-1 toDate:currentDate options:0];
+    string = [oneHourAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1h"], @"'hour' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:84399] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *twentyThreeHoursAgo = [calendar dateByAddingUnit:NSCalendarUnitHour value:-23 toDate:currentDate options:0];
+    string = [twentyThreeHoursAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"23h"], @"'hour' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:86500] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *oneDayAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-1 toDate:currentDate options:0];
+    string = [oneDayAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1d"], @"'day' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:604799] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *sixDaysAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-6 toDate:currentDate options:0];
+    string = [sixDaysAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"6d"], @"'day' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:604900] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *oneWeekAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-7 toDate:currentDate options:0];
+    string = [oneWeekAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"1w"], @"'week' test failed");
     
-    string = [[currentDate dateByAddingTimeInterval:1209800] urbn_humanReadableStringForTimeSinceCurrentDate];
+    NSDate *twoWeeksAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-14 toDate:currentDate options:0];
+    string = [twoWeeksAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"2w"], @"'week' test failed");
+    
+    // Test future
+    NSDate *future = [calendar dateByAddingUnit:NSCalendarUnitDay value:14 toDate:currentDate options:0];
+    string = [future urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"now"], @"'future' test failed");
 }
 
 - (void)testContainsString {
