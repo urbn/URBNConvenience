@@ -54,6 +54,11 @@
     NSDate *twoWeeksAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-14 toDate:currentDate options:0];
     string = [twoWeeksAgo urbn_humanReadableStringForTimeSinceCurrentDate];
     XCTAssertTrue([string isEqualToString:@"2w"], @"'week' test failed");
+    
+    // Test future
+    NSDate *future = [calendar dateByAddingUnit:NSCalendarUnitDay value:14 toDate:currentDate options:0];
+    string = [future urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"now"], @"'future' test failed");
 }
 
 - (void)testContainsString {
