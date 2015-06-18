@@ -8,20 +8,25 @@
 
 #import "URBNProcessEditingTextStorage.h"
 
-static NSInteger const maxLengthBeforeWarning = 83;
-static NSInteger const maxLength = 133;
-
 @interface URBNProcessEditingTextStorage ()
 
 @property (nonatomic, strong) NSMutableAttributedString *backingStore;
+@property (nonatomic, strong) UIColor *foregroundTextColor;
+@property (nonatomic, strong) UIColor *errorTextColor;
+@property (nonatomic, strong) UIFont *font;
+@property (nonatomic, assign) NSInteger maxLength;
 
 @end
 
 @implementation URBNProcessEditingTextStorage
 
-- (instancetype)init {
+- (instancetype)initWithFont:(UIFont *)font withForegroundTextColor:(UIColor *)foregroundTextColor withErrorTextColor:(UIColor *)errorTextColor withMaxLength:(NSInteger)maxLength {
     if (self = [super init]) {
         _backingStore = [NSMutableAttributedString new];
+        _foregroundTextColor = foregroundTextColor;
+        _errorTextColor = errorTextColor;
+        _font = font;
+        _maxLength = maxLength;
     }
     
     return self;
@@ -47,6 +52,19 @@ static NSInteger const maxLength = 133;
     [self.backingStore setAttributes:attrs range:range];
     [self edited:NSTextStorageEditedAttributes range:range changeInLength:0];
     [self endEditing];
+}
+
+- (void)processEditing {
+    NSInteger stringLength = self.string.length;
+    [self removeAttribute:NSBackgroundColorAttributeName range:NSMakeRange(0, stringLength)];
+
+    if (stringLength > self.maxLength) {
+        [self addAttribute:NSBackgroundColorAttributeName value:self.errorTextColor range:NSMakeRange(self.maxLength, stringLength - self.maxLength)];
+    }
+    
+    [self addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, stringLength)];
+    [self addAttribute:NSForegroundColorAttributeName value:self.foregroundTextColor range:NSMakeRange(0, stringLength)];
+    [super processEditing];
 }
 
 @end
