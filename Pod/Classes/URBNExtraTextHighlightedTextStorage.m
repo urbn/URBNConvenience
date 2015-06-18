@@ -6,9 +6,9 @@
 //
 //
 
-#import "URBNProcessEditingTextStorage.h"
+#import "URBNExtraTextHighlightedTextStorage.h"
 
-@interface URBNProcessEditingTextStorage ()
+@interface URBNExtraTextHighlightedTextStorage ()
 
 @property (nonatomic, strong) NSMutableAttributedString *backingStore;
 @property (nonatomic, strong) UIColor *foregroundTextColor;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation URBNProcessEditingTextStorage
+@implementation URBNExtraTextHighlightedTextStorage
 
 - (instancetype)initWithFont:(UIFont *)font withForegroundTextColor:(UIColor *)foregroundTextColor withErrorTextColor:(UIColor *)errorTextColor withMaxLength:(NSInteger)maxLength {
     self = [super init];

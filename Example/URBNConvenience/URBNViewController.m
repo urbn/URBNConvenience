@@ -117,6 +117,7 @@
     } completion:nil];
 
     NSTextStorage *textStorage = [[URBNProcessEditingTextStorage alloc] initWithFont:[UIFont systemFontOfSize:14.f] withForegroundTextColor:[UIColor blueColor] withErrorTextColor:[UIColor redColor] withMaxLength:25];
+
     NSLayoutManager *textLayout = [NSLayoutManager new];
     [textStorage addLayoutManager:textLayout];
     NSTextContainer *textContainer = [NSTextContainer new];

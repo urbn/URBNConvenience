@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface URBNProcessEditingTextStorage : NSTextStorage
+@interface URBNExtraTextHighlightedTextStorage : NSTextStorage
 
 - (instancetype)initWithFont:(UIFont *)font withForegroundTextColor:(UIColor *)foregroundTextColor withErrorTextColor:(UIColor *)errorTextColor withMaxLength:(NSInteger)maxLength;
 
