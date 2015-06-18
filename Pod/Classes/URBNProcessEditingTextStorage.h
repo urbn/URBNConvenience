@@ -10,4 +10,6 @@
 
 @interface URBNProcessEditingTextStorage : NSTextStorage
 
+- (instancetype)initWithFont:(UIFont *)font withForegroundTextColor:(UIColor *)foregroundTextColor withErrorTextColor:(UIColor *)errorTextColor withMaxLength:(NSInteger)maxLength;
+
 @end

@@ -11,7 +11,6 @@
 #import "URBNBorderViewController.h"
 #import <URBNConvenience/UIView+URBNBorders.h>
 
-
 @interface URBNViewController ()
 @property(nonatomic, strong) UIImageView *imageView1;
 @property(nonatomic, strong) UIImageView *imageView2;
@@ -116,6 +115,20 @@
     [UIView animateWithDuration:3.0 delay:0.0 options:UIViewAnimationOptionRepeat|UIViewAnimationOptionAutoreverse animations:^{
         purpleBox.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 40.0, 0.0);
     } completion:nil];
+
+    NSTextStorage *textStorage = [[URBNProcessEditingTextStorage alloc] initWithFont:[UIFont systemFontOfSize:14.f] withForegroundTextColor:[UIColor blueColor] withErrorTextColor:[UIColor redColor] withMaxLength:25];
+    NSLayoutManager *textLayout = [NSLayoutManager new];
+    [textStorage addLayoutManager:textLayout];
+    NSTextContainer *textContainer = [NSTextContainer new];
+    [textLayout addTextContainer:textContainer];
+    UITextView *textEntryView = [[UITextView alloc] initWithFrame:CGRectZero textContainer:textContainer];
+    textEntryView.backgroundColor = [UIColor lightGrayColor];
+    textEntryView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:textEntryView];
+    [textEntryView urbn_addWidthLayoutConstraingWithConstant:100.f];
+    [textEntryView urbn_addHeightLayoutConstraintWithConstant:100.f];
+    [textEntryView urbn_addConstraintForAttribute:NSLayoutAttributeCenterY withItem:self.view];
+    [textEntryView urbn_addConstraintForAttribute:NSLayoutAttributeRight withItem:self.view];
 }
 
 - (void)showBorders {

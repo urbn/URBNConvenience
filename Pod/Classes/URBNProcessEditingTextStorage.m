@@ -21,7 +21,9 @@
 @implementation URBNProcessEditingTextStorage
 
 - (instancetype)initWithFont:(UIFont *)font withForegroundTextColor:(UIColor *)foregroundTextColor withErrorTextColor:(UIColor *)errorTextColor withMaxLength:(NSInteger)maxLength {
-    if (self = [super init]) {
+    self = [super init];
+    
+    if (self) {
         _backingStore = [NSMutableAttributedString new];
         _foregroundTextColor = foregroundTextColor;
         _errorTextColor = errorTextColor;
