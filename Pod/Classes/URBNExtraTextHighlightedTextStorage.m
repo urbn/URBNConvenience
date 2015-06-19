@@ -11,23 +11,42 @@
 @interface URBNExtraTextHighlightedTextStorage ()
 
 @property (nonatomic, strong) NSMutableAttributedString *backingStore;
-@property (nonatomic, strong) UIColor *foregroundTextColor;
 @property (nonatomic, strong) UIColor *errorTextColor;
-@property (nonatomic, strong) UIFont *font;
 @property (nonatomic, assign) NSInteger maxLength;
 
 @end
 
 @implementation URBNExtraTextHighlightedTextStorage
 
-- (instancetype)initWithFont:(UIFont *)font withForegroundTextColor:(UIColor *)foregroundTextColor withErrorTextColor:(UIColor *)errorTextColor withMaxLength:(NSInteger)maxLength {
+- (instancetype)init {
+    return [self initWithString:@""];
+}
+
+- (instancetype)initWithString:(NSString *)str {
+    return [self initWithString:str attributes:nil];
+}
+
+- (instancetype)initWithString:(NSString *)str attributes:(NSDictionary *)attrs {
+    return [self initWithString:str attributes:attrs errorTextColor:[UIColor redColor] maxLength:10];
+}
+
+- (instancetype)initWithAttributedString:(NSAttributedString *)attrStr {
+    self = [self initWithString:@"" attributes:nil errorTextColor:[UIColor redColor] maxLength:10];
+    self.backingStore = [attrStr mutableCopy];
+    
+    return self;
+}
+
+- (instancetype)initWithAttributes:(NSDictionary *)attributes errorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength {
+    return [self initWithString:@"" attributes:attributes errorTextColor:errorTextColor maxLength:maxLength];
+}
+
+- (instancetype)initWithString:(NSString *)string attributes:(NSDictionary *)attributes errorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength {
     self = [super init];
     
     if (self) {
-        _backingStore = [NSMutableAttributedString new];
-        _foregroundTextColor = foregroundTextColor;
+        _backingStore = [[NSMutableAttributedString alloc] initWithString:string attributes:attributes];
         _errorTextColor = errorTextColor;
-        _font = font;
         _maxLength = maxLength;
     }
     
@@ -63,9 +82,6 @@
     if (stringLength > self.maxLength) {
         [self addAttribute:NSBackgroundColorAttributeName value:self.errorTextColor range:NSMakeRange(self.maxLength, stringLength - self.maxLength)];
     }
-    
-    [self addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, stringLength)];
-    [self addAttribute:NSForegroundColorAttributeName value:self.foregroundTextColor range:NSMakeRange(0, stringLength)];
     [super processEditing];
 }
 
