@@ -10,8 +10,6 @@
 
 @interface URBNExtraTextHighlightedTextStorage : NSTextStorage
 
-- (instancetype)initWithAttributes:(NSDictionary *)attributes errorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength;
-
-- (instancetype)initWithString:(NSString *)string attributes:(NSDictionary *)attributes errorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithErrorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength;
 
 @end

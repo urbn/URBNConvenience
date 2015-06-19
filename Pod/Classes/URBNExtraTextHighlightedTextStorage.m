@@ -18,34 +18,11 @@
 
 @implementation URBNExtraTextHighlightedTextStorage
 
-- (instancetype)init {
-    return [self initWithString:@""];
-}
-
-- (instancetype)initWithString:(NSString *)str {
-    return [self initWithString:str attributes:nil];
-}
-
-- (instancetype)initWithString:(NSString *)str attributes:(NSDictionary *)attrs {
-    return [self initWithString:str attributes:attrs errorTextColor:[UIColor redColor] maxLength:10];
-}
-
-- (instancetype)initWithAttributedString:(NSAttributedString *)attrStr {
-    self = [self initWithString:@"" attributes:nil errorTextColor:[UIColor redColor] maxLength:10];
-    self.backingStore = [attrStr mutableCopy];
-    
-    return self;
-}
-
-- (instancetype)initWithAttributes:(NSDictionary *)attributes errorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength {
-    return [self initWithString:@"" attributes:attributes errorTextColor:errorTextColor maxLength:maxLength];
-}
-
-- (instancetype)initWithString:(NSString *)string attributes:(NSDictionary *)attributes errorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength {
+- (instancetype)initWithErrorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength {
     self = [super init];
     
     if (self) {
-        _backingStore = [[NSMutableAttributedString alloc] initWithString:string attributes:attributes];
+        _backingStore = [NSMutableAttributedString new];
         _errorTextColor = errorTextColor;
         _maxLength = maxLength;
     }
@@ -76,11 +53,13 @@
 }
 
 - (void)processEditing {
-    NSInteger stringLength = self.string.length;
-    [self removeAttribute:NSBackgroundColorAttributeName range:NSMakeRange(0, stringLength)];
+    if (self.errorTextColor) {
+        NSInteger stringLength = self.string.length;
+        [self removeAttribute:NSBackgroundColorAttributeName range:NSMakeRange(0, stringLength)];
 
-    if (stringLength > self.maxLength) {
-        [self addAttribute:NSBackgroundColorAttributeName value:self.errorTextColor range:NSMakeRange(self.maxLength, stringLength - self.maxLength)];
+        if (stringLength > self.maxLength) {
+            [self addAttribute:NSBackgroundColorAttributeName value:self.errorTextColor range:NSMakeRange(self.maxLength, stringLength - self.maxLength)];
+        }
     }
     [super processEditing];
 }

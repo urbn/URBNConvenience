@@ -124,6 +124,7 @@
     UITextView *textEntryView = [[UITextView alloc] initWithFrame:CGRectZero textContainer:textContainer];
     textEntryView.backgroundColor = [UIColor lightGrayColor];
     textEntryView.translatesAutoresizingMaskIntoConstraints = NO;
+    textEntryView.typingAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:13.f]};
     [self.view addSubview:textEntryView];
     [textEntryView urbn_addWidthLayoutConstraingWithConstant:100.f];
     [textEntryView urbn_addHeightLayoutConstraintWithConstant:100.f];
