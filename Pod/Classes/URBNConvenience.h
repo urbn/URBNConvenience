@@ -7,6 +7,7 @@
 #import "UIImage+URBN.h"
 #import "UIView+URBNLayout.h"
 #import "UIView+URBNAnimations.h"
+#import "UIView+URBNBorders.h"
 #import "UITextField+URBNLoadingIndicator.h"
 #import "NSString+URBN.h"
 
