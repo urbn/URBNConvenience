@@ -108,6 +108,14 @@
     [tf urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
     [tf urbn_addWidthLayoutConstraingWithConstant:100.f];
     [tf urbn_showLoading:YES animated:YES spinnerInsets:UIEdgeInsetsMake(0.0, 0.0, 4.0, 4.0)];
+    
+    UIView *purpleBox = [[UIView alloc] initWithFrame:CGRectMake(50.0, 350.0, 200.0, 150.0)];
+    purpleBox.backgroundColor = [UIColor purpleColor];
+    [purpleBox urbn_setBorderWithColor:[UIColor yellowColor] width:4.0];
+    [self.view addSubview:purpleBox];
+    [UIView animateWithDuration:3.0 delay:0.0 options:UIViewAnimationOptionRepeat|UIViewAnimationOptionAutoreverse animations:^{
+        purpleBox.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 40.0, 0.0);
+    } completion:nil];
 }
 
 - (void)showBorders {
