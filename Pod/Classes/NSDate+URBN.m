@@ -67,9 +67,8 @@ static const NSTimeInterval URBNConvenienceWeekThreshold   = 604800;  // < 1 wee
         if (!bundlePath) {
             bundlePath = [[NSBundle bundleForClass:[URBNTextField class]] pathForResource:@"URBNConvenience" ofType:@"bundle"];
         }
-        NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
         bundle = [NSBundle bundleWithPath:bundlePath];
-
+        
         NSString *language = [[NSLocale preferredLanguages] count]? [NSLocale preferredLanguages][0]: @"en";
         
         if (![[bundle localizations] containsObject:language]) {
