@@ -13,7 +13,6 @@ build/
 !default.perspectivev3
 xcuserdata
 *.xccheckout
-*.xcuserstate
 profile
 *.moved-aside
 DerivedData
@@ -31,3 +30,6 @@ DerivedData
 # `pod install` in .travis.yml
 #
 # Pods/
+Example/Pods
+Example/URBNCheckout.xcworkspace
+
