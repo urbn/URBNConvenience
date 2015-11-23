@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface URBNExtraTextHighlightedTextStorage : NSTextStorage
+@interface URBNHighlightTextStorage : NSTextStorage
 
 - (instancetype)initWithErrorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength;
 

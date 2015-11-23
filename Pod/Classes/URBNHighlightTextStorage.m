@@ -6,9 +6,9 @@
 //
 //
 
-#import "URBNExtraTextHighlightedTextStorage.h"
+#import "URBNHighlightTextStorage.h"
 
-@interface URBNExtraTextHighlightedTextStorage ()
+@interface URBNHighlightTextStorage ()
 
 @property (nonatomic, strong) NSMutableAttributedString *backingStore;
 @property (nonatomic, strong) UIColor *errorTextColor;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation URBNExtraTextHighlightedTextStorage
+@implementation URBNHighlightTextStorage
 
 - (instancetype)initWithErrorTextColor:(UIColor *)errorTextColor maxLength:(NSInteger)maxLength {
     self = [super init];

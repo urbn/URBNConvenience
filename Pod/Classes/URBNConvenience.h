@@ -10,7 +10,7 @@
 #import "UIView+URBNBorders.h"
 #import "UITextField+URBNLoadingIndicator.h"
 #import "NSString+URBN.h"
-#import "URBNExtraTextHighlightedTextStorage.h"
+#import "URBNHighlightTextStorage.h"
 
 //Subclasses
 #import "URBNTextField.h"

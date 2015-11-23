@@ -116,7 +116,7 @@
         purpleBox.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 40.0, 0.0);
     } completion:nil];
 
-    NSTextStorage *textStorage = [[URBNExtraTextHighlightedTextStorage alloc] initWithErrorTextColor:[UIColor redColor] maxLength:10];
+    NSTextStorage *textStorage = [[URBNHighlightTextStorage alloc] initWithErrorTextColor:[UIColor redColor] maxLength:10];
     NSLayoutManager *textLayout = [NSLayoutManager new];
     [textStorage addLayoutManager:textLayout];
     NSTextContainer *textContainer = [NSTextContainer new];
