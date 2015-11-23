@@ -11,6 +11,7 @@
 #import "UITextField+URBNLoadingIndicator.h"
 #import "NSString+URBN.h"
 #import "URBNHighlightTextStorage.h"
+#import "UITextView+URBNHighlight.h"
 
 //Subclasses
 #import "URBNTextField.h"

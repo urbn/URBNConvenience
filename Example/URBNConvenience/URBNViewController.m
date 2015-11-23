@@ -116,12 +116,7 @@
         purpleBox.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 40.0, 0.0);
     } completion:nil];
 
-    NSTextStorage *textStorage = [[URBNHighlightTextStorage alloc] initWithErrorTextColor:[UIColor redColor] maxLength:10];
-    NSLayoutManager *textLayout = [NSLayoutManager new];
-    [textStorage addLayoutManager:textLayout];
-    NSTextContainer *textContainer = [NSTextContainer new];
-    [textLayout addTextContainer:textContainer];
-    UITextView *textEntryView = [[UITextView alloc] initWithFrame:CGRectZero textContainer:textContainer];
+    UITextView *textEntryView = [[UITextView class] urbn_UITextViewWithErrorColor:[UIColor redColor] maxLength:10];
     textEntryView.backgroundColor = [UIColor lightGrayColor];
     textEntryView.translatesAutoresizingMaskIntoConstraints = NO;
     textEntryView.typingAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:13.f]};
