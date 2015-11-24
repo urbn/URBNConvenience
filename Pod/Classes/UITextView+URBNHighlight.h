@@ -8,6 +8,6 @@
 
 @interface UITextView (URBNHighlight)
 
-+ (instancetype)urbn_UITextViewWithErrorColor:(UIColor *)errorColor maxLength:(NSInteger)maxLength;
++ (instancetype)urbn_highlightTextViewWithErrorColor:(UIColor *)errorColor maxLength:(NSInteger)maxLength;
 
 @end

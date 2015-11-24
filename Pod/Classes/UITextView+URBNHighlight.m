@@ -11,7 +11,7 @@
 
 @implementation UITextView (URBNHighlight)
 
-+ (instancetype)urbn_UITextViewWithErrorColor:(UIColor *)errorColor maxLength:(NSInteger)maxLength {
++ (instancetype)urbn_highlightTextViewWithErrorColor:(UIColor *)errorColor maxLength:(NSInteger)maxLength {
     NSTextStorage *textStorage = [[URBNHighlightTextStorage alloc] initWithErrorTextColor:errorColor maxLength:maxLength];
     NSLayoutManager *textLayout = [NSLayoutManager new];
     [textStorage addLayoutManager:textLayout];
