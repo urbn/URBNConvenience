@@ -10,6 +10,7 @@
 #import "URBNViewController.h"
 #import "URBNBorderViewController.h"
 #import <URBNConvenience/UIView+URBNBorders.h>
+#import "Convenience-Swift.h"
 
 @interface URBNViewController ()
 @property(nonatomic, strong) UIImageView *imageView1;
@@ -67,24 +68,24 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[errorLabel]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(errorLabel)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[errorLabel]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(errorLabel)]];
 
-    UILabel* label = [[UILabel alloc] init];
-    label.text = @"This label should appear in front of a red box.";
-    label.numberOfLines = 2;
-    label.translatesAutoresizingMaskIntoConstraints = NO;
-    [label urbn_addHeightLayoutConstraintWithConstant:70.0f];
-    [label urbn_addWidthLayoutConstraingWithConstant:320.0f];
+    UIButton* button = [UIButton new];
+    [button setTitle:@"This button should be on a red box." forState:UIControlStateNormal];
+    button.translatesAutoresizingMaskIntoConstraints = NO;
+    [button urbn_addHeightLayoutConstraintWithConstant:70.0f];
+    [button urbn_addWidthLayoutConstraingWithConstant:320.0f];
+    [button addTarget:self action:@selector(seeSwiftSampleLayout) forControlEvents:UIControlEventTouchUpInside];
 
     UIView* redBox = [[UIView alloc] init];
     redBox.clipsToBounds = NO;
     redBox.translatesAutoresizingMaskIntoConstraints = NO;
     redBox.backgroundColor = [UIColor redColor];
 
-    [redBox urbn_addHeightLayoutConstraintWithConstant:label.urbn_heightLayoutConstraint.constant]; //These are the key lines of code in this example. If Issue #9 exists, the constants will be 0
-    [redBox urbn_addWidthLayoutConstraingWithConstant:label.urbn_widthLayoutConstraint.constant];
+    [redBox urbn_addHeightLayoutConstraintWithConstant:button.urbn_heightLayoutConstraint.constant]; //These are the key lines of code in this example. If Issue #9 exists, the constants will be 0
+    [redBox urbn_addWidthLayoutConstraingWithConstant:button.urbn_widthLayoutConstraint.constant];
 
-    [redBox addSubview:label];
-    [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[label]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(label)]];
-    [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[label]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(label)]];
+    [redBox addSubview:button];
+    [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[button]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(button)]];
+    [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[button]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(button)]];
 
     [self.view addSubview:redBox];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[redBox]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(redBox)]];
@@ -131,6 +132,12 @@
     URBNBorderViewController *borderVC = [[URBNBorderViewController alloc] initWithStyle:UITableViewStylePlain];
     borderVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissVC)];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:borderVC];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (void)seeSwiftSampleLayout {
+    SwiftVC *swiftVC = [SwiftVC new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:swiftVC];
     [self presentViewController:nav animated:YES completion:nil];
 }
 

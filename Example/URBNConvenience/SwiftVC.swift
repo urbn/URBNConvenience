@@ -7,17 +7,44 @@
 //
 
 import UIKit
+import URBNConvenience
 
 class SwiftVC: UIViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
+        
+        view.backgroundColor = .whiteColor()
+    }
+    
+    override func viewDidLoad() {
         let redView = UIView()
+        let blueView = UIView()
+        let greenView = UIView()
+
+        blueView.backgroundColor = .blueColor()
+        redView.backgroundColor = .redColor()
+        greenView.backgroundColor = .greenColor()
+
+        view.addCodelayoutView(redView)
+        view.addCodelayoutView(blueView)
+        view.addCodelayoutView(greenView)
+
+        let views = ["redView": redView, "blueView": blueView, "greenView": greenView]
         
-        
+        activateVFL(
+            "V:|-[blueView(==redView)][greenView(==redView)][redView]-|",
+            options: [.AlignAllLeft, .AlignAllRight],
+            views: views
+        )
+        activateVFL(
+            "H:|-[redView]-|",
+            views: views
+        )
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

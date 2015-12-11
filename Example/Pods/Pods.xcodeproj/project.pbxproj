@@ -38,7 +38,7 @@
 		B060EFAA27A4CD7E54227AC0A4FABA1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB35A6B64F542A72321516E845EFDCC7 /* Foundation.framework */; };
 		B1B3D0476319D563B363F430631E86A3 /* NSDate+URBN.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FEC13B16020083BF73F154E7646EF6B /* NSDate+URBN.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0297B50201BD4E973DC98CFC8FCCAC7 /* UITextView+URBNHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5E214C2CD7228CEFFDD78FAB27483 /* UITextView+URBNHighlight.m */; };
-		D33929E5D534CFDB037B2F729D01C5BA /* ConstraintConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0C93ED30427AA5CCB059A841BB0E0 /* ConstraintConvenience.swift */; };
+		D33929E5D534CFDB037B2F729D01C5BA /* LayoutConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0C93ED30427AA5CCB059A841BB0E0 /* LayoutConvenience.swift */; };
 		D6EB84306F89DF049E1DBF7168F13092 /* URBNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 717F0C5A88FAE7D9238D88A7A26583DD /* URBNTextField.m */; };
 		DCC45A0771E3F253E2A3C4028435F707 /* UIView+URBNLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD7972E5A9BC9F95141EB3F1DECF19A /* UIView+URBNLayout.m */; };
 		E2AE30B6275815B5D618EEA5BDFFDB5F /* UIView+URBNAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F0D5FB480F1EFD1480815605637D64 /* UIView+URBNAnimations.m */; };
@@ -93,7 +93,7 @@
 		B5C057ECF096AF64AB171A3F58EA9DF4 /* URBNConvenience.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = URBNConvenience.bundle; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BFFF104E6898D5F3E8109317AF33AD70 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		C3E0C93ED30427AA5CCB059A841BB0E0 /* ConstraintConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintConvenience.swift; sourceTree = "<group>"; };
+		C3E0C93ED30427AA5CCB059A841BB0E0 /* LayoutConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutConvenience.swift; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		CEFF8FDE55DB795DF09C3A5A25F670E4 /* NSNotificationCenter+URBN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+URBN.h"; sourceTree = "<group>"; };
 		CFD7972E5A9BC9F95141EB3F1DECF19A /* UIView+URBNLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+URBNLayout.m"; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		BEC7DCF2A2B72F0A7B33E425B9C56B0A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C3E0C93ED30427AA5CCB059A841BB0E0 /* ConstraintConvenience.swift */,
+				C3E0C93ED30427AA5CCB059A841BB0E0 /* LayoutConvenience.swift */,
 				8FEC13B16020083BF73F154E7646EF6B /* NSDate+URBN.h */,
 				DA25913AED3421A1B5B6900F8F964606 /* NSDate+URBN.m */,
 				CEFF8FDE55DB795DF09C3A5A25F670E4 /* NSNotificationCenter+URBN.h */,
@@ -418,7 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33929E5D534CFDB037B2F729D01C5BA /* ConstraintConvenience.swift in Sources */,
+				D33929E5D534CFDB037B2F729D01C5BA /* LayoutConvenience.swift in Sources */,
 				08D0F2C47C44107152C1AFF9C4A77995 /* NSDate+URBN.m in Sources */,
 				968EA7374483CDF472D5EEBB1F5E9423 /* NSNotificationCenter+URBN.m in Sources */,
 				8DB61469ED1A4A19B3CBAC9377793E75 /* NSString+URBN.m in Sources */,
