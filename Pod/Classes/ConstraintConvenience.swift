@@ -18,3 +18,10 @@ public func activateVFL(format: String, options: NSLayoutFormatOptions = [], met
         )
     )
 }
+
+extension UIView {
+    func addAutolayoutView(subview: UIView) {
+        subview.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(subview)
+    }
+}
