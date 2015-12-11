@@ -13,6 +13,7 @@
 		17E7F2B1C9886152E8EC5586A548AC31 /* URBNHighlightTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5959B2D146DF5E13367AE2F290426903 /* URBNHighlightTextStorage.m */; };
 		20191060C04C6DE97DD1F8B091A437E5 /* URBNFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 045DDEC4E5C22BC050573D890F8234DF /* URBNFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2020CB7A3A0DE9D0D2857E97AE573611 /* UIView+URBNBorders.h in Headers */ = {isa = PBXBuildFile; fileRef = 09FE8641BC17A77D0A52063361BCC1FA /* UIView+URBNBorders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		228692061C1B238600B5B1B0 /* SearchableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228692051C1B238600B5B1B0 /* SearchableProtocol.swift */; };
 		2AD7B4BF5EE371670F964DBD2B946561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB35A6B64F542A72321516E845EFDCC7 /* Foundation.framework */; };
 		324D2A78F56D914B47B47AAE37C30D9C /* UIImage+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5739259AE2784514B8C06F2F46DAE1 /* UIImage+URBN.m */; };
 		4B0102B04BAF930820E8BFE18BD4BB2F /* URBNConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 22457EA1320739D1067665F036360F2F /* URBNConvenience.m */; };
@@ -62,6 +63,7 @@
 		09FE8641BC17A77D0A52063361BCC1FA /* UIView+URBNBorders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+URBNBorders.h"; sourceTree = "<group>"; };
 		131DF1864FFC937D485462DF94DC1A5C /* UIView+URBNAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+URBNAnimations.h"; sourceTree = "<group>"; };
 		22457EA1320739D1067665F036360F2F /* URBNConvenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNConvenience.m; sourceTree = "<group>"; };
+		228692051C1B238600B5B1B0 /* SearchableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableProtocol.swift; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
 		2C2553911BF404E8CB5ABF2186535C4A /* URBNConvenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNConvenience.h; sourceTree = "<group>"; };
 		2E0FD54DB134D9CED012FAC5847BDA81 /* URBNConvenience-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URBNConvenience-umbrella.h"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				44A81179FADCA9DC8A0296865DB60EF3 /* URBNMacros.h */,
 				901C4021273718C4534EBEAB31B58F5B /* URBNTextField.h */,
 				717F0C5A88FAE7D9238D88A7A26583DD /* URBNTextField.m */,
+				228692051C1B238600B5B1B0 /* SearchableProtocol.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -373,7 +376,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65872A3E7C55869221B1140CD13D3857 /* Pods-dummy.m in Sources */,
+				228692061C1B238600B5B1B0 /* SearchableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -619,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
