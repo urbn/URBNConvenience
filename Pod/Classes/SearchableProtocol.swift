@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import CoreSpotlight
+import MobileCoreServices
 
 struct UserActivityEligibility : OptionSetType {
     let rawValue : Int
