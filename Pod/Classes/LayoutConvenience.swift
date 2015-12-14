@@ -20,7 +20,7 @@ public func activateVFL(format: String, options: NSLayoutFormatOptions = [], met
 }
 
 public extension UIView {
-    public func addCodelayoutView(subview: UIView) {
+    public func addSubviewWithNoConstraints(subview: UIView) {
         subview.translatesAutoresizingMaskIntoConstraints = false
         addSubview(subview)
     }

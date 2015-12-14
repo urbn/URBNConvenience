@@ -27,12 +27,12 @@ protocol SearchInfoProvider {
 
 @available(iOS 9.0, *)
 protocol Searchable {
-    func configActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity
+    func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity
 }
 
 @available(iOS 9.0, *)
 extension Searchable {
-    func configActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity {
+    func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity {
         searchActivity.title = infoProvider.searchTitle()
         searchActivity.webpageURL = NSURL(string: infoProvider.searchURL())
         searchActivity.keywords = infoProvider.keywords()

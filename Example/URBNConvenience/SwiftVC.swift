@@ -26,9 +26,9 @@ class SwiftVC: UIViewController {
         redView.backgroundColor = .redColor()
         greenView.backgroundColor = .greenColor()
 
-        view.addCodelayoutView(redView)
-        view.addCodelayoutView(blueView)
-        view.addCodelayoutView(greenView)
+        view.addSubviewWithNoConstraints(redView)
+        view.addSubviewWithNoConstraints(blueView)
+        view.addSubviewWithNoConstraints(greenView)
 
         let views = ["redView": redView, "blueView": blueView, "greenView": greenView]
         
