@@ -8,30 +8,45 @@
 
 import Foundation
 
-public func qrImage(text: String, foregroundColor: UIColor, backgroundColor: UIColor, height: CGFloat, width: CGFloat) -> UIImage? {
-    let foregroundColorRef = foregroundColor.CGColor
-    let foregroundColorString = CIColor(CGColor: foregroundColorRef).stringRepresentation
-    let foregroundCoreColor = CIColor(string: foregroundColorString)
-    let backgroundColorRef = backgroundColor.CGColor
-    let backgroundColorString = CIColor(CGColor: backgroundColorRef).stringRepresentation
-    let backgroundColor = CIColor(string: backgroundColorString)
+
+public func scaledColoredQRImage(text: String, foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
+    return color(scale(qrImage(text), size: size), foregroundColor: foregroundColor, backgroundColor: backgroundColor)
+}
     
+public func qrImage(text: String) -> CIImage? {
     let data = text.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false)
-    
     let filter = CIFilter(name: "CIQRCodeGenerator")
     
     filter?.setValue(data, forKey: "inputMessage")
     filter?.setValue("Q", forKey: "inputCorrectionLevel")
     
-    guard let qrcodeImage = filter?.outputImage else { return nil }
+    return filter?.outputImage
+}
+
+public func scale(image: CIImage?, size: CGSize) -> CIImage? {
+    guard let imageToScale = image else { return nil }
     
-    let scaleX = width / qrcodeImage.extent.size.width
-    let scaleY = height / qrcodeImage.extent.size.height
+    let scaleX = size.width / imageToScale.extent.size.width
+    let scaleY = size.height / imageToScale.extent.size.height
     
-    let transformedImage = qrcodeImage.imageByApplyingTransform(CGAffineTransformMakeScale(scaleX, scaleY))
+    return imageToScale.imageByApplyingTransform(CGAffineTransformMakeScale(scaleX, scaleY))
+}
+
+public func color(image: CIImage?, foregroundColor: UIColor, backgroundColor: UIColor) -> UIImage? {
+    guard let imageToColor = image else { return nil }
     
-    let colorFilter = CIFilter(name: "CIFalseColor", withInputParameters: ["inputImage": transformedImage, "inputColor0":foregroundCoreColor, "inputColor1":backgroundColor])
+    let foregroundCoreColor = convertToCIColor(foregroundColor)
+    let backgroundCoreColor = convertToCIColor(backgroundColor)
+
+    let colorFilter = CIFilter(name: "CIFalseColor", withInputParameters: ["inputImage": imageToColor, "inputColor0":foregroundCoreColor, "inputColor1":backgroundCoreColor])
     guard let finalCIImage = colorFilter?.outputImage else { return nil }
     
     return UIImage(CIImage: finalCIImage)
+}
+
+public func convertToCIColor(color: UIColor) -> CIColor {
+    let foregroundColorRef = color.CGColor
+    let foregroundColorString = CIColor(CGColor: foregroundColorRef).stringRepresentation
+    
+    return CIColor(string: foregroundColorString)
 }
