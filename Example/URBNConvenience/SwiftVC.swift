@@ -22,7 +22,7 @@ class SwiftVC: UIViewController {
         let blueView = UIView()
         let greenView = UIImageView()
         
-        greenView.image = scaledColoredQRImage("core image supports qr codes", foregroundColor: .purpleColor(), backgroundColor: .greenColor(), size: CGSizeMake(100.0, 100.0))
+        greenView.image = qrImage("core image supports qr codes", foregroundColor: .purpleColor(), backgroundColor: .greenColor())
 
         blueView.backgroundColor = .blueColor()
         redView.backgroundColor = .redColor()
