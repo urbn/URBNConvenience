@@ -20,7 +20,9 @@ class SwiftVC: UIViewController {
     override func viewDidLoad() {
         let redView = UIView()
         let blueView = UIView()
-        let greenView = UIView()
+        let greenView = UIImageView()
+        
+        greenView.image = scaledColoredQRImage("core image supports qr codes", foregroundColor: .purpleColor(), backgroundColor: .greenColor(), size: CGSizeMake(100.0, 100.0))
 
         blueView.backgroundColor = .blueColor()
         redView.backgroundColor = .redColor()
