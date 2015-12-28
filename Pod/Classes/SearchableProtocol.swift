@@ -10,14 +10,15 @@ import Foundation
 import CoreSpotlight
 import MobileCoreServices
 
-struct UserActivityEligibility : OptionSetType {
-    let rawValue : Int
-    static let Search = UserActivityEligibility(rawValue: 1 << 1)
-    static let Handoff = UserActivityEligibility(rawValue: 1 << 2)
-    static let PublicIndexing = UserActivityEligibility(rawValue: 1 << 3)
+public struct UserActivityEligibility : OptionSetType {
+    public init(rawValue:Int) { self.rawValue = rawValue}
+    public let rawValue : Int
+    public static let Search = UserActivityEligibility(rawValue: 1 << 1)
+    public static let Handoff = UserActivityEligibility(rawValue: 1 << 2)
+    public static let PublicIndexing = UserActivityEligibility(rawValue: 1 << 3)
 }
 
-protocol SearchInfoProvider {
+public protocol SearchInfoProvider {
     var userActivityEligibility: UserActivityEligibility { get }
     func searchURL() -> String
     func searchTitle() -> String
@@ -26,13 +27,13 @@ protocol SearchInfoProvider {
 }
 
 @available(iOS 9.0, *)
-protocol Searchable {
+public protocol Searchable {
     func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity
 }
 
 @available(iOS 9.0, *)
-extension Searchable {
-    func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity {
+public extension Searchable {
+    public func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity {
         searchActivity.title = infoProvider.searchTitle()
         searchActivity.webpageURL = NSURL(string: infoProvider.searchURL())
         searchActivity.keywords = infoProvider.keywords()
