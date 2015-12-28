@@ -42,9 +42,7 @@ public extension Searchable {
         searchActivity.eligibleForSearch = infoProvider.userActivityEligibility.contains(.Search)
         searchActivity.eligibleForHandoff = infoProvider.userActivityEligibility.contains(.Handoff)
         searchActivity.eligibleForPublicIndexing = infoProvider.userActivityEligibility.contains(.PublicIndexing)
-        
-        searchActivity.becomeCurrent()
-        
+                
         return searchActivity
     }
     
