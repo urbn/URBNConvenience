@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "UIImage+ImageEffects.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef void(^URBNConvenienceImageDrawBlock)(CGRect rect, CGContextRef context);
 
 @interface UIImage (URBN)
@@ -18,3 +20,5 @@ typedef void(^URBNConvenienceImageDrawBlock)(CGRect rect, CGContextRef context);
 + (UIImage *)urbn_screenShotOfView:(UIView *)view afterScreenUpdates:(BOOL)afterScreenUpdates;
 
 @end
+
+NS_ASSUME_NONNULL_END
