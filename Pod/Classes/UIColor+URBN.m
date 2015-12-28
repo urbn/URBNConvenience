@@ -10,6 +10,8 @@
 
 @implementation UIColor (URBN)
 
+// Note : Sourced from https://github.com/fcanas/uicolor-utilities
+
 + (UIColor *)colorWithHexString:(NSString *)stringToConvert {
     
     if ([stringToConvert hasPrefix:@"#"]) {
