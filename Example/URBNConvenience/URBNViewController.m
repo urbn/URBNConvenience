@@ -69,7 +69,7 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[errorLabel]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(errorLabel)]];
 
     UIButton* button = [UIButton new];
-    [button setTitle:@"This button should be on a red box." forState:UIControlStateNormal];
+    [button setTitle:@"This should be on a red box. Swift ->" forState:UIControlStateNormal];
     button.translatesAutoresizingMaskIntoConstraints = NO;
     [button urbn_addHeightLayoutConstraintWithConstant:70.0f];
     [button urbn_addWidthLayoutConstraingWithConstant:320.0f];
