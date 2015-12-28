@@ -13,6 +13,7 @@ typedef void(^URBNConvenienceImageDrawBlock)(CGRect rect, CGContextRef context);
 
 @interface UIImage (URBN)
 
+- (UIImage *)urbn_tintedImageWithColor:(UIColor *)color;
 + (UIImage *)urbn_imageDrawnWithKey:(NSString *)key size:(CGSize)size drawBlock:(URBNConvenienceImageDrawBlock)drawBlock;
 + (UIImage *)urbn_screenShotOfView:(UIView *)view afterScreenUpdates:(BOOL)afterScreenUpdates;
 
