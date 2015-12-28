@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func activateVFL(format: String, options: NSLayoutFormatOptions = [], metrics: [String : AnyObject]? = nil, views: [String : AnyObject]) {
+public func activateVFL(format format: String, options: NSLayoutFormatOptions = [], metrics: [String : AnyObject]? = nil, views: [String : AnyObject]) {
     NSLayoutConstraint.activateConstraints(
         NSLayoutConstraint.constraintsWithVisualFormat(
             format,

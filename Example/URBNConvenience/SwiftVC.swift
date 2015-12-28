@@ -34,12 +34,12 @@ class SwiftVC: UIViewController {
         let views = ["redView": redView, "blueView": blueView, "greenView": greenView]
         
         activateVFL(
-            "V:|-[blueView(==redView)][greenView(==redView)][redView]-|",
+            format: "V:|-[blueView(==redView)][greenView(==redView)][redView]-|",
             options: [.AlignAllLeft, .AlignAllRight],
             views: views
         )
         activateVFL(
-            "H:|-[redView]-|",
+            format: "H:|-[redView]-|",
             views: views
         )
         
