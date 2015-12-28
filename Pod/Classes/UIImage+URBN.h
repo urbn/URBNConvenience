@@ -9,16 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "UIImage+ImageEffects.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-typedef void(^URBNConvenienceImageDrawBlock)(CGRect rect, CGContextRef context);
+typedef void(^URBNConvenienceImageDrawBlock)(CGRect rect,_Nonnull CGContextRef context);
 
 @interface UIImage (URBN)
 
-- (UIImage *)urbn_tintedImageWithColor:(UIColor *)color;
-+ (UIImage *)urbn_imageDrawnWithKey:(NSString *)key size:(CGSize)size drawBlock:(URBNConvenienceImageDrawBlock)drawBlock;
-+ (UIImage *)urbn_screenShotOfView:(UIView *)view afterScreenUpdates:(BOOL)afterScreenUpdates;
+- (UIImage * _Nullable)urbn_tintedImageWithColor:(UIColor * _Nonnull)color;
++ (UIImage * _Nullable)urbn_imageDrawnWithKey:(NSString * _Nonnull)key size:(CGSize)size drawBlock:(_Nullable URBNConvenienceImageDrawBlock)drawBlock;
++ (UIImage * _Nullable)urbn_screenShotOfView:(UIView * _Nonnull)view afterScreenUpdates:(BOOL)afterScreenUpdates;
 
 @end
-
-NS_ASSUME_NONNULL_END
