@@ -9,11 +9,11 @@
 import Foundation
 
 
-public func qrImage(text: String, foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
-    return qrImage(text)?.scale(size)?.color(foregroundColor: foregroundColor, backgroundColor: backgroundColor)?.mapToUIImage()
+public func qrImage(textToEncode text: String, foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
+    return qrImage(textToEncode: text)?.scale(size)?.color(foregroundColor: foregroundColor, backgroundColor: backgroundColor)?.mapToUIImage()
 }
 
-public func qrImage(text: String) -> CIImage? {
+public func qrImage(textToEncode text: String) -> CIImage? {
     let data = text.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false)
     let filter = CIFilter(name: "CIQRCodeGenerator")
     
