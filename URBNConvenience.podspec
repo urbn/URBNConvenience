@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "URBNConvenience"
-  s.version          = "0.8.7"
+  s.version          = "1.0.0"
   s.summary          = "A pod for URBN convenience functions, macros, and categories."
   s.homepage         = "https://github.com/urbn/URBNConvenience"
   s.license          = 'MIT'
