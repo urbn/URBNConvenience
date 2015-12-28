@@ -34,10 +34,7 @@
     int g = (hex >> 8) & 0xFF;
     int b = (hex) & 0xFF;
     
-    return [UIColor colorWithRed:r / 255.0f
-                           green:g / 255.0f
-                            blue:b / 255.0f
-                           alpha:1.0f];
+    return [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1.0];
 }
 
 + (UIColor *)colorWithRGBAHex:(UInt32)hex {
@@ -47,10 +44,7 @@
     int b = (hex >> 8) & 0xFF;
     int a = (hex) & 0xFF;
     
-    return [UIColor colorWithRed:r / 255.0f
-                           green:g / 255.0f
-                            blue:b / 255.0f
-                           alpha:a / 255.0f];
+    return [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:a / 255.0];
 }
 
 @end
