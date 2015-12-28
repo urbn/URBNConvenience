@@ -12,7 +12,7 @@
 
 // Note : Sourced from https://github.com/fcanas/uicolor-utilities
 
-+ (UIColor *)colorWithHexString:(NSString *)stringToConvert {
++ (UIColor *)urbn_colorWithHexString:(NSString *)stringToConvert {
     
     if ([stringToConvert hasPrefix:@"#"]) {
         stringToConvert = [stringToConvert substringFromIndex:1];
@@ -25,10 +25,10 @@
         return nil;
     }
     
-    return [UIColor colorWithRGBHex:hexNum];
+    return [UIColor urbn_colorWithRGBHex:hexNum];
 }
 
-+ (UIColor *)colorWithRGBHex:(UInt32)hex {
++ (UIColor *)urbn_colorWithRGBHex:(UInt32)hex {
     
     int r = (hex >> 16) & 0xFF;
     int g = (hex >> 8) & 0xFF;
@@ -37,7 +37,7 @@
     return [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1.0];
 }
 
-+ (UIColor *)colorWithRGBAHex:(UInt32)hex {
++ (UIColor *)urbn_colorWithRGBAHex:(UInt32)hex {
     
     int r = (hex >> 24) & 0xFF;
     int g = (hex >> 16) & 0xFF;

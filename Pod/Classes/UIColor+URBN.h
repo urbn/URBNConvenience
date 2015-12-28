@@ -10,8 +10,8 @@
 
 @interface UIColor (URBN)
 
-+ (UIColor *)colorWithRGBHex:(UInt32)hex;
-+ (UIColor *)colorWithRGBAHex:(UInt32)hex;
-+ (UIColor *)colorWithHexString:(NSString *)stringToConvert;
++ (UIColor *)urbn_colorWithRGBHex:(UInt32)hex;
++ (UIColor *)urbn_colorWithRGBAHex:(UInt32)hex;
++ (UIColor *)urbn_colorWithHexString:(NSString *)stringToConvert;
 
 @end
