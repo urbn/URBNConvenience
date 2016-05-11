@@ -40,6 +40,7 @@
 		B714BA189C040F3E5962D46BD491843A /* UIView+URBNAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 6454DDA285DAF6835E3C460A73B14880 /* UIView+URBNAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6E24831FD9C4E9A196BE5BA6C675E58 /* UITextView+URBNHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BFDA7517D3077A886564A098FF3E20 /* UITextView+URBNHighlight.m */; };
 		CA760F6A7FD3F3DCD641035962DBEDC3 /* UIImage+URBN.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2DC3704BF6371A09528D3222F9CEF1 /* UIImage+URBN.m */; };
+		CB1E673C1CE3D8D500747CC2 /* SequenceType+URBN.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E673B1CE3D8D500747CC2 /* SequenceType+URBN.swift */; };
 		D4A226CF807732CF61BEED63C618515A /* URBNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 77337A3D0D4A9D0032A4FD9F84A2BE93 /* URBNTextField.m */; };
 		DB1D0F33EDEDDC4E440B594D6F47C162 /* UIView+URBNBorders.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F25C12285C87C559DAF764DE694845 /* UIView+URBNBorders.m */; };
 		EBBC488837662F50CE46CC328458C0B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -98,6 +99,7 @@
 		B5C057ECF096AF64AB171A3F58EA9DF4 /* URBNConvenience.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = URBNConvenience.bundle; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C66A5AB095EFF2517A3D9119F1AF46E3 /* UIView+URBNBorders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+URBNBorders.h"; sourceTree = "<group>"; };
+		CB1E673B1CE3D8D500747CC2 /* SequenceType+URBN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+URBN.swift"; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		CD6BD3241EBB531E0C805EBCE72584D4 /* NSDate+URBN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+URBN.h"; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				F68FBF7C0F1BDD497BAA7C024EED4890 /* URBNMacros.h */,
 				083368B5CCD0076AE843F89B2955C797 /* URBNTextField.h */,
 				77337A3D0D4A9D0032A4FD9F84A2BE93 /* URBNTextField.m */,
+				CB1E673B1CE3D8D500747CC2 /* SequenceType+URBN.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -386,7 +389,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65872A3E7C55869221B1140CD13D3857 /* Pods-dummy.m in Sources */,
+				CB1E673C1CE3D8D500747CC2 /* SequenceType+URBN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -566,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
