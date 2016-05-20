@@ -10,6 +10,6 @@ import Foundation
 
 public func += <Key, Value> (inout left: Dictionary<Key, Value>, right: Dictionary<Key, Value>) {
     for (key, value) in right {
-        left.updateValue(value, forKey: key)
+        left[key] = value
     }
 }
