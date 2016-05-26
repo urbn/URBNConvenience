@@ -10,7 +10,7 @@ import Foundation
 
 //based on https://medium.com/@calebd/swift-reusable-cells-31391d2f2906#.owjb1kpk2
 extension UITableView {
-    final func registerReusableCell<T where T: UITableViewCell>(cell: ReusableCell<T>) {
+    public final func registerReusableCell<T where T: UITableViewCell>(cell: ReusableCell<T>) {
         switch cell {
         case .Class(let identifier):
             registerClass(T.self, forCellReuseIdentifier: identifier)
@@ -20,7 +20,7 @@ extension UITableView {
         }
     }
     
-    final func dequeueReusableCell<T where T: UITableViewCell>(cell: ReusableCell<T>, indexPath: NSIndexPath) -> T {
+    public final func dequeueReusableCell<T where T: UITableViewCell>(cell: ReusableCell<T>, indexPath: NSIndexPath) -> T {
         guard let cell = dequeueReusableCellWithIdentifier(cell.identifier, forIndexPath: indexPath) as? T else {
             assertionFailure("type error how is this possible?")
             return T()
@@ -45,6 +45,7 @@ public enum ReusableCell<Cell> {
     public init(identifier: String) {
         self = .Class(identifier: identifier)
     }
+    
     public init(identifier: String, nibName: String, bundle: NSBundle? = nil) {
         self = .Nib(identifier: identifier, nibName: nibName, bundle: bundle)
     }

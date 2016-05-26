@@ -100,6 +100,15 @@
     [b urbn_addConstraintForAttribute:NSLayoutAttributeTop withItem:self.view withConstant:50.f withPriority:UILayoutPriorityDefaultHigh];
     [b urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
     
+    UIButton *tableViewHelperButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [tableViewHelperButton setTitle:@"TableViewHelper" forState:UIControlStateNormal];
+    [tableViewHelperButton addTarget:self action:@selector(showTableViewHelpers) forControlEvents:UIControlEventTouchUpInside];
+    tableViewHelperButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:tableViewHelperButton];
+    [tableViewHelperButton urbn_addConstraintForAttribute:NSLayoutAttributeTop withItem:self.view withConstant:20.f withPriority:UILayoutPriorityDefaultHigh];
+    [tableViewHelperButton urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
+    
+    
     UITextField *tf = [UITextField new];
     tf.borderStyle = UITextBorderStyleRoundedRect;
     tf.translatesAutoresizingMaskIntoConstraints = NO;
@@ -128,10 +137,17 @@
     [textEntryView urbn_addConstraintForAttribute:NSLayoutAttributeRight withItem:self.view];
 }
 
-- (void)showBorders {
-    URBNBorderViewController *borderVC = [[URBNBorderViewController alloc] initWithStyle:UITableViewStylePlain];
+- (void)showTableViewHelpers {
+    URBNTableViewHelper *borderVC = [[URBNTableViewHelper alloc] initWithStyle:UITableViewStylePlain];
     borderVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissVC)];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:borderVC];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (void)showBorders {
+    URBNBorderViewController *tableHelperViewController = [[URBNBorderViewController alloc] initWithStyle:UITableViewStylePlain];
+    tableHelperViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissVC)];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tableHelperViewController];
     [self presentViewController:nav animated:YES completion:nil];
 }
 
