@@ -36,8 +36,8 @@ public extension CIImage {
     }
     
     public func color(foregroundColor foregroundColor: UIColor, backgroundColor: UIColor) -> CIImage? {
-        let foregroundCoreColor = convertToCIColor(foregroundColor)
-        let backgroundCoreColor = convertToCIColor(backgroundColor)
+        let foregroundCoreColor = CIColor(uiColor: foregroundColor)
+        let backgroundCoreColor = CIColor(uiColor: backgroundColor)
         
         let colorFilter = CIFilter(name: "CIFalseColor", withInputParameters: ["inputImage": self, "inputColor0":foregroundCoreColor, "inputColor1":backgroundCoreColor])
         
@@ -45,9 +45,11 @@ public extension CIImage {
     }
 }
 
-public func convertToCIColor(color: UIColor) -> CIColor {
-    let foregroundColorRef = color.CGColor
-    let foregroundColorString = CIColor(CGColor: foregroundColorRef).stringRepresentation
-    
-    return CIColor(string: foregroundColorString)
+extension CIColor {
+    convenience init(uiColor: UIColor) {
+        let foregroundColorRef = uiColor.CGColor
+        let foregroundColorString = CIColor(CGColor: foregroundColorRef).stringRepresentation
+        
+        self.init(string: foregroundColorString)
+    }
 }
