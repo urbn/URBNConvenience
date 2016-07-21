@@ -9,18 +9,20 @@
 import Foundation
 
 
-public func qrImage(textToEncode text: String, foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
-    return qrImage(textToEncode: text)?.scale(size)?.color(foregroundColor: foregroundColor, backgroundColor: backgroundColor)?.mapToUIImage()
-}
-
-public func qrImage(textToEncode text: String) -> CIImage? {
-    let data = text.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false)
-    let filter = CIFilter(name: "CIQRCodeGenerator")
+public extension String {
+    public func qrImage() -> CIImage? {
+        let data = dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false)
+        let filter = CIFilter(name: "CIQRCodeGenerator")
+        
+        filter?.setValue(data, forKey: "inputMessage")
+        filter?.setValue("Q", forKey: "inputCorrectionLevel")
+        
+        return filter?.outputImage
+    }
     
-    filter?.setValue(data, forKey: "inputMessage")
-    filter?.setValue("Q", forKey: "inputCorrectionLevel")
-    
-    return filter?.outputImage
+    public func qrImage(foregroundColor foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
+        return qrImage()?.scale(size)?.color(foregroundColor: foregroundColor, backgroundColor: backgroundColor)?.mapToUIImage()
+    }
 }
 
 public extension CIImage {
@@ -36,8 +38,8 @@ public extension CIImage {
     }
     
     public func color(foregroundColor foregroundColor: UIColor, backgroundColor: UIColor) -> CIImage? {
-        let foregroundCoreColor = convertToCIColor(foregroundColor)
-        let backgroundCoreColor = convertToCIColor(backgroundColor)
+        let foregroundCoreColor = CIColor(uiColor: foregroundColor)
+        let backgroundCoreColor = CIColor(uiColor: backgroundColor)
         
         let colorFilter = CIFilter(name: "CIFalseColor", withInputParameters: ["inputImage": self, "inputColor0":foregroundCoreColor, "inputColor1":backgroundCoreColor])
         
@@ -45,9 +47,11 @@ public extension CIImage {
     }
 }
 
-public func convertToCIColor(color: UIColor) -> CIColor {
-    let foregroundColorRef = color.CGColor
-    let foregroundColorString = CIColor(CGColor: foregroundColorRef).stringRepresentation
-    
-    return CIColor(string: foregroundColorString)
+extension CIColor {
+    convenience init(uiColor: UIColor) {
+        let foregroundColorRef = uiColor.CGColor
+        let foregroundColorString = CIColor(CGColor: foregroundColorRef).stringRepresentation
+        
+        self.init(string: foregroundColorString)
+    }
 }

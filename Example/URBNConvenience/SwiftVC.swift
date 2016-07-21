@@ -43,7 +43,7 @@ class SwiftVC: UIViewController {
             views: views
         )
         
-        imageView.image = qrImage(textToEncode: "core image supports qr codes", foregroundColor: .purpleColor(), backgroundColor: .greenColor(), size: CGSizeMake(100.0, 100.0))
+        imageView.image = "core image supports qr codes".qrImage(foregroundColor: .purpleColor(), backgroundColor: .greenColor(), size: CGSizeMake(100.0, 100.0))
         greenView.addSubviewWithNoConstraints(imageView)
         NSLayoutConstraint(item: greenView, attribute: .CenterX, relatedBy: .Equal, toItem: imageView, attribute: .CenterX, multiplier: 1.0, constant: 0.0).active = true
         NSLayoutConstraint(item: greenView, attribute: .CenterY, relatedBy: .Equal, toItem: imageView, attribute: .CenterY, multiplier: 1.0, constant: 0.0).active = true
