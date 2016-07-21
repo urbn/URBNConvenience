@@ -9,18 +9,20 @@
 import Foundation
 
 
-public func qrImage(textToEncode text: String, foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
-    return qrImage(textToEncode: text)?.scale(size)?.color(foregroundColor: foregroundColor, backgroundColor: backgroundColor)?.mapToUIImage()
-}
-
-public func qrImage(textToEncode text: String) -> CIImage? {
-    let data = text.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false)
-    let filter = CIFilter(name: "CIQRCodeGenerator")
+public extension String {
+    public func qrImage() -> CIImage? {
+        let data = dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false)
+        let filter = CIFilter(name: "CIQRCodeGenerator")
+        
+        filter?.setValue(data, forKey: "inputMessage")
+        filter?.setValue("Q", forKey: "inputCorrectionLevel")
+        
+        return filter?.outputImage
+    }
     
-    filter?.setValue(data, forKey: "inputMessage")
-    filter?.setValue("Q", forKey: "inputCorrectionLevel")
-    
-    return filter?.outputImage
+    public func qrImage(foregroundColor foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
+        return qrImage()?.scale(size)?.color(foregroundColor: foregroundColor, backgroundColor: backgroundColor)?.mapToUIImage()
+    }
 }
 
 public extension CIImage {
