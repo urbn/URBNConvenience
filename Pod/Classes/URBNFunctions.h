@@ -1,4 +1,4 @@
-#import <URBNConvenience/URBNTextField.h>
+#import "URBNTextField.h"
 
 #pragma mark - App Version
 static inline NSString *applicationVersion() {
