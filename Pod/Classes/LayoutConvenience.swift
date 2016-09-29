@@ -20,8 +20,19 @@ public func activateVFL(format format: String, options: NSLayoutFormatOptions = 
 }
 
 public extension UIView {
+    @available(*, deprecated, message="addSubviewsWithNoConstraints instead")
     public func addSubviewWithNoConstraints(subview: UIView) {
-        subview.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(subview)
+        addSubviewsWithNoConstraints(subview)
+    }
+    
+    public func addSubviewsWithNoConstraints(subviews: UIView...) {
+        addSubviewsWithNoConstraints(subviews)
+    }
+    
+    public func addSubviewsWithNoConstraints(subviews: [UIView]) {
+        for v in subviews {
+            v.translatesAutoresizingMaskIntoConstraints = false
+            addSubview(v)
+        }
     }
 }

@@ -31,6 +31,7 @@ public protocol Searchable {
     func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity
 }
 
+#if !os(tvOS)
 @available(iOS 9.0, *)
 public extension Searchable {
     public func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity {
@@ -60,3 +61,4 @@ public extension Searchable {
         return attributes
     }
 }
+#endif
