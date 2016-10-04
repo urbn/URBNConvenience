@@ -35,4 +35,8 @@ public extension UIView {
             addSubview(v)
         }
     }
+    
+    public func addSubviewsWithNoConstraints<T: UIView>(subviews: LazyMapCollection<[String: T], T>) {
+        addSubviewsWithNoConstraints(Array(subviews))
+    }
 }
