@@ -28,4 +28,17 @@ class DictionaryConvenienceTests: XCTestCase {
         XCTAssert(foo.keys.count == 1)
     }
 
+    func testCombineDictionaryLiterals() {
+        let foobar = ["Urban": 1234] + ["Outfitters": 5678]
+        XCTAssert(foobar["Urban"] == 1234)
+        XCTAssert(foobar["Outfitters"] == 5678)
+        XCTAssert(foobar.keys.count == 2)
+    }
+
+    func testCombineDictionaryLiteralsKeysOverride() {
+        let foobar = ["UO": 1234] + ["UO": 5678]
+        XCTAssert(foobar["UO"] == 5678)
+        XCTAssert(foobar.keys.count == 1)
+    }
+
 }

@@ -13,3 +13,9 @@ public func += <Key, Value> (inout left: [Key: Value], right: [Key: Value]) {
         left[key] = value
     }
 }
+
+public func + <Key, Value> (left: [Key: Value], right: [Key: Value]) -> [Key: Value] {
+    var sum = left
+    sum += right
+    return sum
+}
