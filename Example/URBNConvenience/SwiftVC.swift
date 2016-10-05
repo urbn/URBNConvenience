@@ -14,7 +14,7 @@ class SwiftVC: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         
-        view.backgroundColor = .whiteColor()
+        view.backgroundColor = .white
     }
     
     override func viewDidLoad() {
@@ -23,19 +23,19 @@ class SwiftVC: UIViewController {
         let greenView = UIView()
         let imageView = UIImageView()
         
-        blueView.backgroundColor = .blueColor()
-        redView.backgroundColor = .redColor()
-        greenView.backgroundColor = .greenColor()
+        blueView.backgroundColor = .blue
+        redView.backgroundColor = .red
+        greenView.backgroundColor = .green
 
-        view.addSubviewWithNoConstraints(redView)
-        view.addSubviewWithNoConstraints(blueView)
-        view.addSubviewWithNoConstraints(greenView)
+        view.addSubviewsWithNoConstraints(redView)
+        view.addSubviewsWithNoConstraints(blueView)
+        view.addSubviewsWithNoConstraints(greenView)
 
         let views = ["redView": redView, "blueView": blueView, "greenView": greenView]
         
         activateVFL(
             format: "V:|-[blueView(==redView)][greenView(==redView)][redView]-|",
-            options: [.AlignAllLeft, .AlignAllRight],
+            options: [.alignAllLeft, .alignAllRight],
             views: views
         )
         activateVFL(
@@ -43,10 +43,10 @@ class SwiftVC: UIViewController {
             views: views
         )
         
-        imageView.image = "core image supports qr codes".qrImage(foregroundColor: .purpleColor(), backgroundColor: .greenColor(), size: CGSizeMake(100.0, 100.0))
-        greenView.addSubviewWithNoConstraints(imageView)
-        NSLayoutConstraint(item: greenView, attribute: .CenterX, relatedBy: .Equal, toItem: imageView, attribute: .CenterX, multiplier: 1.0, constant: 0.0).active = true
-        NSLayoutConstraint(item: greenView, attribute: .CenterY, relatedBy: .Equal, toItem: imageView, attribute: .CenterY, multiplier: 1.0, constant: 0.0).active = true
+        imageView.image = "core image supports qr codes".qrImage(foregroundColor: .purple, backgroundColor: .green, size: CGSize(width: 100.0, height: 100.0))
+        greenView.addSubviewsWithNoConstraints(imageView)
+        NSLayoutConstraint(item: greenView, attribute: .centerX, relatedBy: .equal, toItem: imageView, attribute: .centerX, multiplier: 1.0, constant: 0.0).isActive = true
+        NSLayoutConstraint(item: greenView, attribute: .centerY, relatedBy: .equal, toItem: imageView, attribute: .centerY, multiplier: 1.0, constant: 0.0).isActive = true
     }
 
     required init?(coder aDecoder: NSCoder) {

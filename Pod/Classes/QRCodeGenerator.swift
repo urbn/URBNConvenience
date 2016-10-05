@@ -11,7 +11,7 @@ import Foundation
 
 public extension String {
     public func qrImage() -> CIImage? {
-        let data = dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false)
+        let data = self.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
         let filter = CIFilter(name: "CIQRCodeGenerator")
         
         filter?.setValue(data, forKey: "inputMessage")
@@ -20,24 +20,24 @@ public extension String {
         return filter?.outputImage
     }
     
-    public func qrImage(foregroundColor foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
+    public func qrImage(foregroundColor: UIColor, backgroundColor: UIColor, size: CGSize) -> UIImage? {
         return qrImage()?.scale(size)?.color(foregroundColor: foregroundColor, backgroundColor: backgroundColor)?.mapToUIImage()
     }
 }
 
 public extension CIImage {
     public func mapToUIImage() -> UIImage? {
-        return UIImage(CIImage: self)
+        return UIImage(ciImage: self)
     }
     
-    public func scale(size: CGSize) -> CIImage? {
+    public func scale(_ size: CGSize) -> CIImage? {
         let scaleX = size.width / extent.size.width
         let scaleY = size.height / extent.size.height
         
-        return imageByApplyingTransform(CGAffineTransformMakeScale(scaleX, scaleY))
+        return applying(CGAffineTransform(scaleX: scaleX, y: scaleY))
     }
     
-    public func color(foregroundColor foregroundColor: UIColor, backgroundColor: UIColor) -> CIImage? {
+    public func color(foregroundColor: UIColor, backgroundColor: UIColor) -> CIImage? {
         let foregroundCoreColor = CIColor(uiColor: foregroundColor)
         let backgroundCoreColor = CIColor(uiColor: backgroundColor)
         
@@ -49,8 +49,8 @@ public extension CIImage {
 
 extension CIColor {
     convenience init(uiColor: UIColor) {
-        let foregroundColorRef = uiColor.CGColor
-        let foregroundColorString = CIColor(CGColor: foregroundColorRef).stringRepresentation
+        let foregroundColorRef = uiColor.cgColor
+        let foregroundColorString = CIColor(cgColor: foregroundColorRef).stringRepresentation
         
         self.init(string: foregroundColorString)
     }
