@@ -41,4 +41,18 @@ class DictionaryConvenienceTests: XCTestCase {
         XCTAssert(foobar.keys.count == 1)
     }
 
+    func testNilDictionary() {
+        var foo = ["Hello": 1234]
+        let bar: [String: Int]? = nil
+        foo += bar
+        XCTAssert(foo["Hello"] == 1234)
+        XCTAssert(foo.keys.count == 1)
+    }
+
+    func testNilLiteral() {
+        let foobar = ["UO": 1234] + nil
+        XCTAssert(foobar["UO"] == 1234)
+        XCTAssert(foobar.keys.count == 1)
+    }
+
 }
