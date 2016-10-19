@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func += <Key, Value> (inout left: [Key: Value], right: [Key: Value]?) {
+public func += <Key, Value> ( left: inout [Key: Value], right: [Key: Value]?) {
     guard let right = right else {
         return
     }
