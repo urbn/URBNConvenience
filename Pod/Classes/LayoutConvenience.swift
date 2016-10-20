@@ -20,10 +20,8 @@ public func activateVFL(format: String, options: NSLayoutFormatOptions = [], met
 }
 
 public extension UIView {
-    @available(*, deprecated, message: "addSubviewsWithNoConstraints instead")
-    public func addSubviewWithNoConstraints(_ subview: UIView) {
-        addSubviewsWithNoConstraints(subview)
-    }
+    @available(*, unavailable, message: "use addSubviewsWithNoConstraints instead")
+    public func addSubviewWithNoConstraints(_ subview: UIView) { }
     
     public func addSubviewsWithNoConstraints(_ subviews: UIView...) {
         addSubviewsWithNoConstraints(subviews)
