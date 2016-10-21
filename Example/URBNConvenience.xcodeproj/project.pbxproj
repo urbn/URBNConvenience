@@ -600,8 +600,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "80d0ec2f-fb38-424f-81fb-9c1f8c9b171a";
-				PROVISIONING_PROFILE_SPECIFIER = "URBN Enterprise Distribution Wildcard";
+				PROVISIONING_PROFILE = "4c319d40-dcf6-4a30-963f-9fb3f3a573bc";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
 				SWIFT_OBJC_BRIDGING_HEADER = "URBNConvenience/Convenience-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -625,8 +625,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "80d0ec2f-fb38-424f-81fb-9c1f8c9b171a";
-				PROVISIONING_PROFILE_SPECIFIER = "URBN Enterprise Distribution Wildcard";
+				PROVISIONING_PROFILE = "4c319d40-dcf6-4a30-963f-9fb3f3a573bc";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
 				SWIFT_OBJC_BRIDGING_HEADER = "URBNConvenience/Convenience-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
