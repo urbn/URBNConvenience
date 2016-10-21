@@ -21,7 +21,7 @@
 - (void)testHumanReadableStringsPastDates {
     NSString *string;
     NSDate *currentDate = [NSDate date];
-    NSCalendar *calendar = [NSCalendar calendarWithIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
     
     NSDate *oneMinuteAgo = [calendar dateByAddingUnit:NSCalendarUnitMinute value:-1 toDate:currentDate options:0];
     string = [oneMinuteAgo urbn_humanReadableStringForTimeSinceCurrentDate];

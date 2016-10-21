@@ -19,7 +19,7 @@ class URBNTableViewHelper: UITableViewController {
     let dataSource = [["title": "Title1", "detail":"Detail 1"], ["title": "Title2", "detail":"Detail 2"], ["title": "Title3", "detail":"Detail 3"], ["title": "Title4", "detail":"Detail 4"], ["title": "Title5", "detail":"Detail 5"]]
     
     override init(style: UITableViewStyle) {
-        super.init(style: .Plain)
+        super.init(style: .plain)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,16 +34,16 @@ class URBNTableViewHelper: UITableViewController {
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
     }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellData = dataSource[indexPath.row] 
-        let cell = tableView.dequeueReusableCell(Cell.Helper, indexPath: indexPath)
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellData = dataSource[indexPath.row]
+        let cell = tableView.dequeueReusableCell(Cell.Helper, indexPath: indexPath as NSIndexPath)
         
-        cell.updateCellContent(cellData)
+        cell.updateCellContent(sampleData: cellData)
         
         return cell
     }

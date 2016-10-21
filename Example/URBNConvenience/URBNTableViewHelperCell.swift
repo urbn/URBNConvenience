@@ -22,9 +22,9 @@ class URBNTableViewHelperCell: UITableViewCell {
         
         let views = ["titleLabel": titleLabel, "detailLabel": detailLabel]
         var constraints = [NSLayoutConstraint]()
-        constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|-[titleLabel]-|", options: [], metrics: nil, views: views)
-        constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-[titleLabel]-[detailLabel]-|", options: [.AlignAllLeft], metrics: nil, views: views)
-        NSLayoutConstraint.activateConstraints(constraints)
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-[titleLabel]-|", options: [], metrics: nil, views: views)
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-[titleLabel]-[detailLabel]-|", options: [.alignAllLeft], metrics: nil, views: views)
+        NSLayoutConstraint.activate(constraints)
     }
     
     required init?(coder aDecoder: NSCoder) {
