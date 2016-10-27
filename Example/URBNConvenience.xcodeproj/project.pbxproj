@@ -35,6 +35,8 @@
 		CB26038E1DC23F7600AFE7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB26038C1DC23F7600AFE7E9 /* Main.storyboard */; };
 		CB2603901DC23F7600AFE7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB26038F1DC23F7600AFE7E9 /* Assets.xcassets */; };
 		CB26039B1DC23F7600AFE7E9 /* TVConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB26039A1DC23F7600AFE7E9 /* TVConvenienceTests.swift */; };
+		CB2603B21DC2418A00AFE7E9 /* URBNConvenienceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */; };
+		CB2603B31DC241D500AFE7E9 /* DictionaryConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */; };
 		D4F2F491427D6F88C3D5FD63 /* Pods_Convenience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AFE86403F4E61E7A890355 /* Pods_Convenience.framework */; };
 		D8F856211AB73100008BE6C8 /* URBNBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */; };
 		E7CC2E37E348992028787131 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD96ED788A71FE0E5E1B906E /* Pods_Tests.framework */; };
@@ -711,6 +713,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2603B21DC2418A00AFE7E9 /* URBNConvenienceTestCase.m in Sources */,
+				CB2603B31DC241D500AFE7E9 /* DictionaryConvenienceTests.swift in Sources */,
 				CB26039B1DC23F7600AFE7E9 /* TVConvenienceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
