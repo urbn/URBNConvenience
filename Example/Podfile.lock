@@ -1,5 +1,5 @@
 PODS:
-  - URBNConvenience (1.1.1)
+  - URBNConvenience (2.0.0)
 
 DEPENDENCIES:
   - URBNConvenience (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  URBNConvenience: cf6ce61b574d3bf2df8c8d5dd3984b4163643cfd
+  URBNConvenience: e74f72aabdc3da83d726686cbcc41f21bcc23d2f
 
-PODFILE CHECKSUM: 08a6a5afe736a777978b7c1a888b5349b9cd0b77
+PODFILE CHECKSUM: 4bfbebbb9fc7a9a90efd38463f9ff637cb17d94e
 
 COCOAPODS: 1.1.1

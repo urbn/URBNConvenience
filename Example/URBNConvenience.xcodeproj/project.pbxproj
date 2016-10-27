@@ -27,7 +27,16 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		7A37D3113895E171759429E6 /* Pods_TVConvenienceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A543F0E61C48A62DC863ED5B /* Pods_TVConvenienceTests.framework */; };
 		A0F058511A2E58C500D60C6E /* URBNConvenienceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */; };
+		A98195632B25165862E8328E /* Pods_TVConvenience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B12EA55BA3C5D56B4B4394 /* Pods_TVConvenience.framework */; };
+		CB2603891DC23F7600AFE7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2603881DC23F7600AFE7E9 /* AppDelegate.swift */; };
+		CB26038B1DC23F7600AFE7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB26038A1DC23F7600AFE7E9 /* ViewController.swift */; };
+		CB26038E1DC23F7600AFE7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB26038C1DC23F7600AFE7E9 /* Main.storyboard */; };
+		CB2603901DC23F7600AFE7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB26038F1DC23F7600AFE7E9 /* Assets.xcassets */; };
+		CB26039B1DC23F7600AFE7E9 /* TVConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB26039A1DC23F7600AFE7E9 /* TVConvenienceTests.swift */; };
+		CB2603B21DC2418A00AFE7E9 /* URBNConvenienceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */; };
+		CB2603B31DC241D500AFE7E9 /* DictionaryConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */; };
 		D4F2F491427D6F88C3D5FD63 /* Pods_Convenience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AFE86403F4E61E7A890355 /* Pods_Convenience.framework */; };
 		D8F856211AB73100008BE6C8 /* URBNBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */; };
 		E7CC2E37E348992028787131 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD96ED788A71FE0E5E1B906E /* Pods_Tests.framework */; };
@@ -40,6 +49,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = URBNConvenience;
+		};
+		CB2603971DC23F7600AFE7E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB2603851DC23F7500AFE7E9;
+			remoteInfo = TVConvenience;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,10 +97,27 @@
 		74B80EB47F6CADE003522ED2 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9BF835A10478A8BD0F62A026 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNConvenienceTestCase.m; sourceTree = "<group>"; };
+		A543F0E61C48A62DC863ED5B /* Pods_TVConvenienceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVConvenienceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F917EADF37DACE5D57E85D /* Pods-TVConvenience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenience.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience.debug.xcconfig"; sourceTree = "<group>"; };
+		BF29D7EF938F11612E05C1E1 /* Pods-TVConvenience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenience.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience.release.xcconfig"; sourceTree = "<group>"; };
+		CB2603861DC23F7500AFE7E9 /* TVConvenience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVConvenience.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2603881DC23F7600AFE7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB26038A1DC23F7600AFE7E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB26038D1DC23F7600AFE7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB26038F1DC23F7600AFE7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB2603911DC23F7600AFE7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2603961DC23F7600AFE7E9 /* TVConvenienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVConvenienceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB26039A1DC23F7600AFE7E9 /* TVConvenienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVConvenienceTests.swift; sourceTree = "<group>"; };
+		CB26039C1DC23F7600AFE7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2603A51DC23F7600AFE7E9 /* TVConvenienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVConvenienceUITests.swift; sourceTree = "<group>"; };
+		CB2603A71DC23F7600AFE7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCBF34BA78F8723250CF3F3F /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCFC4354A29EF72A8B94A061 /* Pods-TVConvenienceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenienceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8F8561F1AB73100008BE6C8 /* URBNBorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBNBorderViewController.h; sourceTree = "<group>"; };
 		D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNBorderViewController.m; sourceTree = "<group>"; };
 		DD96ED788A71FE0E5E1B906E /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22F8C7A26063F52FC620F48 /* Pods-TVConvenienceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenienceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4B12EA55BA3C5D56B4B4394 /* Pods_TVConvenience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVConvenience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +143,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB2603831DC23F7500AFE7E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98195632B25165862E8328E /* Pods_TVConvenience.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2603931DC23F7600AFE7E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A37D3113895E171759429E6 /* Pods_TVConvenienceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,6 +169,10 @@
 				5D21EAF585B8884A846CB1D5 /* Pods-Convenience.release.xcconfig */,
 				CCBF34BA78F8723250CF3F3F /* Pods-Tests.debug.xcconfig */,
 				74B80EB47F6CADE003522ED2 /* Pods-Tests.release.xcconfig */,
+				B0F917EADF37DACE5D57E85D /* Pods-TVConvenience.debug.xcconfig */,
+				BF29D7EF938F11612E05C1E1 /* Pods-TVConvenience.release.xcconfig */,
+				CCFC4354A29EF72A8B94A061 /* Pods-TVConvenienceTests.debug.xcconfig */,
+				E22F8C7A26063F52FC620F48 /* Pods-TVConvenienceTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,6 +183,9 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* URBNConvenience */,
 				6003F5B5195388D20070C39A /* Tests */,
+				CB2603871DC23F7600AFE7E9 /* TVConvenience */,
+				CB2603991DC23F7600AFE7E9 /* TVConvenienceTests */,
+				CB2603A41DC23F7600AFE7E9 /* TVConvenienceUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				04A634CBE4E7F87DC9E76DAC /* Pods */,
@@ -141,6 +197,8 @@
 			children = (
 				6003F58A195388D20070C39A /* Convenience.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
+				CB2603861DC23F7500AFE7E9 /* TVConvenience.app */,
+				CB2603961DC23F7600AFE7E9 /* TVConvenienceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +213,8 @@
 				30587074D0991DF74DDB5DC5 /* Pods.framework */,
 				73AFE86403F4E61E7A890355 /* Pods_Convenience.framework */,
 				DD96ED788A71FE0E5E1B906E /* Pods_Tests.framework */,
+				F4B12EA55BA3C5D56B4B4394 /* Pods_TVConvenience.framework */,
+				A543F0E61C48A62DC863ED5B /* Pods_TVConvenienceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,6 +284,36 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		CB2603871DC23F7600AFE7E9 /* TVConvenience */ = {
+			isa = PBXGroup;
+			children = (
+				CB2603881DC23F7600AFE7E9 /* AppDelegate.swift */,
+				CB26038A1DC23F7600AFE7E9 /* ViewController.swift */,
+				CB26038C1DC23F7600AFE7E9 /* Main.storyboard */,
+				CB26038F1DC23F7600AFE7E9 /* Assets.xcassets */,
+				CB2603911DC23F7600AFE7E9 /* Info.plist */,
+			);
+			path = TVConvenience;
+			sourceTree = "<group>";
+		};
+		CB2603991DC23F7600AFE7E9 /* TVConvenienceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB26039A1DC23F7600AFE7E9 /* TVConvenienceTests.swift */,
+				CB26039C1DC23F7600AFE7E9 /* Info.plist */,
+			);
+			path = TVConvenienceTests;
+			sourceTree = "<group>";
+		};
+		CB2603A41DC23F7600AFE7E9 /* TVConvenienceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB2603A51DC23F7600AFE7E9 /* TVConvenienceUITests.swift */,
+				CB2603A71DC23F7600AFE7E9 /* Info.plist */,
+			);
+			path = TVConvenienceUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,6 +358,47 @@
 			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CB2603851DC23F7500AFE7E9 /* TVConvenience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB2603AE1DC23F7600AFE7E9 /* Build configuration list for PBXNativeTarget "TVConvenience" */;
+			buildPhases = (
+				BD6F828A5BCAEC6DDB7E9102 /* [CP] Check Pods Manifest.lock */,
+				CB2603821DC23F7500AFE7E9 /* Sources */,
+				CB2603831DC23F7500AFE7E9 /* Frameworks */,
+				CB2603841DC23F7500AFE7E9 /* Resources */,
+				DD1518742C4CB6B5BDB05ACB /* [CP] Embed Pods Frameworks */,
+				A847ADACEDFDE7824FCDE7A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVConvenience;
+			productName = TVConvenience;
+			productReference = CB2603861DC23F7500AFE7E9 /* TVConvenience.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB2603951DC23F7600AFE7E9 /* TVConvenienceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB2603AF1DC23F7600AFE7E9 /* Build configuration list for PBXNativeTarget "TVConvenienceTests" */;
+			buildPhases = (
+				654B35CE00ABAD7177C3CE8F /* [CP] Check Pods Manifest.lock */,
+				CB2603921DC23F7600AFE7E9 /* Sources */,
+				CB2603931DC23F7600AFE7E9 /* Frameworks */,
+				CB2603941DC23F7600AFE7E9 /* Resources */,
+				831E3E0E487684E70B605A48 /* [CP] Embed Pods Frameworks */,
+				EA954AD9BE94411E4BEE5B7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB2603981DC23F7600AFE7E9 /* PBXTargetDependency */,
+			);
+			name = TVConvenienceTests;
+			productName = TVConvenienceTests;
+			productReference = CB2603961DC23F7600AFE7E9 /* TVConvenienceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -275,7 +406,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = URBN;
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = jgrandelli;
 				TargetAttributes = {
@@ -287,6 +418,17 @@
 					6003F5AD195388D20070C39A = {
 						LastSwiftMigration = 0800;
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					CB2603851DC23F7500AFE7E9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6438N9QD27;
+						ProvisioningStyle = Automatic;
+					};
+					CB2603951DC23F7600AFE7E9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6438N9QD27;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB2603851DC23F7500AFE7E9;
 					};
 				};
 			};
@@ -305,6 +447,8 @@
 			targets = (
 				6003F589195388D20070C39A /* Convenience */,
 				6003F5AD195388D20070C39A /* Tests */,
+				CB2603851DC23F7500AFE7E9 /* TVConvenience */,
+				CB2603951DC23F7600AFE7E9 /* TVConvenienceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,6 +471,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2603841DC23F7500AFE7E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2603901DC23F7600AFE7E9 /* Assets.xcassets in Resources */,
+				CB26038E1DC23F7600AFE7E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2603941DC23F7600AFE7E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +523,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		654B35CE00ABAD7177C3CE8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		831E3E0E487684E70B605A48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8EF1DB919ED7D02E0F8F7048 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +566,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Convenience/Pods-Convenience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A847ADACEDFDE7824FCDE7A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6F828A5BCAEC6DDB7E9102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BFAB2ADB953A0079BEDE0B67 /* [CP] Copy Pods Resources */ = {
@@ -406,6 +626,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1518742C4CB6B5BDB05ACB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA954AD9BE94411E4BEE5B7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FDCF0BFDFAF88CA8A7C42940 /* [CP] Embed Pods Frameworks */ = {
@@ -450,6 +700,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB2603821DC23F7500AFE7E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB26038B1DC23F7600AFE7E9 /* ViewController.swift in Sources */,
+				CB2603891DC23F7600AFE7E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2603921DC23F7600AFE7E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2603B21DC2418A00AFE7E9 /* URBNConvenienceTestCase.m in Sources */,
+				CB2603B31DC241D500AFE7E9 /* DictionaryConvenienceTests.swift in Sources */,
+				CB26039B1DC23F7600AFE7E9 /* TVConvenienceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -457,6 +726,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* Convenience */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		CB2603981DC23F7600AFE7E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB2603851DC23F7500AFE7E9 /* TVConvenience */;
+			targetProxy = CB2603971DC23F7600AFE7E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,6 +765,14 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB26038C1DC23F7600AFE7E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB26038D1DC23F7600AFE7E9 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -672,6 +954,106 @@
 			};
 			name = Release;
 		};
+		CB2603A81DC23F7600AFE7E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F917EADF37DACE5D57E85D /* Pods-TVConvenience.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6438N9QD27;
+				INFOPLIST_FILE = TVConvenience/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dutcher.TVConvenience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		CB2603A91DC23F7600AFE7E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF29D7EF938F11612E05C1E1 /* Pods-TVConvenience.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6438N9QD27;
+				INFOPLIST_FILE = TVConvenience/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dutcher.TVConvenience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		CB2603AA1DC23F7600AFE7E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFC4354A29EF72A8B94A061 /* Pods-TVConvenienceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6438N9QD27;
+				INFOPLIST_FILE = TVConvenienceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dutcher.TVConvenienceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVConvenience.app/TVConvenience";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		CB2603AB1DC23F7600AFE7E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22F8C7A26063F52FC620F48 /* Pods-TVConvenienceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6438N9QD27;
+				INFOPLIST_FILE = TVConvenienceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dutcher.TVConvenienceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVConvenience.app/TVConvenience";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -698,6 +1080,24 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB2603AE1DC23F7600AFE7E9 /* Build configuration list for PBXNativeTarget "TVConvenience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2603A81DC23F7600AFE7E9 /* Debug */,
+				CB2603A91DC23F7600AFE7E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB2603AF1DC23F7600AFE7E9 /* Build configuration list for PBXNativeTarget "TVConvenienceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2603AA1DC23F7600AFE7E9 /* Debug */,
+				CB2603AB1DC23F7600AFE7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
