@@ -27,7 +27,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		7A37D3113895E171759429E6 /* Pods_TVConvenienceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A543F0E61C48A62DC863ED5B /* Pods_TVConvenienceTests.framework */; };
 		A0F058511A2E58C500D60C6E /* URBNConvenienceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */; };
+		A98195632B25165862E8328E /* Pods_TVConvenience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B12EA55BA3C5D56B4B4394 /* Pods_TVConvenience.framework */; };
 		CB2603891DC23F7600AFE7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2603881DC23F7600AFE7E9 /* AppDelegate.swift */; };
 		CB26038B1DC23F7600AFE7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB26038A1DC23F7600AFE7E9 /* ViewController.swift */; };
 		CB26038E1DC23F7600AFE7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB26038C1DC23F7600AFE7E9 /* Main.storyboard */; };
@@ -93,6 +95,9 @@
 		74B80EB47F6CADE003522ED2 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9BF835A10478A8BD0F62A026 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNConvenienceTestCase.m; sourceTree = "<group>"; };
+		A543F0E61C48A62DC863ED5B /* Pods_TVConvenienceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVConvenienceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F917EADF37DACE5D57E85D /* Pods-TVConvenience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenience.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience.debug.xcconfig"; sourceTree = "<group>"; };
+		BF29D7EF938F11612E05C1E1 /* Pods-TVConvenience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenience.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience.release.xcconfig"; sourceTree = "<group>"; };
 		CB2603861DC23F7500AFE7E9 /* TVConvenience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVConvenience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2603881DC23F7600AFE7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB26038A1DC23F7600AFE7E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,9 +110,12 @@
 		CB2603A51DC23F7600AFE7E9 /* TVConvenienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVConvenienceUITests.swift; sourceTree = "<group>"; };
 		CB2603A71DC23F7600AFE7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCBF34BA78F8723250CF3F3F /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCFC4354A29EF72A8B94A061 /* Pods-TVConvenienceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenienceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8F8561F1AB73100008BE6C8 /* URBNBorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBNBorderViewController.h; sourceTree = "<group>"; };
 		D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNBorderViewController.m; sourceTree = "<group>"; };
 		DD96ED788A71FE0E5E1B906E /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22F8C7A26063F52FC620F48 /* Pods-TVConvenienceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVConvenienceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4B12EA55BA3C5D56B4B4394 /* Pods_TVConvenience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVConvenience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98195632B25165862E8328E /* Pods_TVConvenience.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A37D3113895E171759429E6 /* Pods_TVConvenienceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +167,10 @@
 				5D21EAF585B8884A846CB1D5 /* Pods-Convenience.release.xcconfig */,
 				CCBF34BA78F8723250CF3F3F /* Pods-Tests.debug.xcconfig */,
 				74B80EB47F6CADE003522ED2 /* Pods-Tests.release.xcconfig */,
+				B0F917EADF37DACE5D57E85D /* Pods-TVConvenience.debug.xcconfig */,
+				BF29D7EF938F11612E05C1E1 /* Pods-TVConvenience.release.xcconfig */,
+				CCFC4354A29EF72A8B94A061 /* Pods-TVConvenienceTests.debug.xcconfig */,
+				E22F8C7A26063F52FC620F48 /* Pods-TVConvenienceTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -197,6 +211,8 @@
 				30587074D0991DF74DDB5DC5 /* Pods.framework */,
 				73AFE86403F4E61E7A890355 /* Pods_Convenience.framework */,
 				DD96ED788A71FE0E5E1B906E /* Pods_Tests.framework */,
+				F4B12EA55BA3C5D56B4B4394 /* Pods_TVConvenience.framework */,
+				A543F0E61C48A62DC863ED5B /* Pods_TVConvenienceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,9 +360,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2603AE1DC23F7600AFE7E9 /* Build configuration list for PBXNativeTarget "TVConvenience" */;
 			buildPhases = (
+				BD6F828A5BCAEC6DDB7E9102 /* [CP] Check Pods Manifest.lock */,
 				CB2603821DC23F7500AFE7E9 /* Sources */,
 				CB2603831DC23F7500AFE7E9 /* Frameworks */,
 				CB2603841DC23F7500AFE7E9 /* Resources */,
+				DD1518742C4CB6B5BDB05ACB /* [CP] Embed Pods Frameworks */,
+				A847ADACEDFDE7824FCDE7A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,9 +380,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2603AF1DC23F7600AFE7E9 /* Build configuration list for PBXNativeTarget "TVConvenienceTests" */;
 			buildPhases = (
+				654B35CE00ABAD7177C3CE8F /* [CP] Check Pods Manifest.lock */,
 				CB2603921DC23F7600AFE7E9 /* Sources */,
 				CB2603931DC23F7600AFE7E9 /* Frameworks */,
 				CB2603941DC23F7600AFE7E9 /* Resources */,
+				831E3E0E487684E70B605A48 /* [CP] Embed Pods Frameworks */,
+				EA954AD9BE94411E4BEE5B7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -499,6 +521,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		654B35CE00ABAD7177C3CE8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		831E3E0E487684E70B605A48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8EF1DB919ED7D02E0F8F7048 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +564,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Convenience/Pods-Convenience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A847ADACEDFDE7824FCDE7A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6F828A5BCAEC6DDB7E9102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BFAB2ADB953A0079BEDE0B67 /* [CP] Copy Pods Resources */ = {
@@ -542,6 +624,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1518742C4CB6B5BDB05ACB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenience/Pods-TVConvenience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA954AD9BE94411E4BEE5B7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVConvenienceTests/Pods-TVConvenienceTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FDCF0BFDFAF88CA8A7C42940 /* [CP] Embed Pods Frameworks */ = {
@@ -840,7 +952,9 @@
 		};
 		CB2603A81DC23F7600AFE7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F917EADF37DACE5D57E85D /* Pods-TVConvenience.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -864,7 +978,9 @@
 		};
 		CB2603A91DC23F7600AFE7E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF29D7EF938F11612E05C1E1 /* Pods-TVConvenience.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -887,8 +1003,9 @@
 		};
 		CB2603AA1DC23F7600AFE7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFC4354A29EF72A8B94A061 /* Pods-TVConvenienceTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -911,8 +1028,9 @@
 		};
 		CB2603AB1DC23F7600AFE7E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22F8C7A26063F52FC620F48 /* Pods-TVConvenienceTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -969,6 +1087,7 @@
 				CB2603A91DC23F7600AFE7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB2603AF1DC23F7600AFE7E9 /* Build configuration list for PBXNativeTarget "TVConvenienceTests" */ = {
 			isa = XCConfigurationList;
@@ -977,6 +1096,7 @@
 				CB2603AB1DC23F7600AFE7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

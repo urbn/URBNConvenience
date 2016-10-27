@@ -1,9 +1,24 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'Convenience' do
+def convenience_pods
     pod "URBNConvenience", :path => "../"
+end
+
+
+target 'Convenience' do
+  convenience_pods
+
   target 'Tests' do
     inherit! :search_paths
   end
 end
+
+target 'TVConvenience' do
+  convenience_pods
+
+  target 'TVConvenienceTests' do
+    inherit! :search_paths
+  end
+end
+
