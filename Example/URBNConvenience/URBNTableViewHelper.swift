@@ -41,7 +41,7 @@ class URBNTableViewHelper: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellData = dataSource[indexPath.row]
-        let cell = tableView.dequeueReusableCell(Cell.Helper, indexPath: indexPath as NSIndexPath)
+        let cell = tableView.dequeueReusableCell(Cell.Helper, indexPath: indexPath)
         
         cell.updateCellContent(sampleData: cellData)
         

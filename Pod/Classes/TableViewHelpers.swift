@@ -20,8 +20,8 @@ extension UITableView {
         }
     }
     
-    public final func dequeueReusableCell<T>(_ cell: ReusableCell<T>, indexPath: NSIndexPath) -> T where T: UITableViewCell {
-        guard let cell = dequeueReusableCell(withIdentifier: cell.identifier, for: indexPath as IndexPath) as? T else {
+    public final func dequeueReusableCell<T>(_ cell: ReusableCell<T>, indexPath: IndexPath) -> T where T: UITableViewCell {
+        guard let cell = dequeueReusableCell(withIdentifier: cell.identifier, for: indexPath) as? T else {
             assertionFailure("type error how is this possible?")
             return T()
         }
