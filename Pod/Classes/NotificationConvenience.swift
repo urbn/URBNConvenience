@@ -20,7 +20,6 @@ public extension NotificationCenter {
     }
     
     public func post(notificationName: String, onMainQueue mainQueue: Bool, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) -> Void {
-        
         let note = Notification(name: Notification.Name(rawValue: notificaitonName), object: object, userInfo: info)
         post(notification: note, onMainQueue: mainQueue)
     }
