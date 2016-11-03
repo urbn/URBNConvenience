@@ -12,8 +12,8 @@ import Foundation
 public extension NotificationCenter {
     
     public func post(notification: Notification, queue: DispatchQueue = DispatchQueue.main) -> Void {
-        queue.async { [unowned self] in
-            self.post(notification)
+        queue.async { [weak self] in
+            self?.post(notification)
         }
     }
     
