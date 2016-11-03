@@ -11,16 +11,14 @@ import Foundation
 
 public extension NotificationCenter {
     
-    public func post(notification: Notification, onMainQueue mainQueue: Bool) -> Void {
-        func postNote() {
-            post(notification)
+    public func post(notification: Notification, queue: DispatchQueue = DispatchQueue.main) -> Void {
+        queue.async { [unowned self] in
+            self.post(notification)
         }
-        
-        mainQueue ? DispatchQueue.main.async { postNote() } : postNote()
     }
     
-    public func post(notificationName: String, onMainQueue mainQueue: Bool, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) -> Void {
+    public func post(notificationName: String, queue: DispatchQueue = DispatchQueue.main, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) -> Void {
         let note = Notification(name: Notification.Name(rawValue: notificationName), object: object, userInfo: userInfo)
-        post(notification: note, onMainQueue: mainQueue)
+        post(notification: note, queue: queue)
     }
 }
