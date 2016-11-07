@@ -17,6 +17,11 @@ public extension NotificationCenter {
         }
     }
     
+    public func post(notificationName: Notification.Name, queue: DispatchQueue = DispatchQueue.main, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) -> Void {
+        let note = Notification(name: notificationName, object: object, userInfo: userInfo)
+        post(notification: note, queue: queue)
+    }
+    
     public func post(notificationName: String, queue: DispatchQueue = DispatchQueue.main, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) -> Void {
         let note = Notification(name: Notification.Name(rawValue: notificationName), object: object, userInfo: userInfo)
         post(notification: note, queue: queue)
