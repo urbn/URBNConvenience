@@ -12,6 +12,7 @@
 		3208F8031CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */; };
 		455B9AC71CF63F6A008ABF7E /* URBNTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B9AC61CF63F6A008ABF7E /* URBNTableViewHelper.swift */; };
 		455B9AC91CF63FAE008ABF7E /* URBNTableViewHelperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B9AC81CF63FAE008ABF7E /* URBNTableViewHelperCell.swift */; };
+		456CF36F1DDB41D0004E30CE /* DateConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CF36E1DDB41D0004E30CE /* DateConvenienceTests.swift */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -69,6 +70,7 @@
 		3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryConvenienceTests.swift; sourceTree = "<group>"; };
 		455B9AC61CF63F6A008ABF7E /* URBNTableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URBNTableViewHelper.swift; sourceTree = "<group>"; };
 		455B9AC81CF63FAE008ABF7E /* URBNTableViewHelperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URBNTableViewHelperCell.swift; sourceTree = "<group>"; };
+		456CF36E1DDB41D0004E30CE /* DateConvenienceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConvenienceTests.swift; sourceTree = "<group>"; };
 		5908BC4943E0F7351358F9AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5D21EAF585B8884A846CB1D5 /* Pods-Convenience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Convenience.release.xcconfig"; path = "Pods/Target Support Files/Pods-Convenience/Pods-Convenience.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Convenience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convenience.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +258,7 @@
 				A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 				3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */,
+				456CF36E1DDB41D0004E30CE /* DateConvenienceTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 			files = (
 				A0F058511A2E58C500D60C6E /* URBNConvenienceTestCase.m in Sources */,
 				3208F8031CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift in Sources */,
+				456CF36F1DDB41D0004E30CE /* DateConvenienceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,6 +931,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Convenience.app/Convenience";
 				WRAPPER_EXTENSION = xctest;

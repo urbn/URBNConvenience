@@ -10,10 +10,6 @@ import Foundation
 
 public extension Date {
     // MARK: Units
-    public var components: DateComponents? {
-        return Calendar.current.dateComponents([.era, .year, .month, .day, .hour, .minute, .second, .weekday, .weekdayOrdinal, .quarter, .weekOfMonth, .weekOfYear, .yearForWeekOfYear, .nanosecond, .calendar, .timeZone], from: self)
-    }
-
     public static func monthSymbols() -> [String] {
         return DateFormatter().monthSymbols
     }
@@ -24,34 +20,28 @@ public extension Date {
         return monthSymbols()[month]
     }
     
+    public func components(inTimeZone timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> DateComponents {
+        return Calendar.autoupdatingCurrent.dateComponents(in: timeZone, from: self)
+    }
+    
     // MARK: Date Creation
     public func dateByAdding(years: Int? = nil, months: Int? = nil, weeks: Int? = nil, days:Int? = nil, hours: Int? = nil, minutes: Int? = nil, seconds: Int? = nil) -> Date? {
         var components = DateComponents(year: years, month: months, day: days, hour: hours, minute: minutes, second: seconds)
         
-        return Calendar.current.date(byAdding: components, to: self)
+        return Calendar.autoupdatingCurrent.date(byAdding: components, to: self)
     }
     
-    public func dateFrom(year: Int, month: Int, day: Int, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) -> Date {
+    public static func dateFrom(year: Int, month: Int, day: Int, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) -> Date? {
         var components = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
-        
-        return Date()
+
+        return Calendar.autoupdatingCurrent.date(from: components)
     }
 
-    public func dateInTimeZone(_ timeZone: TimeZone) -> Date {
-        let currentOffset = TimeZone.current.secondsFromGMT(for: self)
-        let toOffset = timeZone.secondsFromGMT(for: self)
-        let diff = TimeInterval(toOffset - currentOffset)
+    public static func dateFromString(_ string: String, format: String) -> Date? {
+        var formatter = DateFormatter()
+        formatter.dateFormat = format
 
-        return self.addingTimeInterval(diff)
-    }
-
-    // MARK: Relativity
-    public func isBefore(date: Date) -> Bool {
-        return self.compare(date) == .orderedAscending
-    }
-
-    public func isAfter(date: Date) -> Bool {
-        return self.compare(date) == .orderedDescending
+        return formatter.date(from: string)
     }
 
     // MARK: Display
@@ -59,7 +49,7 @@ public extension Date {
         var formatter = DateFormatter()
         
         if localized {
-            guard let format = DateFormatter.dateFormat(fromTemplate: format, options: 0, locale: Locale.current) else {
+            guard let format = DateFormatter.dateFormat(fromTemplate: format, options: 0, locale: Locale.autoupdatingCurrent) else {
                 return nil
             }
         }
