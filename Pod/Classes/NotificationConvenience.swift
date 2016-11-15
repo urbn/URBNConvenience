@@ -19,9 +19,7 @@ public extension NotificationCenter {
     
     // Needed for objc compatibility
     public func post(notification: Notification) -> Void {
-        DispatchQueue.main.async { [weak self] in
-            self?.post(notification)
-        }
+        post(notification)
     }
     
     public func post(notificationName: Notification.Name, queue: DispatchQueue = DispatchQueue.main, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) -> Void {
