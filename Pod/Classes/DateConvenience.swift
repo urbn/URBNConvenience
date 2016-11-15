@@ -59,3 +59,38 @@ public extension Date {
         return formatter.string(from: self)
     }
 }
+
+// Stupid Tech debt
+@objc public class DateCompat: NSObject {
+    @objc public static func dateByAddingYears(_ years: Int, toDate date: Date?) -> Date? {
+        return date?.dateByAdding(years: years)
+    }
+    
+    @objc public static func dayOfMothForDate(_ date: Date?) -> Int {
+        return date?.components().day ?? 0
+    }
+    
+    @objc public static func yearForDate(_ date: Date?) -> Int {
+        return date?.components().year ?? 0
+    }
+    
+    @objc public static func monthForDate(_ date: Date?) -> Int {
+        return date?.components().month ?? 0
+    }
+    
+    @objc public static func dateFrom(year: Int, month: Int, day: Int) -> Date? {
+        return Date.dateFrom(year: year, month: month, day: day)
+    }
+    
+    @objc public static func dateFrom(year: Int, month: Int, day: Int, hour: Int) -> Date? {
+        return Date.dateFrom(year: year, month: month, day: day, hour: hour)
+    }
+    
+    @objc public static func monthSymbol(index: Int) -> String? {
+        return Date.monthSymbol(month: index)
+    }
+    
+    @objc public static func stringFromDate(_ date: Date?, withFormat format: String, localized: Bool) -> String? {
+        return date?.string(withFormat: format, localized: localized)
+    }
+}
