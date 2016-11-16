@@ -17,6 +17,11 @@ public extension NotificationCenter {
         }
     }
     
+    // Needed for objc compatibility
+    public func post(notification: Notification) -> Void {
+        post(notification)
+    }
+    
     public func post(notificationName: Notification.Name, queue: DispatchQueue = DispatchQueue.main, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) -> Void {
         let note = Notification(name: notificationName, object: object, userInfo: userInfo)
         post(notification: note, queue: queue)
