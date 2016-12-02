@@ -57,3 +57,17 @@ public extension UIView {
         return container
     }
 }
+
+@available(iOS 9.0, *)
+public extension UIStackView {
+    
+    public func addArrangedSubviews(_ subviews: UIView...) {
+        addArrangedSubviews(subviews)
+    }
+    
+    public func addArrangedSubviews(_ subviews: [UIView]) {
+        for v in subviews {
+            addArrangedSubview(v)
+        }
+    }
+}

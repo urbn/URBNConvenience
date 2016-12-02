@@ -1,15 +1,15 @@
 PODS:
-  - URBNConvenience (2.0.5)
+  - URBNConvenience (2.1.2)
 
 DEPENDENCIES:
   - URBNConvenience (from `../`)
 
 EXTERNAL SOURCES:
   URBNConvenience:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  URBNConvenience: ae4e190a12091c998061d87bd7b8796ea2ef27f8
+  URBNConvenience: 1da2817340e61c499d58bd89d4c5e46dbfef628a
 
 PODFILE CHECKSUM: 4bfbebbb9fc7a9a90efd38463f9ff637cb17d94e
 
