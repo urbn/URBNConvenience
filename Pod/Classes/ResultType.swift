@@ -120,3 +120,5 @@ public func ==<T>(lhs: Result<T>, rhs: Result<T>) -> Bool {
     default: return false
     }
 }
+
+@objc public class NoResponseType: NSObject {}
