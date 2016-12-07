@@ -97,6 +97,7 @@ public extension Result where T:Equatable {
 
 // MARK: - Equatability -
 extension Result: Equatable {}
+@objc public class NoResponseType: NSObject {}
 
 public func ==<T,U>(lhs: Result<T>, rhs: Result<U>) -> Bool {
     // Results with different types are not equal
@@ -120,5 +121,3 @@ public func ==<T>(lhs: Result<T>, rhs: Result<T>) -> Bool {
     default: return false
     }
 }
-
-@objc public class NoResponseType: NSObject {}
