@@ -38,7 +38,7 @@ public extension UIView {
         addSubviewsWithNoConstraints(Array(subviews))
     }
     
-    public func wrapInView(_ view: UIView? = nil, withInsets insets: UIEdgeInsets = UIEdgeInsets.zero) -> UIView {
+    @discardableResult public func wrapInView(_ view: UIView? = nil, withInsets insets: UIEdgeInsets = UIEdgeInsets.zero) -> UIView {
         var container: UIView
         if let view = view {
             container = view
