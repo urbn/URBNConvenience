@@ -9,6 +9,29 @@
 import Foundation
 
 public extension UIImage {
+    public final func tintedImage(color: UIColor) -> UIImage? {
+        UIGraphicsBeginImageContext(self.size)
+        let context = UIGraphicsGetCurrentContext()
+
+        context?.scaleBy(x: 1.0, y: -1.0)
+        context?.translateBy(x: 0.0, y: -self.size.height)
+        context?.setBlendMode(CGBlendMode.multiply)
+
+        let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
+
+        if let cGImage = self.cgImage {
+            context?.clip(to: rect, mask: cGImage)
+        }
+
+        color.setFill()
+        context?.fill(rect)
+
+        guard let newImage = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+        UIGraphicsEndImageContext()
+
+        return newImage
+    }
+
     public static func scaleAndCropped(image: UIImage, radius: CGFloat) -> UIImage? {
         let scaledImage = image.scaleImage(size: CGSize(width: radius, height: radius))?.squareCroppedImageFromCenter(width: radius)
 
