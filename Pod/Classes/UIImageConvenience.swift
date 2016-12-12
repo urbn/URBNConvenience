@@ -9,7 +9,7 @@
 import Foundation
 
 public extension UIImage {
-    public final func tintedImage(color: UIColor) -> UIImage? {
+    public func tintedImage(color: UIColor) -> UIImage? {
         UIGraphicsBeginImageContext(self.size)
         let context = UIGraphicsGetCurrentContext()
 
@@ -32,6 +32,38 @@ public extension UIImage {
         return newImage
     }
 
+    //TODO: Check this logic in a different PR. Seems brands aren't really using it.
+    public static func imageDrawnWithKey(key: NSString, size: CGSize, drawBlock: URBNConvenienceImageDrawBlock) -> UIImage? {
+        assert(key != nil, "Key must be non-nil")
+        assert(size.width > 0 && size.height > 0, "Invalid image size (both dimensions must be greater than zero")
+
+        var imageCache = NSCache<NSString, UIImage>()
+        guard var image = imageCache.object(forKey: key) else { return nil }
+
+        UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
+        if let context = UIGraphicsGetCurrentContext() {
+            drawBlock(CGRect(x: 0, y: 0, width: size.width, height: size.height), context)
+
+            guard let currentContext = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+
+            image = currentContext
+            imageCache.setObject(image, forKey: key)
+            UIGraphicsEndImageContext()
+        }
+
+        return image
+    }
+
+    public static func screenShot(view: UIView, afterScreenUpdates: Bool) -> UIImage? {
+        UIGraphicsBeginImageContext(CGSize(width: view.frame.size.width, height: view.frame.size.height))
+        view.drawHierarchy(in: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height), afterScreenUpdates: afterScreenUpdates)
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return image
+    }
+
     public static func scaleAndCropped(image: UIImage, radius: CGFloat) -> UIImage? {
         let scaledImage = image.scaleImage(size: CGSize(width: radius, height: radius))?.squareCroppedImageFromCenter(width: radius)
 
@@ -46,7 +78,10 @@ public extension UIImage {
 
         guard let width = scaledImage?.size.height, let height = scaledImage?.size.height else { return nil }
         image.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
-        newImage = UIGraphicsGetImageFromCurrentImageContext()!
+
+        if let currentContext = UIGraphicsGetImageFromCurrentImageContext() {
+            newImage = currentContext
+        }
 
         UIGraphicsEndImageContext()
 
