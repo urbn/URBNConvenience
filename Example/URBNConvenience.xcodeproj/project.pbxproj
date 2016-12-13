@@ -10,6 +10,7 @@
 		228692041C1B0E8000B5B1B0 /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228692031C1B0E8000B5B1B0 /* SwiftVC.swift */; };
 		22FEE7831A6EF4A6005151B7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22FEE7821A6EF4A6005151B7 /* Localizable.strings */; };
 		3208F8031CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */; };
+		451AAFEB1E0081E800062D38 /* ResultTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AAFEA1E0081E800062D38 /* ResultTypeTests.swift */; };
 		455B9AC71CF63F6A008ABF7E /* URBNTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B9AC61CF63F6A008ABF7E /* URBNTableViewHelper.swift */; };
 		455B9AC91CF63FAE008ABF7E /* URBNTableViewHelperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B9AC81CF63FAE008ABF7E /* URBNTableViewHelperCell.swift */; };
 		456CF36F1DDB41D0004E30CE /* DateConvenienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CF36E1DDB41D0004E30CE /* DateConvenienceTests.swift */; };
@@ -68,6 +69,7 @@
 		30587074D0991DF74DDB5DC5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3208F8011CEF8E9F0083D9B7 /* Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryConvenienceTests.swift; sourceTree = "<group>"; };
+		451AAFEA1E0081E800062D38 /* ResultTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTypeTests.swift; sourceTree = "<group>"; };
 		455B9AC61CF63F6A008ABF7E /* URBNTableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URBNTableViewHelper.swift; sourceTree = "<group>"; };
 		455B9AC81CF63FAE008ABF7E /* URBNTableViewHelperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URBNTableViewHelperCell.swift; sourceTree = "<group>"; };
 		456CF36E1DDB41D0004E30CE /* DateConvenienceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConvenienceTests.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 				3208F8021CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift */,
+				451AAFEA1E0081E800062D38 /* ResultTypeTests.swift */,
 				456CF36E1DDB41D0004E30CE /* DateConvenienceTests.swift */,
 			);
 			path = Tests;
@@ -694,6 +697,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451AAFEB1E0081E800062D38 /* ResultTypeTests.swift in Sources */,
 				A0F058511A2E58C500D60C6E /* URBNConvenienceTestCase.m in Sources */,
 				3208F8031CEF8E9F0083D9B7 /* DictionaryConvenienceTests.swift in Sources */,
 				456CF36F1DDB41D0004E30CE /* DateConvenienceTests.swift in Sources */,
