@@ -10,6 +10,10 @@ import XCTest
 import URBNConvenience
 
 class ResultTypeTests: XCTestCase {
+
+    fileprivate enum ResultTestError: Error {
+        case testErrorCase
+    }
     
     func testResultEmptySuccess() {
         
@@ -30,9 +34,9 @@ class ResultTypeTests: XCTestCase {
     
     func testResultFailure() {
         
-        let result = Result(RouterError.invalidRequest)
-        XCTAssert(result == Result.failure(RouterError.invalidRequest), "Result instantiated with an error should be .failure(error)")
-        XCTAssertEqual(result.error as? RouterError, RouterError.invalidRequest, "`error` should be populated and equal to the initial value")
+        let result = Result(ResultTestError.testErrorCase)
+        XCTAssert(result == Result.failure(ResultTestError.testErrorCase), "Result instantiated with an error should be .failure(error)")
+        XCTAssertEqual(result.error as? ResultTestError, ResultTestError.testErrorCase, "`error` should be populated and equal to the initial value")
         // TODO: Ensure changing this test makes sense... it was checking false
         XCTAssertEqual(result.isEmpty, true, "`isEmpty` should be false on .failure results")
         XCTAssertNil(result.value, "`value` should be nil on .failure results")
@@ -48,13 +52,13 @@ class ResultTypeTests: XCTestCase {
         //This one is busted because we no logner have emptyResponse types and instead us NoResponseType. This case should not arise. Need to make sure client apps play nice
         //XCTAssertTrue(Result<String>(nil) == Result<Any>(nil), ".emptySuccess should be equal regardless of the generic type")
         
-        XCTAssertFalse(Result<NoResponseType>(nil) == Result(RouterError.invalidRequest), ".emptySuccess should not equal .failure results")
-        XCTAssertFalse(Result("") == Result(RouterError.invalidRequest), ".success should not equal .failure results")
+        XCTAssertFalse(Result<NoResponseType>(nil) == Result(ResultTestError.testErrorCase), ".emptySuccess should not equal .failure results")
+        XCTAssertFalse(Result("") == Result(ResultTestError.testErrorCase), ".success should not equal .failure results")
         XCTAssertFalse(Result(SomeItem()) == Result(SomeItem()), ".success should not equal .success if Value type is not Equatable")
         
         // Failure should equal failure regardless of type
-        XCTAssertTrue(Result<String>(RouterError.invalidResponse) == Result<Any>(RouterError.invalidResponse), ".failure should equal .failure if errors are same")
-        XCTAssertTrue(Result<Any>(RouterError.invalidResponse) == Result<Any>(RouterError.invalidResponse), ".failure should equal .failure if errors are same")
+        XCTAssertTrue(Result<String>(ResultTestError.testErrorCase) == Result<Any>(ResultTestError.testErrorCase), ".failure should equal .failure if errors are same")
+        XCTAssertTrue(Result<Any>(ResultTestError.testErrorCase) == Result<Any>(ResultTestError.testErrorCase), ".failure should equal .failure if errors are same")
     }
     
     func testSuccessResultHandlers() {
@@ -83,12 +87,12 @@ class ResultTypeTests: XCTestCase {
     }
     
     func testErrorResultHandlers() {
-        let result = Result(RouterError.invalidRequest)
+        let result = Result(ResultTestError.testErrorCase)
         
         var makeSureOnErrorSynchronous: Bool = false
         result.onError { (err) -> Void in
             makeSureOnErrorSynchronous = true
-            XCTAssertEqual(err as? RouterError, RouterError.invalidRequest, "Result.onError handler should be called when populated")
+            XCTAssertEqual(err as? ResultTestError, ResultTestError.testErrorCase, "Result.onError handler should be called when populated")
         }
         XCTAssertEqual(makeSureOnErrorSynchronous, true, "onError should be synchronous")
         
