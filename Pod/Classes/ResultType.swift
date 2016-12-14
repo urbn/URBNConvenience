@@ -64,14 +64,14 @@ public extension Result {
 
 // MARK: - Helper Handling -
 public extension Result {
-    func onSuccess(handler: (_ data: Value?) -> Void) {
+    public func onSuccess(handler: (_ data: Value?) -> Void) {
         switch(self) {
         case .success(let data): handler(data)
         default: break
         }
     }
     
-    func onError(handler: (_ err: Error) -> Void) {
+    public func onError(handler: (_ err: Error) -> Void) {
         switch(self) {
         case .failure(let e): handler(e)
         default: break
