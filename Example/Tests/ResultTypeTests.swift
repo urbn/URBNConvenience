@@ -48,10 +48,6 @@ class ResultTypeTests: XCTestCase {
         
         XCTAssertFalse(Result(nil) == Result(""), ".emptySuccess should not equal .success results")
         XCTAssertFalse(Result("") == Result(0), ".success should not equal .success if the Value types differ")
-        
-        //This one is busted because we no logner have emptyResponse types and instead us NoResponseType. This case should not arise. Need to make sure client apps play nice
-        //XCTAssertTrue(Result<String>(nil) == Result<Any>(nil), ".emptySuccess should be equal regardless of the generic type")
-        
         XCTAssertFalse(Result<NoResponseType>(nil) == Result(ResultTestError.testErrorCase), ".emptySuccess should not equal .failure results")
         XCTAssertFalse(Result("") == Result(ResultTestError.testErrorCase), ".success should not equal .failure results")
         XCTAssertFalse(Result(SomeItem()) == Result(SomeItem()), ".success should not equal .success if Value type is not Equatable")
