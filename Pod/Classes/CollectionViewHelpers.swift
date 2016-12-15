@@ -21,7 +21,7 @@ extension UICollectionView {
     
     public final func dequeueReusableCell<T>(_ cell: ReusableCell<T>, indexPath: IndexPath) -> T where T: UICollectionViewCell {
         guard let cell = dequeueReusableCell(withReuseIdentifier: cell.identifier, for: indexPath) as? T else {
-            assertionFailure("type error how is this possible?")
+            assert(false, "type error how is this possible?")
             return T()
         }
 

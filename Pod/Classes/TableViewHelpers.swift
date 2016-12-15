@@ -22,7 +22,7 @@ extension UITableView {
     
     public final func dequeueReusableCell<T>(_ cell: ReusableCell<T>, indexPath: IndexPath) -> T where T: UITableViewCell {
         guard let cell = dequeueReusableCell(withIdentifier: cell.identifier, for: indexPath) as? T else {
-            assertionFailure("type error how is this possible?")
+            assert(false, "type error how is this possible?")
             return T()
         }
         return cell
