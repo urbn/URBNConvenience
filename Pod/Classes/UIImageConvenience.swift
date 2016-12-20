@@ -88,7 +88,7 @@ public extension UIImage {
         return newImage
     }
 
-    #if !os(tvOS)
+    #if !os(tvOS) 
     public static func roundedStretchableImage(color: UIColor, cornerRadius: CGFloat) -> UIImage {
         let rectSize = max(cornerRadius, 4.0) * 2.0
         let rect = CGRect(x: 0, y: 0, width: rectSize, height: rectSize)
