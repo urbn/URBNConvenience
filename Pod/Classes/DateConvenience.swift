@@ -46,15 +46,18 @@ public extension Date {
 
     // MARK: Display
     public func string(withFormat format: String, localized: Bool = true) -> String? {
-        var formatter = DateFormatter()
+        let formatter = DateFormatter()
+        var dateFormat = format
         
         if localized {
-            guard let format = DateFormatter.dateFormat(fromTemplate: format, options: 0, locale: Locale.autoupdatingCurrent) else {
+            guard let localeFormat = DateFormatter.dateFormat(fromTemplate: format, options: 0, locale: Locale.autoupdatingCurrent) else {
                 return nil
             }
+            
+            dateFormat = localeFormat
         }
         
-        formatter.dateFormat = format
+        formatter.dateFormat = dateFormat
 
         return formatter.string(from: self)
     }
