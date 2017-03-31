@@ -55,7 +55,6 @@ public extension Date {
             }
             
             dateFormat = localeFormat
-            formatter.locale = Locale.autoupdatingCurrent
         }
         
         formatter.dateFormat = dateFormat
