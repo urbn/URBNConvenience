@@ -121,3 +121,38 @@ public func ==<T>(lhs: Result<T>, rhs: Result<T>) -> Bool {
     default: return false
     }
 }
+
+// MARK: - Map
+extension Result {
+    
+    /// Allow us to transform values in the result type
+    ///
+    /// - Parameter transform: function to transform one value to another
+    /// - Returns: a result with the new value type
+    public func map<U>(_ transform: (Value?) throws -> U?) -> Result<U> {
+        switch self {
+        case .failure(let error):
+            return Result<U>(error)
+        case .success(let value):
+            do {
+                return Result<U>(try transform(value))
+            }
+            catch let error {
+                return Result<U>(error)
+            }
+        }
+    }
+
+    /// Allow us to transform errors in the result type
+    ///
+    /// - Parameter transform: function to transform one error to another
+    /// - Returns: a result with the new error type
+    public func map(_ transform: (Error) -> Error) -> Result<Value> {
+        switch self {
+        case .failure(let error):
+            return Result(transform(error))
+        case .success(let value):
+            return Result(value)
+        }
+    }
+}
