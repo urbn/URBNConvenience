@@ -95,5 +95,84 @@ class ResultTypeTests: XCTestCase {
         result.onSuccess { (data) -> Void in
             XCTFail("This should not happen")
         }
-    }    
+    }
+    
+    fileprivate enum TestError: Error {
+        case dummy
+        case foo
+        case bar
+    }
+    
+    private let errorConverter: (Error) -> Error = {
+        if let error = $0 as? TestError, error == .foo {
+            return TestError.bar
+        }
+        return $0
+    }
+    
+    let urlConverter: (String?) throws -> URL = {
+        guard let string = $0 else { throw TestError.dummy }
+        return URL(string: string)!
+    }
+    
+    func testResultSuccessMap() {
+        let result = Result(Int(1234))
+        let newResult = result.map{ String(describing: $0!) }
+
+        guard case let .success(value) = newResult, let string = value else {
+            XCTFail("should be success, or not nil")
+            return
+        }
+        
+        XCTAssert(string == "1234")
+    }
+    
+    func testResultSuccessThrow() {
+        let string: String? = nil
+        let result = Result(string)
+        let newResult = result.map(urlConverter)
+
+        guard case let .failure(error) = newResult, let finalError = error as? TestError else {
+            XCTFail("should be failure of TestError")
+            return
+        }
+        
+        XCTAssert(finalError == .dummy)
+    }
+    
+    func testResultSuccessErrorMap() {
+        let result = Result<Int>(1234)
+        let newResult = result.map(errorConverter)
+        
+        guard case let .success(value) = newResult, let int = value else {
+            XCTFail("should be success, or not nil")
+            return
+        }
+        
+        XCTAssert(int == 1234)
+    }
+
+    func testResultFailureMap() {
+        let result = Result<Int>(TestError.foo)
+        let newResult = result.map(errorConverter)
+        
+        guard case let .failure(error) = newResult, let finalError = error as? TestError else {
+            XCTFail("should be failure of TestError")
+            return
+        }
+        
+        XCTAssert(finalError == .bar)
+    }
+    
+    func testResultFailureNoMap() {
+        let result = Result<Int>(TestError.dummy)
+        let newResult = result.map(errorConverter)
+        
+        guard case let .failure(error) = newResult, let finalError = error as? TestError else {
+            XCTFail("should be failure of TestError")
+            return
+        }
+        
+        XCTAssert(finalError == .dummy)
+    }
 }
