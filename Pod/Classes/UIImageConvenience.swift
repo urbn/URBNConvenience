@@ -34,10 +34,9 @@ public extension UIImage {
 
     //TODO: Check this logic in a different PR. Seems brands aren't really using it.
     public static func imageDrawnWithKey(key: NSString, size: CGSize, drawBlock: URBNConvenienceImageDrawBlock) -> UIImage? {
-        assert(key != nil, "Key must be non-nil")
         assert(size.width > 0 && size.height > 0, "Invalid image size (both dimensions must be greater than zero")
 
-        var imageCache = NSCache<NSString, UIImage>()
+        let imageCache = NSCache<NSString, UIImage>()
         guard var image = imageCache.object(forKey: key) else { return nil }
 
         UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
@@ -154,15 +153,15 @@ public extension UIImage {
         switch imageOrientation {
         case .down, .downMirrored:
             transform = transform.translatedBy(x: size.width, y: size.height)
-            transform = transform.rotated(by: CGFloat(M_PI))
+            transform = transform.rotated(by: CGFloat(Double.pi))
             break
         case .left, .leftMirrored:
             transform = transform.translatedBy(x: size.width, y: size.height)
-            transform = transform.rotated(by: CGFloat(M_PI_2))
+            transform = transform.rotated(by: CGFloat(Double.pi / 2))
             break
         case .right, .rightMirrored:
             transform = transform.translatedBy(x: size.width, y: size.height)
-            transform = transform.rotated(by: CGFloat(-M_PI_2))
+            transform = transform.rotated(by: CGFloat(-(Double.pi / 2)))
             break
         case .up, .upMirrored:
             break
@@ -233,7 +232,7 @@ public extension UIImage {
     }
 
     public func rotateImage(degrees: CGFloat) -> UIImage? {
-        let radians = Double(degrees / 180.0) * M_PI
+        let radians = Double(degrees / 180.0) * Double.pi
         let rotatedViewBox = UIView(frame: CGRect(x: 0.0, y: 0.0, width: self.size.width, height: self.size.height))
         let transform = CGAffineTransform(rotationAngle: CGFloat(radians))
         rotatedViewBox.transform = transform
