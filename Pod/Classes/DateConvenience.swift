@@ -26,19 +26,19 @@ public extension Date {
     
     // MARK: Date Creation
     public func dateByAdding(years: Int? = nil, months: Int? = nil, weeks: Int? = nil, days:Int? = nil, hours: Int? = nil, minutes: Int? = nil, seconds: Int? = nil) -> Date? {
-        var components = DateComponents(year: years, month: months, day: days, hour: hours, minute: minutes, second: seconds)
+        let components = DateComponents(year: years, month: months, day: days, hour: hours, minute: minutes, second: seconds)
         
         return Calendar.autoupdatingCurrent.date(byAdding: components, to: self)
     }
     
     public static func dateFrom(year: Int, month: Int, day: Int, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) -> Date? {
-        var components = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
+        let components = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
 
         return Calendar.autoupdatingCurrent.date(from: components)
     }
 
     public static func dateFromString(_ string: String, format: String) -> Date? {
-        var formatter = DateFormatter()
+        let formatter = DateFormatter()
         formatter.dateFormat = format
 
         return formatter.date(from: string)

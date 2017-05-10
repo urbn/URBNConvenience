@@ -6,11 +6,10 @@
 //  Copyright (c) 2014 jgrandelli. All rights reserved.
 //
 
-#import <URBNConvenience/URBNConvenience.h>
 #import "URBNViewController.h"
 #import "URBNBorderViewController.h"
-#import <URBNConvenience/UIView+URBNBorders.h>
 #import "Convenience-Swift.h"
+@import URBNConvenience;
 
 @interface URBNViewController ()
 @property(nonatomic, strong) UIImageView *imageView1;
@@ -40,7 +39,7 @@
     self.imageView2.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.imageView2];
     
-    UIImage *image = [UIImage urbn_imageDrawnWithKey:@"imageKey" size:size drawBlock:^(CGRect rect, CGContextRef context) {
+    UIImage *image = [UIImage imageDrawnWithKeyWithKey:@"imageKey" size:size drawBlock:^(CGRect rect, CGContextRef context) {
         CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
         CGContextFillRect(context, rect);
     }];
@@ -48,7 +47,10 @@
     self.imageView1.image = [image applyBlurWithRadius:8 tintColor:[[UIColor redColor] colorWithAlphaComponent:0.8] saturationDeltaFactor:1 maskImage:nil];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UIImage *delayImage = [UIImage urbn_imageDrawnWithKey:@"imageKey" size:size drawBlock:nil];
+        UIImage *delayImage = [UIImage imageDrawnWithKeyWithKey:@"imageKey" size:size drawBlock:^(CGRect rect, CGContextRef context) {
+            // This block is defined non-null
+        }];
+        
         self.imageView2.image = delayImage;
         
         // This shows access to the top constraint we added above.
