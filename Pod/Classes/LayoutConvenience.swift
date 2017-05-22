@@ -61,11 +61,7 @@ public extension UIView {
         }
         
         container.addSubviewsWithNoConstraints(self)
-        
-        if #available(iOS 9, *) {
-            
-        }
-        
+
         let metrics = ["top": insets.top, "left": insets.left, "bottom": insets.bottom, "right": insets.right]
         activateVFL(format: "H:|-left-[view]-right-|", metrics: metrics, views: ["view": self])
         activateVFL(format: "V:|-top-[view]-bottom-|", metrics: metrics, views: ["view": self])
