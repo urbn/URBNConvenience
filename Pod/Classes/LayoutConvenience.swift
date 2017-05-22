@@ -14,10 +14,28 @@ fileprivate var defaultInsetConstraint: InsetConstraint {
 }
 
 public struct InsetConstraints {
-    var top: InsetConstraint = defaultInsetConstraint
-    var left: InsetConstraint = defaultInsetConstraint
-    var right: InsetConstraint = defaultInsetConstraint
-    var bottom: InsetConstraint = defaultInsetConstraint
+    var top: InsetConstraint
+    var left: InsetConstraint
+    var right: InsetConstraint
+    var bottom: InsetConstraint
+    
+    init(top: InsetConstraint = defaultInsetConstraint, left: InsetConstraint = defaultInsetConstraint, bottom: InsetConstraint = defaultInsetConstraint, right: InsetConstraint = defaultInsetConstraint) {
+        self.top = top
+        self.left = left
+        self.bottom = bottom
+        self.right = right
+    }
+    
+    init(insets: UIEdgeInsets, horizontalPriority: UILayoutPriority = UILayoutPriorityRequired, verticalPriority: UILayoutPriority = UILayoutPriorityRequired) {
+        self.init(top: (constant: insets.top, priority: verticalPriority),
+                  left: (constant: insets.left, priority: horizontalPriority),
+                  bottom: (constant: insets.bottom, priority: verticalPriority),
+                  right: (constant: insets.right, priority: horizontalPriority))
+    }
+    
+    init(insets: UIEdgeInsets, priority: UILayoutPriority = UILayoutPriorityRequired) {
+        self.init(insets: insets, horizontalPriority: priority, verticalPriority: priority)
+    }
 }
 
 public func activateVFL(format: String, options: NSLayoutFormatOptions = [], metrics: [String : Any]? = nil, views: [String : Any]) {
@@ -70,34 +88,37 @@ public extension UIView {
     }
     
     @available(iOS 9, *)
-    public func wrapInView(_ view: UIView? = nil, withInsetConstraints insetConstraints: InsetConstraints) -> UIView {
-        var container: UIView
-        if let view = view {
-            container = view
-        }
-        else {
-            container = UIView()
-            container.translatesAutoresizingMaskIntoConstraints = false
-        }
+    public func wrap(in view: UIView, with insetConstraints: InsetConstraints) {
+        wrap(child: self, inParent: view, with: insetConstraints)
+    }
+    
+    @available(iOS 9, *)
+    public func wrapInNewView(with insetConstraints: InsetConstraints) -> UIView {
+        let view = UIView()
+        wrap(child: self, inParent: view, with: insetConstraints)
         
-        container.addSubviewsWithNoConstraints(self)
-        let topAnchor = container.topAnchor.constraint(equalTo: self.topAnchor, constant: insetConstraints.top.constant)
+        return view
+    }
+    
+    @available(iOS 9, *)
+    private func wrap(child: UIView, inParent parent: UIView, with insetConstraints: InsetConstraints) {
+        parent.addSubviewsWithNoConstraints(child)
+        
+        let topAnchor = child.topAnchor.constraint(equalTo: parent.topAnchor, constant: insetConstraints.top.constant)
         topAnchor.priority = insetConstraints.top.priority
         topAnchor.isActive = true
         
-        let leftAnchor = container.leftAnchor.constraint(equalTo: self.leftAnchor, constant: insetConstraints.left.constant)
+        let leftAnchor = child.leftAnchor.constraint(equalTo: parent.leftAnchor, constant: insetConstraints.left.constant)
         leftAnchor.priority = insetConstraints.left.priority
         leftAnchor.isActive = true
         
-        let bottomAnchor = container.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -insetConstraints.bottom.constant)
+        let bottomAnchor = child.bottomAnchor.constraint(equalTo: parent.bottomAnchor, constant: -insetConstraints.bottom.constant)
         bottomAnchor.priority = insetConstraints.bottom.priority
         bottomAnchor.isActive = true
         
-        let rightAnchor = container.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -insetConstraints.right.constant)
+        let rightAnchor = child.rightAnchor.constraint(equalTo: parent.rightAnchor, constant: -insetConstraints.right.constant)
         rightAnchor.priority = insetConstraints.right.priority
         rightAnchor.isActive = true
-        
-        return container
     }
 }
 
