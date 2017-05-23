@@ -14,10 +14,10 @@ fileprivate var defaultInsetConstraint: InsetConstraint {
 }
 
 public struct InsetConstraints {
-    var top: InsetConstraint
-    var left: InsetConstraint
-    var right: InsetConstraint
-    var bottom: InsetConstraint
+    public var top: InsetConstraint
+    public var left: InsetConstraint
+    public var right: InsetConstraint
+    public var bottom: InsetConstraint
     
     public init(top: InsetConstraint = defaultInsetConstraint, left: InsetConstraint = defaultInsetConstraint, bottom: InsetConstraint = defaultInsetConstraint, right: InsetConstraint = defaultInsetConstraint) {
         self.top = top
