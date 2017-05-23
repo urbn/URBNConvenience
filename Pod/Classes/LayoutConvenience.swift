@@ -19,21 +19,21 @@ public struct InsetConstraints {
     var right: InsetConstraint
     var bottom: InsetConstraint
     
-    init(top: InsetConstraint = defaultInsetConstraint, left: InsetConstraint = defaultInsetConstraint, bottom: InsetConstraint = defaultInsetConstraint, right: InsetConstraint = defaultInsetConstraint) {
+    public init(top: InsetConstraint = defaultInsetConstraint, left: InsetConstraint = defaultInsetConstraint, bottom: InsetConstraint = defaultInsetConstraint, right: InsetConstraint = defaultInsetConstraint) {
         self.top = top
         self.left = left
         self.bottom = bottom
         self.right = right
     }
     
-    init(insets: UIEdgeInsets, horizontalPriority: UILayoutPriority = UILayoutPriorityRequired, verticalPriority: UILayoutPriority = UILayoutPriorityRequired) {
+    public init(insets: UIEdgeInsets, horizontalPriority: UILayoutPriority = UILayoutPriorityRequired, verticalPriority: UILayoutPriority = UILayoutPriorityRequired) {
         self.init(top: (constant: insets.top, priority: verticalPriority),
                   left: (constant: insets.left, priority: horizontalPriority),
                   bottom: (constant: insets.bottom, priority: verticalPriority),
                   right: (constant: insets.right, priority: horizontalPriority))
     }
     
-    init(insets: UIEdgeInsets, priority: UILayoutPriority = UILayoutPriorityRequired) {
+    public init(insets: UIEdgeInsets, priority: UILayoutPriority = UILayoutPriorityRequired) {
         self.init(insets: insets, horizontalPriority: priority, verticalPriority: priority)
     }
 }
